@@ -1,0 +1,82 @@
+<div class="container mt-5">
+
+  <div class="text-center" style="padding:0 5%">
+    <div class="text-start text-lg-end align-bottom d-inline-block" style="color: #0069a7; letter-spacing: 0.06rem;font-size: 1.8rem; font-weight: 100;margin-bottom:40px;">
+      {{ section.settings.title | escape }}<br/>
+      {{ section.settings.subtitle | escape }}
+    </div>
+      {%- if section.settings.featured_image != blank -%}
+        <img src="{{section.settings.featured_image | img_url: '400x400', scale: 2 }}" style="max-height:300px;" class="d-inline-block" alt="begin quote">
+      {%- else -%}
+        {{ section.settings.featured_image | img_url: '160x160', scale: 1 | img_tag: section.settings.featured_image.alt, "featured-text-image-class" }}
+        {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div id="cta-with-header" style="letter-spacing: 0.02rem; font-size: 1.2rem;line-height:2rem;color:#65665d;" class="text-center">
+        {{ section.settings.text }}
+        
+        <button type="button" class="btn btn-success cta-button mt-3">{{ section.settings.button-label | escape }}</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% stylesheet %}
+  #cta-with-header .cta-button {
+    text-transform:uppercase;
+    padding: .8rem 7rem;
+    background-color: #76bc21;
+    border-color:#76bc21;
+    font-weight: 500;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Featured Text",
+  "class":"cta-with-header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "CTA Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "SubTitle",
+      "default": "SubTitle"
+    },
+    { 
+      "type": "image_picker",
+      "id":"featured_image",
+      "label": "Featured Image"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Call to action text.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button-label",
+      "label": "Button Label",
+      "default": "Do Someething"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"CTA with header"
+    }
+  ]
+}
+{% endschema %}

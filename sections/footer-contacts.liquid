@@ -1,0 +1,77 @@
+
+
+<div class="container">
+  <p class="h4">{{ section.settings.title | escape }}</p>
+
+  {%- if section.blocks.size > 0 -%}
+      <div class="container">
+          
+          {%- for block in section.blocks -%}
+          <div class="row">
+              <div class="col-1" style="max-width: 50px;">
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image | img_url: '160x160', scale: 1 | img_tag: block.settings.image.alt, 'img-fluid' }}
+                  {%- else -%}
+                    {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' | class: 'img-fluid' }}
+                  {%- endif -%}
+              </div>
+              <div class="col-11">
+                <p>
+                  {{ block.settings.details}}
+                </p>
+              </div>
+          </div>
+          {%- endfor -%}
+          
+      </div>
+  </ul>
+  {%- endif -%}
+</div>
+
+
+
+{%schema%}
+{
+  "name": "Footer Contacts",
+  "max_blocks": 20,
+  "class":"col-4",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default" : "Please Conttact Us"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Contact Detail",
+      "type": "contact_detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "html",
+          "id": "details",
+          "label": "Details",
+          "default": "<ul>\n\t<li><strong>Feature 1</strong></li>\n\t<li>Feature 2</li>\n\t<li>Feature 3</li>\n</ul>"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Product Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional"
+        }
+      ]
+    }
+  ]
+}
+{%endschema%}

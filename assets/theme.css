@@ -1,0 +1,36 @@
+body {
+  font-family: var(--font-stack-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+.content-wrapper {
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-body-wrapper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color:#65665d;
+  color: #ffffff;
+  font-family: var(--font-stack-footer);
+  font-size: .8rem;
+} 
+
+
+
+sup {
+  top: -1em;
+  font-size: .5rem;
+  margin-left: .1rem;
+}
+
+ul {
+  padding-left: .9rem;
+}

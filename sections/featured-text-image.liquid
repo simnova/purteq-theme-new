@@ -1,0 +1,73 @@
+<div class="container mt-5" style="margin-bottom:12rem">
+  <div class="text-center">
+    <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      
+      <div class="float-start" style="shape-outside: content-box; margin-top:3.1rem;">
+        {%- if section.settings.featured_image != blank -%}
+        {{ section.settings.featured_image | img_url: '220x220', scale: 1 | img_tag: section.settings.featured_image.alt, "featured-text-image-class" }}
+        {%- else -%}
+          {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <style>
+        
+        
+          #featured-text-image-content strong {
+            color:black;
+            font-weight: inherit;
+          }
+
+          .featured-text-image-class {
+            margin-right: 0px;
+            margin-bottom: max(-1*3vw,-40px);
+          }
+        
+      </style>
+      <div id="featured-text-image-content" style="font-size: min(4vw,2rem) ;color:#65665d;">
+        {{ section.settings.text }}
+      </div>
+      
+
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Featured Text & Image",
+  "class":"featured-text-image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Talk about your brand"
+    },
+    { 
+        "type": "image_picker",
+        "id":"featured_image",
+        "label": "Featured Image"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Featured Text & Image"
+    }
+  ]
+}
+{% endschema %}

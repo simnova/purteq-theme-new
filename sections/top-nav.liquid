@@ -1,0 +1,113 @@
+<div class="navbar navbar-expand-lg fixed-top continer top-nav">
+    <div class="content-body-wrapper container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{{'navigation-purteq-logo.svg'|asset_url}}" alt="" width="245" height="106" class="d-inline-block align-top logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          {% for link in linklists.main-menu.links %}
+            {% assign child_list_handle = link.title | handleize %}
+            {% if linklists[child_list_handle].links != blank %}
+              <li class="navbar-nav">
+                <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  [{% for childlink in linklists[child_list_handle].links %}
+                  <li><a href="{{ childlink.url }}" class="dropdown-item">{{ childlink.title | escape }}</a></li>
+                {% endfor %}]
+                </ul>
+            </li>
+
+            {% else %}
+              <li class="navbar-nav">
+                <a href="{{ link.url }}" class="nav-link  {% if link.active %}active{% endif %}">{{ link.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+          <!--  
+          <li class="navbar-nav">
+            <a href="/cart" class="nav-link">Cart</a>
+          </li>
+        -->
+          {% if shop.customer_accounts_enabled %}
+            {% if customer %}
+            <li>
+              <a href="/account" class="nav-link">account</a>
+            </li>
+              {{ 'log out'  | customer_logout_link }}
+            {% else %}
+            <li class="navbar-nav">
+              <a href="{{ customer_login_link.url }}" class="nav-link {% if customer_login_link.active %}active{% endif %}">Log In</a>
+            </li>
+            {% endif %}
+          {% endif %}
+          
+        </ul>
+
+
+
+      </div>
+
+  </div>
+</div>
+
+{% style %}
+  @font-face {
+    font-family: 'Bank Gothic Pro Medium Cond';
+    src: local('Bank Gothic Pro Medium Cond'), local('BankGothicPro-MediumCond'),
+        url('{{'BankGothicPro-MediumCond.woff2'|asset_url}}') format('woff2'),
+        url('{{'BankGothicPro-MediumCond.woff'|asset_url}}') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }  
+{% endstyle %}
+
+{% stylesheet %}
+  .navbar img.logo{
+    margin:-1rem 0;
+
+  }
+  .top-nav {
+    min-height:107px;
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    background-color:white;
+    font-family: 'Bank Gothic Pro Medium Cond'; 
+    font-weight: 500; 
+    font-style: normal;
+  }
+
+  .top-nav .nav-link {
+    padding: 6px 12px;
+    text-transform:uppercase;
+    font-size: 1.1rem;
+    margin: 0 0 0 16px;
+  }
+
+  .top-nav .nav-link:link, .nav-link:visited, .nav-link:active {
+    text-decoration: none;
+    color:#65665d;
+    
+  }
+
+  .top-nav .nav-link:hover {
+    color: white !important;
+    background-color: #0069A7;
+  }
+
+  .top-nav .nav-link.active {
+    text-decoration:underline;
+    text-underline-offset: .1rem;
+    text-decoration-thickness: .15rem;
+    color:#0069A7;
+  }
+
+  
+{% endstylesheet %}

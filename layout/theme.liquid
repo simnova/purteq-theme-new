@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <title>{{ page_title }}</title> 
+
+  {% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <link rel="preload" href="{{ 'bootstrap.min.css' | asset_url }}" as="style">
+  <link rel="preload" href="{{ 'swiper-bundle.min.css' | asset_url }}" as="style">
+
+  <!-- 
+    =====================================================================
+    SHOPIFY GENERATED HEADER CONTENT BEGIN 
+    =====================================================================
+  -->
+  {{ content_for_header }} <!-- Header hook for plugins -->
+  <!-- 
+    =====================================================================
+    SHOPIFY GENERATED HEADER CONTENT END 
+    =====================================================================
+  -->
+
+
+  <!--== FONTS =======================================================-->
+  {%- assign body_font = settings.type_body_font -%}
+  {%- assign footer_font = settings.type_footer_font -%}
+
+
+  <link rel="preload" as="font" href="{{ body_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ footer_font | font_url }}" type="font/woff2" crossorigin>
+
+  {% render 'css-variables' %}
+
+  <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style">
+  
+  {{ 'theme.css' | asset_url | stylesheet_tag }} 
+
+  {% style %}
+    {{ body_font | font_face: font_display: 'swap' }}
+    {{ footer_font | font_face: font_display: 'swap' }}
+  {% endstyle %}
+
+
+
+  
+</head>
+<body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+    {% section 'top-nav' %}
+    <div class="content-wrapper mb-5" style="margin-top: 107px;">
+    {{ content_for_layout }}
+    </div>
+  </main>
+  <footer class="footer mt-auto py-3">
+    <div class="content-wrapper">
+      <div class="container content-body-wrapper">
+        <div class="row mt-5">
+          {% section 'custom-footer' %}
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="{{ 'application.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'jquery-3.6.0.slim.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
+</body>
+</html>

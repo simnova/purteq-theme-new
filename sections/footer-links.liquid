@@ -1,0 +1,56 @@
+<div class="container">
+  {%- if section.blocks.size > 0 -%}
+    <div class="row">
+      {%- for block in section.blocks -%}
+        <div class="col">
+          {%- if block.settings.title -%}
+          <p class="h4">{{ block.settings.title | escape }}</p>
+          {%- endif -%}
+      
+          {%- assign footer_linklist = block.settings.menu -%}
+          <ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
+            {%- for link in linklists[footer_linklist].links -%}
+              <li class="site-footer__linklist-item">
+                <a href="{{ link.url }}"
+                  {% if link.current %} aria-current="page"{% endif %}
+                >
+                  {{ link.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+{%schema%}
+{
+  "name": "footer-links",
+  "class":"col-4",
+  "blocks": [
+    {
+      "type": "link_list",
+      "name":"Site Map",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Site Map Links"
+        },
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Heading",
+          "default": "Site Map"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "default": "footer"
+        }
+      ]
+    }
+  ]
+}
+{%endschema%}

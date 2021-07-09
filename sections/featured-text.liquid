@@ -1,0 +1,44 @@
+<div class="container mt-3 ms-4 me-4">
+  <div class="text-center">
+    <p style="color: #65665d; letter-spacing: 0.06rem;font-size: 2rem; font-weight: 100;">{{ section.settings.title | escape }}</p>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <style>
+          #featured-text-content strong {
+            color:black;
+            font-weight: 100;
+          }
+      </style>
+      <div id="featured-text-content" style="letter-spacing: 0.02rem; font-size: 1.2rem;line-height:2rem;color:#65665d;">
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Talk about your brand"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Featured Text"
+    }
+  ]
+}
+{% endschema %}

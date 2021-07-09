@@ -1,0 +1,19 @@
+{% comment %}
+  This is used to create CSS custom variables with Liquid references
+  The file variables.scss is referring these CSS custom variables as Sass variables
+  to use throughout the stylesheet
+{% endcomment %}
+{% style %}
+  {%- assign body_font = settings.type_body_font -%}
+  {%- assign footer_font = settings.type_footer_font -%}
+
+:root {
+  --font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }};
+
+  --font-stack-footer: {{ footer_font.family }}, {{ footer_font.fallback_families }};
+  --font-style-footer: {{ footer_font.style }};
+  --font-weight-footer: {{ footer_font.weight }};
+  
+}
+
+{% endstyle %}
