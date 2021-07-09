@@ -14,10 +14,48 @@
         "text": "<p>Call to action text.<\/p>",
         "button-label": "Do Something"
       }
+    },
+    "16257993025691a738": {
+      "type": "product-callouts",
+      "blocks": {
+        "16257993025691a738-0": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
+        },
+        "16257993025691a738-1": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
+        },
+        "16257993025691a738-2": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16257993025691a738-0",
+        "16257993025691a738-1",
+        "16257993025691a738-2"
+      ],
+      "settings": {
+        "title": "Products"
+      }
     }
   },
   "order": [
     "carousel_homepage",
-    "1625799275a9d861aa"
+    "1625799275a9d861aa",
+    "16257993025691a738"
   ]
 }
