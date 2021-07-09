@@ -39,8 +39,8 @@
         "16257993025691a738-2": {
           "type": "product_detail",
           "settings": {
-            "title": "",
-            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "title": "NSPECT",
+            "details": "<ul>\n\t<li>\n<strong>Validate the level of clean<\/strong> with a Luminometer<\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
             "link": ""
           }
         }
