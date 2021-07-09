@@ -1,13 +1,23 @@
 {
-  "sections" : {
-    "carousel_homepage" : {
-      "type" : "carousel-homepage",
+  "sections": {
+    "carousel_homepage": {
+      "type": "carousel-homepage",
       "settings": {
-        "title" : "Carousel Homepage"
+      }
+    },
+    "1625799275a9d861aa": {
+      "type": "cta-with-header",
+      "settings": {
+        "title": "CTA Title",
+        "subtitle": "SubTitle",
+        "featured_image": "shopify:\/\/shop_images\/flower.png",
+        "text": "<p>Call to action text.<\/p>",
+        "button-label": "Do Something"
       }
     }
   },
-  "order" : [
-    "carousel_homepage"
+  "order": [
+    "carousel_homepage",
+    "1625799275a9d861aa"
   ]
 }
