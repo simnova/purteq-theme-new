@@ -21,8 +21,9 @@
         "16257993025691a738-0": {
           "type": "product_detail",
           "settings": {
-            "title": "",
-            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "title": "FRESCH",
+            "details": "<ul>\n\t<li>\n<strong>EPA-registered botanical disinfectant<\/strong> kills 99.9% of bacteria &amp; viruses, inclusing SARS-CoV-2, the virus that causes COVID-19<\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-fresch_9cc99293-665e-4880-88da-f179e1103a13.png",
             "link": ""
           }
         },
