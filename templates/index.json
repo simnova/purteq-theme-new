@@ -1,13 +1,95 @@
 {
-  "sections" : {
-    "carousel_homepage" : {
-      "type" : "carousel-homepage",
+  "sections": {
+    "carousel_homepage": {
+      "type": "carousel-homepage",
       "settings": {
-        "title" : "Carousel Homepage"
+      }
+    },
+    "16260496001b9d0254": {
+      "type": "featured-text-image",
+      "settings": {
+        "title": "What is Clean?",
+        "featured_image": "shopify:\/\/shop_images\/flower.png",
+        "text": "<p>In a world turned sideways, it’s a worthy question to ask.  Is a surface clean if it’s “<em>sparkling<\/em>?”   Is a workplace safe if it seems “*clean and fresh?*”  How long does a “<em>disinfecting<\/em>” wipe-down last?  (Only till the next time it’s touched, right?)  Answering these questions with complete honesty is at the heart of the PURTEQ® promise: At PURTEQ, we create non-toxic, sustainable products that deliver <strong>cleanliness with candor. <\/strong><\/p>"
+      }
+    },
+    "16260496490a85176f": {
+      "type": "product-callouts",
+      "blocks": {
+        "16260496490a85176f-0": {
+          "type": "product_detail",
+          "settings": {
+            "title": "FRESCH",
+            "details": "<ul>\n<li>\n<span style=\"color:black\">EPA-registered botanical disinfectant<\/span> kills 99.9% of bacteria &amp; viruses<\/li>\n<li>Triple action: cleans, disinfects, deodorizes<\/li>\n<li>Plant-based active ingredients<\/li>\n<li>No harsh chemicals or fumes<\/li>\n<li>Bleach &amp; ammonia free<\/li>\n<li>Suitable for use in school districts, transit systems, hotels, restaurants, gyms, and more<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-fresch_9cc99293-665e-4880-88da-f179e1103a13.png",
+            "link": ""
+          }
+        },
+        "16260496490a85176f-1": {
+          "type": "product_detail",
+          "settings": {
+            "title": "PREVNT",
+            "details": "<ul>\n<li>\n<span style=\"color:black\">Revolutionary active-barrier cleaner<\/span> enhances the effectiveness of FRESCH by continually cleaning surfaces &amp; the air of inanimate contaminants for up to 90 days<\/li>\n<li>Titanium dioxide (TiO₂) nanotechnology is a naturally occurring oxide often used as a food additive<\/li>\n<li>Transparent water-based formula is designed for a wide variety of surfaces<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-prevnt.png",
+            "link": ""
+          }
+        },
+        "16260496490a85176f-2": {
+          "type": "product_detail",
+          "settings": {
+            "title": "NSPECT",
+            "details": "<ul>\n<li>\n<span style=\"color:black\">Validate the level of clean<\/span> with a Luminometer<\/li>\n <li>Device commonly used in healthcare &amp; food service<\/li>\n <li>Test, monitor, &amp; prove cleanliness in ways not visible to the naked eye<\/li>\n<li>No special training is required to use the device or interpret the results<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-nspect.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16260496490a85176f-0",
+        "16260496490a85176f-1",
+        "16260496490a85176f-2"
+      ],
+      "settings": {
+        "title": "Our Promise is in Our Products"
+      }
+    },
+    "1626049739500c659f": {
+      "type": "featured-text",
+      "settings": {
+        "title": "A non-toxic cleaning system",
+        "text": "<p><strong>A two-step application of first FRESCH, then PREVNT<\/strong>, can leave your environment clean and safe for enduring, provable periods of time – depending on levels of use – without subjecting people to unhealthy toxins and fumes. <em>Then, NSPECT offers tangible proof of that promise.<\/em><\/p>"
+      }
+    },
+    "16260499878c20d24b": {
+      "type": "single-product-callout",
+      "settings": {
+        "title": "We just spread the promise<br> to a new realm of clean.",
+        "featured_image": "shopify:\/\/shop_images\/home-product-citrapur-callout.png",
+        "details": "<h5>CITRAPUR<sup>TM<\/sup>\n<\/h5>\n<ul>\n<li>Easy-to-use, citrus-based disinfecting wipes for business or home<\/li>\n <li>Powerful against pathogens, yet a completely non-toxic alternative to name-brand wipes containing harmful chemicals – which were never meant for heavy use and can lead to toxic build-ups<\/li>\n<li>Simple one-step, no-rinse cleaning and disinfection. Use as directed.<\/li>\n<li>Approved on LIST N for use against SARS-CoV-2, the cause of COVID-19<\/li>\n<\/ul>"
+      }
+    },
+    "1626050025438538c1": {
+      "type": "video-player",
+      "settings": {
+        "title": "The PURTEQ Vision",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=mkIw2krWvao"
+      }
+    },
+    "162605007907936423": {
+      "type": "featured-quote",
+      "settings": {
+        "title": "Rob Kabel, CEO",
+        "text": "Our goal, quite simply, is to boost people’s sense of well-being. Our products earn customers’ trust by being provably better for their health and environment. Proving, not just promising, is at the heart of what we do."
       }
     }
   },
-  "order" : [
-    "carousel_homepage"
+  "order": [
+    "carousel_homepage",
+    "16260496001b9d0254",
+    "16260496490a85176f",
+    "1626049739500c659f",
+    "16260499878c20d24b",
+    "1626050025438538c1",
+    "162605007907936423"
   ]
 }
