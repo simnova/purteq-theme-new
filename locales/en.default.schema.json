@@ -1,0 +1,13 @@
+{
+  "settings_schema": {
+    "colors" : {
+      "name" : "Colors",
+      "settings" : {
+        "colors_accents" : {
+          "label" : "Accents",
+          "info": "User for accents"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{% section 'carousel-homepage' %}
+<div class="container content-body-wrapper">
+{{ content_for_index }}
+</div>
+<div class="container text-center mb-5 mt-1">
+  <img src="{{'purteq-logo-homepage-call-to-action.svg'|asset_url}}" alt=""  class="d-inline-block align-top mb-5" style="max-width:320px;">
+</div>
+
+
+
+{% for product in collections.frontpage.products limit:4 %}
+  <div>
+    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+    {{ product.price | money }}
+    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+    <a href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+    </a>
+  </div>
+{% endfor %}

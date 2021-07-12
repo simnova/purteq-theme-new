@@ -12,7 +12,7 @@
                 {%- if block.settings.image != blank -%}
                     {{ block.settings.image | img_url: '360x360', scale: 2 | img_tag: block.settings.image.alt, 'img-fluid' }}
                 {%- else -%}
-                    {{ 'logo' | placeholder_svg_tag: 'placeholder-svg', 'img-fluid' }}
+                    {{ 'logo' | placeholder_svg_tag: 'placeholder-svg, img-fluid' }}
                 {%- endif -%}
                 </div>
             {%- endfor -%}
