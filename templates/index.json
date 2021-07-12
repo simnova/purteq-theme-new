@@ -53,11 +53,20 @@
       "settings": {
         "title": "Products"
       }
+    },
+    "16260496001b9d0254": {
+      "type": "featured-text-image",
+      "settings": {
+        "title": "What is Clean?",
+        "featured_image": "shopify:\/\/shop_images\/flower.png",
+        "text": "<p>In a world turned sideways, it’s a worthy question to ask.  Is a surface clean if it’s “<em>sparkling<\/em>?”   Is a workplace safe if it seems “*clean and fresh?*”  How long does a “<em>disinfecting<\/em>” wipe-down last?  (Only till the next time it’s touched, right?)  Answering these questions with complete honesty is at the heart of the PURTEQ® promise: At PURTEQ, we create non-toxic, sustainable products that deliver <strong>cleanliness with candor. <\/strong><\/p>"
+      }
     }
   },
   "order": [
     "carousel_homepage",
     "1625799275a9d861aa",
-    "16257993025691a738"
+    "16257993025691a738",
+    "16260496001b9d0254"
   ]
 }
