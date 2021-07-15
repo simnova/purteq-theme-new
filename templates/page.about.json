@@ -25,11 +25,19 @@
             "bio": "<p>Mark Gardner is a co-founder of Magen Supply LLC and an active seed capital Investor. A 1977 graduate of the United States Naval Academy, he served eight years as a Naval Aviator. Upon leaving active duty in 1985, he started an airline career at Northwest Airlines that later became Delta Air Lines, a career span of 35 years.<br\/>Along the way he distinguished himself on multiple aircraft, in multiple positions, with extensive operating experience in domestic and international theaters. In his career he has served as Captain on seven different Boeing and Airbus aircraft types, while finishing his airline career as a Boeing 747-400 Captain.<br\/>Mark sees a chance to help the world survive and thrive safely in the “new normal” that awaits us and is excited about exploring this opportunity.<\/p>"
           }
         },
+        "48549145-bcab-41ea-aa9f-49041400c8c7": {
+          "type": "staff_detail",
+          "settings": {
+            "title": "Larry Shutzberg",
+            "role": "Chief Operating Officer",
+            "bio": "<p>Larry Shutzberg joined the PURTEQ board in January 2021.  He has also been a member of the board for Buckman, a global specialty chemical company, since 2018.  Larry is an accomplished IT Executive who was most recently Executive Vice President of Information Technology for the Rank Group, a $15 billion NZ-based, privately owned conglomerate of manufacturing and consumer product companies with 250+ global manufacturing facilities. He has used his blended background in Accounting, Information Technology, Supply Chain, and Business Operations to help global businesses with their strategic IT and digital journeys. Prior to his twelve years with the Rank Group, Larry spent twenty-two years as VP & CIO for RockTenn Company (now doing business as WestRock), and several years with Accenture before RockTenn.  He currently works with PURTEQ to help improve company performance. Larry lives with his wife Jody in Memphis, TN and has three daughters.<\/p>"
+          }
+        },
         "162631558733ef00ff-2": {
           "type": "staff_detail",
           "settings": {
-            "title": "Staff Member Name",
-            "role": "Jonathan Scharff",
+            "title": "Jonathan Scharff",
+            "role": "Board Member",
             "bio": "<p>Jonathan Scharff is the Chief Administrative Officer (CAO) of Buckman Laboratories International. Jonathan leads Buckman’s Human Resources, Marketing and Communications, Business Strategy & Transformation and Legal departments. In addition to his role as CAO, Jonathan is Buckman’s General Counsel. <br\/>Prior to Buckman, Scharff served as a partner at Harris Shelton Hanover Walsh, PLLC.  He currently is an active Board Member of several companies including Active Implants Corporation.  Jonathan earned his BA degree from Grinnell College and a JD from St. Louis University.<\/p>"
           }
         },
@@ -48,23 +56,15 @@
             "role": "Executive Assistant\/Office Manager",
             "bio": "<p>Judith Currin is Rob Kabel’s Executive Assistant and the Office Manager for PURTEQ’s Memphis office. She previously supported the President of OgilvyInteractive, the Executive Creative Director of Ogilvy North America and the V.P. of Programming for A&E Television Networks in New York City. Judith moved into a Project Management role at Ogilvy and spent 15 years as a Digital Project Manager for Ad Agencies including Ogilvy, R\/GA, DIGITAS, and G2 Interactive.  <br\/>When digital advertising began evolving towards mobile, Judith jumped in and served as Creative Services Manager for Medialets, a mobile technology startup acquired by WPP in 2015. <br\/>Judith has served a diverse list of clients including American Express, IBM, HP and Hilton. Her experience managing teams and instituting processes intended to increase efficiencies align well with PURTEQ’s goals. A native of Lookout Mountain, Judith relocated to Memphis to be near family. She’s also a former Stand-Up Comic and brings her unique sense of fun to every project.<\/p>"
           }
-        },
-        "48549145-bcab-41ea-aa9f-49041400c8c7": {
-          "type": "staff_detail",
-          "settings": {
-            "title": "Larry Shutzberg",
-            "role": "Chief Operating Officer",
-            "bio": "<p>Larry Shutzberg joined the PURTEQ board in January 2021.  He has also been a member of the board for Buckman, a global specialty chemical company, since 2018.  Larry is an accomplished IT Executive who was most recently Executive Vice President of Information Technology for the Rank Group, a $15 billion NZ-based, privately owned conglomerate of manufacturing and consumer product companies with 250+ global manufacturing facilities. He has used his blended background in Accounting, Information Technology, Supply Chain, and Business Operations to help global businesses with their strategic IT and digital journeys. Prior to his twelve years with the Rank Group, Larry spent twenty-two years as VP & CIO for RockTenn Company (now doing business as WestRock), and several years with Accenture before RockTenn.  He currently works with PURTEQ to help improve company performance. Larry lives with his wife Jody in Memphis, TN and has three daughters.<\/p>"
-          }
         }
       },
       "block_order": [
         "162631558733ef00ff-0",
         "162631558733ef00ff-1",
+        "48549145-bcab-41ea-aa9f-49041400c8c7",
         "162631558733ef00ff-2",
         "4aeb6ea2-c37f-420f-9974-009a81831ac3",
-        "d4d6b78b-0a6d-460c-a2da-6c1f952e9f51",
-        "48549145-bcab-41ea-aa9f-49041400c8c7"
+        "d4d6b78b-0a6d-460c-a2da-6c1f952e9f51"
       ],
       "settings": {
         "title": ""
