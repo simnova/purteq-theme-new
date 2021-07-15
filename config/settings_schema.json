@@ -4,11 +4,11 @@
     "theme_name": "PURTEQ Theme New",
     "theme_version": "1.0.0",
     "theme_author": "Patrick Gidich",
-    "theme_documentation_url": "https://github.com/simnova/purteq-theme-new",
-    "theme_support_url" : "https://www.simnova.com"
+    "theme_documentation_url": "https:\/\/github.com\/simnova\/purteq-theme-new",
+    "theme_support_url": "https:\/\/www.simnova.com"
   },
   {
-    "name":"Typography",
+    "name": "Typography",
     "settings": [
       {
         "type": "font_picker",
