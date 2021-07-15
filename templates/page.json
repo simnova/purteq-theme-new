@@ -1,11 +1,14 @@
 {
-  "name": "Default Page Template",
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
     },
     "contact": {
-      "type": "page"
+      "type": "page",
+      "settings": {
+      }
     }
   },
   "order": [
