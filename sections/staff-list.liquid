@@ -8,11 +8,14 @@
       <div class="container">
           {%- for block in section.blocks -%}
           <div class="row">
-            <div class="name">{{ block.settings.name | escape}}</div>
-            <div class="title">{{ block.settings.title | escape}}</div>
+						<div class="col">
+							<div class="name">{{ block.settings.name | escape}}</div>
+            	<div class="title">{{ block.settings.title | escape}}</div>
+						</div>
+            
           </div>
-          <div class="row>
-              <div class="col-xs-12 staff-detail">
+          <div class="row">
+              <div class="col">
                 {%- if block.settings.bio != blank -%}
                 <div class="bio">{{ block.settings.bio }}</div>
                 {%- endif -%}
@@ -22,6 +25,26 @@
       </div>
   {%- endif -%}
 
+	{% style %}
+	.staff-list .name {
+		font-weight: 700;
+		display: inline-block;
+	}
+	.staff-list .title {
+		font-weight: 500;
+		border-left: 3px solid #90c84e;
+		margin-left: 10px;
+		padding-left: 10px;
+		display: inline-block;
+	}
+	.staff-list .bio {
+		font-weight: 400;
+		color: #65665d;
+		margin-top:10px;
+		line-height:30px
+	}
+	
+	{% endstyle %}
 
 
 {% schema %}
@@ -40,14 +63,14 @@
 		"settings": [
       {
 				"type": "text",
-				"id": "name",
+				"id": "title",
 				"label": "Name",
         "default": "Staff Member Name"
 			},
 			{
 				"type": "text",
-				"id": "title",
-				"label": "Title",
+				"id": "role",
+				"label": "Role",
         "default": "Title or Role"
 			},
 			{

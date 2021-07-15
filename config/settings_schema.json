@@ -12,6 +12,18 @@
     "settings": [
       {
         "type": "font_picker",
+        "id": "type_heading_font",
+        "label": "Heading",
+        "default": "avenir_next_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_subheading_font",
+        "label": "Sub Heading",
+        "default": "avenir_next_n4"
+      },
+      {
+        "type": "font_picker",
         "id": "type_body_font",
         "label": "Body Font",
         "default": "avenir_next_n4"

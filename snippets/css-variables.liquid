@@ -4,10 +4,14 @@
   to use throughout the stylesheet
 {% endcomment %}
 {% style %}
+  {%- assign heading_font = settings.type_heading_font -%}
+  {%- assign subheading_font = settings.type_subheading_font -%}
   {%- assign body_font = settings.type_body_font -%}
   {%- assign footer_font = settings.type_footer_font -%}
 
 :root {
+  --font-stack-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+  --font-stack-subheading: {{ subheading_font.family }}, {{ subheading_font.fallback_families }};
   --font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }};
   --font-stack-footer: {{ footer_font.family }}, {{ footer_font.fallback_families }};
   --font-style-footer: {{ footer_font.style }};

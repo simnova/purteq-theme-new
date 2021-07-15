@@ -35,9 +35,19 @@
 
 
   <!--== FONTS =======================================================-->
+  {%- assign heading_font = settings.type_heading_font -%}
+  {%- assign subheading_font = settings.type_subheading_font -%}
   {%- assign body_font = settings.type_body_font -%}
   {%- assign footer_font = settings.type_footer_font -%}
 
+  {%- unless settings.type_heading_font.system? -%}
+  <link rel="preload" as="font" href="{{ settings.type_heading_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ settings.type_heading_font | font_url }}" type="font/woff" crossorigin>
+  {%- endunless -%}
+  {%- unless settings.type_subheading_font.system? -%}
+  <link rel="preload" as="font" href="{{ settings.type_subheading_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ settings.type_subheading_font | font_url }}" type="font/woff" crossorigin>
+  {%- endunless -%}
   {%- unless settings.type_body_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff" crossorigin>
@@ -56,6 +66,8 @@
   {{ 'theme.css' | asset_url | stylesheet_tag }} 
 
   {% style %}
+    {{ heading_font | font_face: font_display: 'swap' }}
+    {{ subheading_font | font_face: font_display: 'swap' }}
     {{ body_font | font_face: font_display: 'swap' }}
     {{ footer_font | font_face: font_display: 'swap' }}
   {% endstyle %}

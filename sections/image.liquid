@@ -1,0 +1,44 @@
+<div class="container">
+
+  
+  
+  {%- if section.settings.image != blank -%}
+    <img 
+     src="{{ section.settings.image | img_url: '1070x'}}"
+
+      alt="{{ section.settings.image.alt | escape }}"
+
+      class="img-fluid"
+    >
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+  
+  
+</div>
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Image",
+  "class":"cta-with-header",
+  "settings": [
+
+    { 
+      "type": "image_picker",
+      "id":"image",
+      "label": "Featured Image"
+    }
+  
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Image"
+    }
+  ]
+}
+{% endschema %}

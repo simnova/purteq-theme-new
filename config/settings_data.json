@@ -1,5 +1,22 @@
 {
   "current": {
+    "type_heading_font": "avenir_next_n7",
+    "type_subheading_font": "avenir_next_n5",
+    "sections": {
+      "top-nav": {
+        "type": "top-nav",
+        "settings": {
+        }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

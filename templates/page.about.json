@@ -1,8 +1,9 @@
 {
   "sections": {
-    "main": {
-      "type": "page",
+    "1626326881b9b8c33b": {
+      "type": "image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/about-header.png"
       }
     },
     "162631558733ef00ff": {
@@ -11,31 +12,65 @@
         "162631558733ef00ff-0": {
           "type": "staff_detail",
           "settings": {
-            "name": "Rob Kabel",
-            "title": "Chief Executive Officer",
+            "name": "Staff Member Name",
+            "title": "Rob Kabel",
             "bio": "<p>Rob Kabel has been actively helping businesses of all sizes grow for over 32 years, specializing in strategic planning, operational excellence, investment analysis and business development.  He is currently an investor\/owner of Perfection Auto Refinish LLC and Magen Supply LLC.  He has held executive roles at Wm. W. Meyers & Sons and DMN Westinghouse. He was twice named as an Ernst & Young Entrepreneur of the Year.<br\/>Rob’s expertise is drawn from a large reservoir of roles in diverse industries. He’s provided advisory services to various startups, including FullTilt Solutions, Inc., a Philadelphia-based leader in custom software, integration, and product development. As a senior advisor to FullTilt, Kabel was responsible for business development strategy, raising $60 million in investment capital, and completing two acquisitions.<br\/>Previously, Kabel was a founding member of the management team that created Xerox Connect, a professional services provider, which he assisted in taking public in 1996 at a valuation of $600 million. Kabel played an instrumental role in growing the company from 75 employees to over 2,000 team members in 25 offices. He also was part of the executive team that managed the company's sale in 1998 to Xerox Corporation for $420 million, later serving as VP of Worldwide Strategy for Xerox Global Document Services.<\/p>"
           }
         },
         "162631558733ef00ff-1": {
           "type": "staff_detail",
           "settings": {
-            "name": "John Doe2",
-            "title": "CEO2",
-            "bio": "<p>started companay<\/p>"
+            "name": "Staff Member Name",
+            "title": "Mark Gardner",
+            "bio": "<p>Mark Gardner is a co-founder of Magen Supply LLC and an active seed capital Investor. A 1977 graduate of the United States Naval Academy, he served eight years as a Naval Aviator. Upon leaving active duty in 1985, he started an airline career at Northwest Airlines that later became Delta Air Lines, a career span of 35 years.<br\/>Along the way he distinguished himself on multiple aircraft, in multiple positions, with extensive operating experience in domestic and international theaters. In his career he has served as Captain on seven different Boeing and Airbus aircraft types, while finishing his airline career as a Boeing 747-400 Captain.<br\/>Mark sees a chance to help the world survive and thrive safely in the “new normal” that awaits us and is excited about exploring this opportunity.<\/p>"
+          }
+        },
+        "162631558733ef00ff-2": {
+          "type": "staff_detail",
+          "settings": {
+            "name": "Staff Member Name",
+            "title": "Jonathan Scharff",
+            "bio": "<p>Jonathan Scharff is the Chief Administrative Officer (CAO) of Buckman Laboratories International. Jonathan leads Buckman’s Human Resources, Marketing and Communications, Business Strategy & Transformation and Legal departments. In addition to his role as CAO, Jonathan is Buckman’s General Counsel. <br\/>Prior to Buckman, Scharff served as a partner at Harris Shelton Hanover Walsh, PLLC.  He currently is an active Board Member of several companies including Active Implants Corporation.  Jonathan earned his BA degree from Grinnell College and a JD from St. Louis University.<\/p>"
+          }
+        },
+        "4aeb6ea2-c37f-420f-9974-009a81831ac3": {
+          "type": "staff_detail",
+          "settings": {
+            "name": "Steve Denker",
+            "title": "Chief Marketing Officer",
+            "bio": "<p>Steve Denker is the former Vice President of Marketing and Digital for WarnerMedia, focusing on the Turner Classic Movies (TCM) network. In this role, Denker was responsible for all of TCM’s marketing, including digital strategy and social media, content, planning, allocation and campaign management across all platforms as well as digital products, websites, apps, and operations. <br\/>In 2015 Steve was named a Digital Marketer of the Year Finalist from the Technology Association of Georgia. Prior to joining WarnerMedia, Denker was a Principal and Director of Digital Strategy for an Atlanta based brand consulting firm, working with clients including Blackstone, PBS, and AGRO Merchants Group. In 2011, Denker was a co-founder and served as the COO of Beach.com. Denker began his marketing career at The Coca-Cola Company as a senior account manager working on experiential and customer marketing teams in sports and entertainment. Steve lives in Atlanta with his wife Karen and two sons.<\/p>"
+          }
+        },
+        "d4d6b78b-0a6d-460c-a2da-6c1f952e9f51": {
+          "type": "staff_detail",
+          "settings": {
+            "name": "Judith Currin",
+            "title": "Executive Assistant\/Office Manager",
+            "bio": "<p>Judith Currin is Rob Kabel’s Executive Assistant and the Office Manager for PURTEQ’s Memphis office. She previously supported the President of OgilvyInteractive, the Executive Creative Director of Ogilvy North America and the V.P. of Programming for A&E Television Networks in New York City. Judith moved into a Project Management role at Ogilvy and spent 15 years as a Digital Project Manager for Ad Agencies including Ogilvy, R\/GA, DIGITAS, and G2 Interactive.  <br\/>When digital advertising began evolving towards mobile, Judith jumped in and served as Creative Services Manager for Medialets, a mobile technology startup acquired by WPP in 2015. <br\/>Judith has served a diverse list of clients including American Express, IBM, HP and Hilton. Her experience managing teams and instituting processes intended to increase efficiencies align well with PURTEQ’s goals. A native of Lookout Mountain, Judith relocated to Memphis to be near family. She’s also a former Stand-Up Comic and brings her unique sense of fun to every project.<\/p>"
           }
         }
       },
       "block_order": [
         "162631558733ef00ff-0",
-        "162631558733ef00ff-1"
+        "162631558733ef00ff-1",
+        "162631558733ef00ff-2",
+        "4aeb6ea2-c37f-420f-9974-009a81831ac3",
+        "d4d6b78b-0a6d-460c-a2da-6c1f952e9f51"
       ],
       "settings": {
-        "title": "Staff List"
+        "title": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
       }
     }
   },
   "order": [
-    "main",
-    "162631558733ef00ff"
+    "1626326881b9b8c33b",
+    "162631558733ef00ff",
+    "main"
   ]
 }
