@@ -1,0 +1,94 @@
+<div class="container mt-5">
+  
+  <div class="text-center mb-4">
+    <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="container">
+      {%- for block in section.blocks -%}
+        <div class="row">
+          <div class="col">
+            <div class="title">{{ block.settings.title | escape}}</div>
+            <div class="role">{{ block.settings.question | escape}}</div>
+          </div>
+        </div>
+        
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {% style %}
+  .faq-list .title {
+    font-weight: 700;
+    display: inline-block;
+  }
+  .faq-list .role {
+    font-weight: 500;
+    border-left: 3px solid #90c84e;
+    margin-left: 10px;
+    padding-left: 10px;
+    display: inline-block;
+  }
+  .faq-list .bio {
+    font-weight: 400;
+    color: #65665d;
+    margin-top:10px;
+    line-height:30px
+  }
+  
+  {% endstyle %}
+
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "section",
+  "class": "faq-list",
+  "settings": [{
+    "type": "text",
+    "id": "title",
+    "label": "FAQ"
+  }],
+  "blocks": [{
+    "name": "Question",
+    "type": "question",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Queston",
+        "default": "What is...?"
+      },
+      {
+        "type": "richtext",
+        "id": "answer",
+        "label": "Answer",
+        "default": "<p>Answer is..</p>"
+      }
+      
+    ]
+  }],
+  "presets": [{
+    "name": "FAQ",
+    "settings": {
+      "title": "FAQ"
+    },
+    "blocks": [{
+        "type": "question",
+        "settings": {
+          "title": "Why is the sky blue",
+          "answer": "<p>don't know</p>"
+        }
+      },
+      {
+        "type": "question",
+        "settings": {
+          "title": "Why did chicken cross road",
+          "answer": "<p>don't know</p>"
+        }
+      }
+    ]
+  }]
+}
+{% endschema %}
