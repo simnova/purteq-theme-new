@@ -1,108 +1,107 @@
 <div class="container mt-5">
-
+  
   <div class="text-center mb-4">
     <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
   </div>
 
   {%- if section.blocks.size > 0 -%}
-      <div class="container">
-          {%- for block in section.blocks -%}
-          <div class="row">
-						<div class="col">
-							<div class="name">{{ block.settings.name | escape}}</div>
-            	<div class="title">{{ block.settings.title | escape}}</div>
-						</div>
-            
+    <div class="container">
+      {%- for block in section.blocks -%}
+        <div class="row">
+          <div class="col">
+            <div class="title">{{ block.settings.title | escape}}</div>
+            <div class="role">{{ block.settings.role | escape}}</div>
           </div>
-          <div class="row">
-              <div class="col">
-                {%- if block.settings.bio != blank -%}
-                <div class="bio">{{ block.settings.bio }}</div>
-                {%- endif -%}
-              </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            {%- if block.settings.bio != blank -%}
+              <div class="bio">{{ block.settings.bio }}</div>
+            {%- endif -%}
           </div>
-          {%- endfor -%}
-      </div>
+        </div>
+      {%- endfor -%}
+    </div>
   {%- endif -%}
 
-	{% style %}
-	.staff-list .name {
-		font-weight: 700;
-		display: inline-block;
-	}
-	.staff-list .title {
-		font-weight: 500;
-		border-left: 3px solid #90c84e;
-		margin-left: 10px;
-		padding-left: 10px;
-		display: inline-block;
-	}
-	.staff-list .bio {
-		font-weight: 400;
-		color: #65665d;
-		margin-top:10px;
-		line-height:30px
-	}
-	
-	{% endstyle %}
+  {% style %}
+  .staff-list .title {
+    font-weight: 700;
+    display: inline-block;
+  }
+  .staff-list .role {
+    font-weight: 500;
+    border-left: 3px solid #90c84e;
+    margin-left: 10px;
+    padding-left: 10px;
+    display: inline-block;
+  }
+  .staff-list .bio {
+    font-weight: 400;
+    color: #65665d;
+    margin-top:10px;
+    line-height:30px
+  }
+  
+  {% endstyle %}
 
 
 {% schema %}
 {
-	"name": "Staff List",
-	"tag": "section",
-	"class": "staff-list",
-	"settings": [{
-		"type": "text",
-		"id": "title",
-		"label": "Staff List"
-	}],
-	"blocks": [{
-		"name": "Staff Member Detail",
-		"type": "staff_detail",
-		"settings": [
+  "name": "Staff List",
+  "tag": "section",
+  "class": "staff-list",
+  "settings": [{
+    "type": "text",
+    "id": "title",
+    "label": "Staff List"
+  }],
+  "blocks": [{
+    "name": "Staff Member Detail",
+    "type": "staff_detail",
+    "settings": [
       {
-				"type": "text",
-				"id": "title",
-				"label": "Name",
+        "type": "text",
+        "id": "title",
+        "label": "Name",
         "default": "Staff Member Name"
-			},
-			{
-				"type": "text",
-				"id": "role",
-				"label": "Role",
+      },
+      {
+        "type": "text",
+        "id": "role",
+        "label": "Role",
         "default": "Title or Role"
-			},
-			{
-				"type": "richtext",
-				"id": "bio",
-				"label": "bio",
+      },
+      {
+        "type": "richtext",
+        "id": "bio",
+        "label": "bio",
         "default": "<p>Bio or History</p>"
-			}
-		]
-	}],
-	"presets": [{
-		"name": "Staff List",
-		"settings": {
-			"title": "Staff List"
-		},
-		"blocks": [{
-				"type": "staff_detail",
-				"settings": {
-					"name": "John Doe1",
-					"title": "CEO1",
-					"bio": "<p>started companay</p>"
-				}
-			},
-			{
-				"type": "staff_detail",
-				"settings": {
-					"name": "John Doe2",
-					"title": "CEO2",
-					"bio": "<p>started companay</p>"
-				}
-			}
-		]
-	}]
+      }
+    ]
+  }],
+  "presets": [{
+    "name": "Staff List",
+    "settings": {
+      "title": "Staff List"
+    },
+    "blocks": [{
+        "type": "staff_detail",
+        "settings": {
+          "title": "John Doe1",
+          "role": "CEO1",
+          "bio": "<p>started companay</p>"
+        }
+      },
+      {
+        "type": "staff_detail",
+        "settings": {
+          "title": "John Doe2",
+          "role": "CEO2",
+          "bio": "<p>started companay</p>"
+        }
+      }
+    ]
+  }]
 }
 {% endschema %}
