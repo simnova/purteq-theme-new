@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -52,7 +53,7 @@
         "46e497de-cee9-4fc2-bd99-7595c64bc623"
       ],
       "settings": {
-        "title": "FAQ"
+        "title": "FREQUENTLY ASKED QUESTIONS"
       }
     }
   },
