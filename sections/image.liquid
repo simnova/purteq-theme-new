@@ -1,20 +1,13 @@
 <div class="container">
-
-  
-  
   {%- if section.settings.image != blank -%}
     <img 
-     src="{{ section.settings.image | img_url: '1070x'}}"
-
+      src="{{ section.settings.image | img_url: '1070x'}}"
       alt="{{ section.settings.image.alt | escape }}"
-
-      class="img-fluid"
+      class="img-fluid" style="min-width:100%;"
     >
   {%- else -%}
     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
   {%- endif -%}
-  
-  
 </div>
 
 {% stylesheet %}
