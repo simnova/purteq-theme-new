@@ -1,6 +1,6 @@
 {
   "sections": {
-    "1626326881b9b8c33b": {
+    "16263336964c1e8c63": {
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/about-header.png"
@@ -78,7 +78,7 @@
     }
   },
   "order": [
-    "1626326881b9b8c33b",
+    "16263336964c1e8c63",
     "162631558733ef00ff",
     "main"
   ]
