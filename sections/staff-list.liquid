@@ -8,10 +8,10 @@
       <div class="container">
           {%- for block in section.blocks -%}
           <div class="row">
-              <div class="col-xs-12 col-md-4 staff-detail">
-                <div class="name">{{ block.settings.name | escape}}</div>
-                <div class="title">{{ block.settings.title | escape}}</div>
-              </div>
+            <div class="name">{{ block.settings.name | escape}}</div>
+            <div class="title">{{ block.settings.title | escape}}</div>
+          </div>
+          <div class="row>
               <div class="col-xs-12 col-md-4 staff-detail">
                 {%- if block.settings.bio != blank -%}
                 <div class="bio">{{ block.settings.bio }}</div>
