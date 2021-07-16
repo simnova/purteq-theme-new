@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1626333847f269a19a": {
+      "type": "faq",
+      "blocks": {
+        "1626333847f269a19a-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is the difference between a cleaner and disinfectant?",
+            "answer": "<p>Cleaning products should be used to remove visible soil and dirt from a surface, but in general, cleaning products cannot make public health claims and do not have to be registered with the EPA. <br\/>Disinfectant products have been scientifically proven to kill certain viruses, bacteria and\/or other germs. All disinfectant products must be registered with the EPA along with scientific proof of the kill claims.  <br\/>A good rule of thumb to distinguish between cleaners and disinfectants is to make sure the product has an EPA number on the label.  If there is not an EPA number on the label, be safe and only use that product to clean up dirt and grime. Also, watch out for words like “antimicrobial” or other marketing jargon that do not indicate disinfecting properties and are not regulated by the EPA.<\/p>"
+          }
+        },
+        "1626333847f269a19a-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I clean and disinfect in one step?",
+            "answer": "<p>Yes, if the surface is visibly clear of dirt and debris, you only need one-step to both clean and disinfect a surface using either FRESCH or CITRAPUR (when used according to disinfection instructions on the label).  If the surface is visibly soiled, we recommend cleaning first (you can use FRESCH or CITRAPUR to clean, too!).  Once the surface is visibly clear, we recommend one more wipe or spray with your favorite PURTEQ disinfectant to ensure complete surface coverage.<\/p>"
+          }
+        },
+        "df92418b-8356-4503-93cc-f945d6501d22": {
+          "type": "question",
+          "settings": {
+            "title": "What is the correct way to disinfect?",
+            "answer": "<p>Because dirt and debris can serve as a physical barrier, it may lower the efficacy of a disinfectant.  For best results, “pre-clean” surfaces to remove any visible dirt or grime which may hinder the disinfectant from coming into contact with surface germs.<\/p>"
+          }
+        },
+        "4ff3d04c-d429-41bf-ba24-16a371c4f8ef": {
+          "type": "question",
+          "settings": {
+            "title": "We are experiencing some residue or stickiness after switching to CITRAPUR, is that normal?",
+            "answer": "<p>If you recently switched to CITRAPUR from a different disinfectant, you may notice a residue or stickiness. This is especially common if the last product you used was a quaternary ammonium-based disinfectant – known as a QUAT. After a few cleanings, CITRAPUR should lift and remove the old residue, and there will no longer be a stickiness. If a light layer of residue remains, a quick rinse with water after the listed contact time should resolve this.<\/p>"
+          }
+        },
+        "46e497de-cee9-4fc2-bd99-7595c64bc623": {
+          "type": "question",
+          "settings": {
+            "title": "What is the benefit of using PURTEQ disinfecting products like FRESCH disinfecting spray and CITRAPUR wipes?",
+            "answer": "<p>Both PURTEQ FRESCH disinfectant and CITRAPUR wipes have the lowest toxicity rating allowable by the EPA, which means our products pose the lowest risk to the health of employees, patients, students, customers or to the environment. Our products have excellent surface compatibility, are tough on germs and bacteria, and non-irritating for users. FRESCH and CITRAPUR provide all the benefits of an EPA approved List N disinfectant without the risk of traditional chemicals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1626333847f269a19a-0",
+        "1626333847f269a19a-1",
+        "df92418b-8356-4503-93cc-f945d6501d22",
+        "4ff3d04c-d429-41bf-ba24-16a371c4f8ef",
+        "46e497de-cee9-4fc2-bd99-7595c64bc623"
+      ],
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1626333847f269a19a"
+  ]
+}
