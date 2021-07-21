@@ -39,18 +39,22 @@ background-image: url({{'image'|img_url}});
   "name": "Image",
   "class":"header-image",
   "settings": [
-
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Header Overlay"
+    },
     { 
       "type": "image_picker",
       "id":"image",
-      "label": "Featured Image"
+      "label": "Header Image"
     }
   
   ],
   "presets": [
     {
       "category": "Something",
-      "name":"Image"
+      "name":"Header Image"
     }
   ]
 }
