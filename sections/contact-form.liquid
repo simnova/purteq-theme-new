@@ -79,7 +79,7 @@
       </textarea>
     </div>
     <div class="mb-3 text-end">
-      <button type="submit" class="btn btn-primary" style="background-color: #69b31d; border-color: #69b31d;">
+      <button type="submit" class="btn btn-primary submit-button" >
         {{ 'templates.contact.form.send' | t }}
       </button>
     </div>
@@ -104,6 +104,13 @@
   color:#777777;
   text-transform:uppercase;
   font-weight:400;
+}
+.contact-form .submit-button {
+  min-width: 10rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #69b31d;
+     border-color: #69b31d;
 }
 
     {% endstyle %}
