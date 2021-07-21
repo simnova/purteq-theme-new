@@ -1,10 +1,7 @@
 <div class="container">
-
-    <div class="image-block text-center" style="margin-top: 15rem; margin-bottom: 5rem;">
-      <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(2rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
+    <div class="image-block text-center" style="margin-bottom: 5rem;">
+      <p style="color: #ffffff; letter-spacing: 0.07rem;font-size: calc(2rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
     </div>
-  
-
 </div>
 
 {% stylesheet %}
@@ -23,12 +20,9 @@ background-image: url({{'image' | img_url}});
 {%- endif -%}
 
   min-height: 47vw; 
-  
+  padding-top: 5vw;
   background-size: contain;
   background-repeat: no-repeat;
-  
-  font-size: .9rem;
-  margin-bottom: .4rem;
 }
 
 
