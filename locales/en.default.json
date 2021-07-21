@@ -34,7 +34,7 @@
         "firstname": "First Name",
         "lastname": "Last Name",
         "email": "Email",
-        "phone": "Phone Number",
+        "phone": "Phone",
         "comment": "Reason for Contacting Us",
         "send": "Send",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
