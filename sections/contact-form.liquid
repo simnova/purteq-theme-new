@@ -1,9 +1,9 @@
 
 <div class="container">
-
-  <div class="text-center" style="margin-top: 15rem; margin-bottom: 5rem;">
-    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(2rem + .9vw); font-weight: 500;">{{ section.settings.heading | escape }}</p>
+  <div class="image-block text-center" style="padding-top: 5vw;">
+    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(1.5rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
   </div>
+
   
   {%- form 'contact', id: 'ContactForm' -%}
     {%- if form.posted_successfully? -%}
