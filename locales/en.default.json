@@ -31,7 +31,8 @@
     },
     "contact": {
       "form": {
-        "name": "Name",
+        "firstname": "First Name",
+        "lastname": "Last Name",
         "email": "Email",
         "phone": "Phone Number",
         "comment": "Reason for Contacting Us",
