@@ -75,11 +75,19 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "16268384495611bf12": {
+      "type": "header-image",
+      "settings": {
+        "title": "About Us",
+        "image": "shopify:\/\/shop_images\/about-header_1fd51c92-79da-4254-b3c4-5908c027b6bd.png"
+      }
     }
   },
   "order": [
     "16263336964c1e8c63",
     "162631558733ef00ff",
-    "main"
+    "main",
+    "16268384495611bf12"
   ]
 }
