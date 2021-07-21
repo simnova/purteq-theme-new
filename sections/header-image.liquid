@@ -1,0 +1,57 @@
+<div class="container">
+
+    <div class="image-block text-center" style="margin-top: 15rem; margin-bottom: 5rem;">
+      <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(2rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
+    </div>
+  
+
+</div>
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+{% style %}
+
+.header-image .image-block  {
+
+
+  {%- if section.settings.image != blank -%}
+  background-image: url({{section.settings.image|img_url}});
+{%- else -%}
+background-image: url({{'image'|img_url}});
+{%- endif -%}
+
+
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  min
+  font-size: .9rem;
+  margin-bottom: .4rem;
+}
+
+
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Image",
+  "class":"header-image",
+  "settings": [
+
+    { 
+      "type": "image_picker",
+      "id":"image",
+      "label": "Featured Image"
+    }
+  
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Image"
+    }
+  ]
+}
+{% endschema %}
