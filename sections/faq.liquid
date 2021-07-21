@@ -1,11 +1,11 @@
-<div class="container mt-5">
-  
-  <div class="text-center" style="margin-top: 15rem; margin-bottom: 5rem;">
-    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(2rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
+<div class="container">
+  <div class="image-block text-center" style="padding-top: 5vw;">
+    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(1.5rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
   </div>
 
+
   {%- if section.blocks.size > 0 -%}
-    <div class="container">
+    <div class="container mt-5">
       {%- for block in section.blocks -%}
         <div class="row">
           <div class="col">
