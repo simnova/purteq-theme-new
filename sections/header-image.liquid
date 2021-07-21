@@ -17,16 +17,16 @@
 
 
   {%- if section.settings.image != blank -%}
-  background-image: url({{section.settings.image|img_url}});
+  background-image: url({{section.settings.image | img_url: '2048x'}});
 {%- else -%}
-background-image: url({{'image'|img_url}});
+background-image: url({{'image' | img_url}});
 {%- endif -%}
 
-
+  min-height: 47vw; 
   
   background-size: contain;
   background-repeat: no-repeat;
-  min
+  
   font-size: .9rem;
   margin-bottom: .4rem;
 }
