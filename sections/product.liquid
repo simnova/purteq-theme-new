@@ -26,4 +26,22 @@
   <input type="number" id="Quantity" name="quantity" value="1" min="1">
   <button type="submit" name="add" id="AddToCart">Add to cart</button>
 </form>
-<div>{{ product.description }}</div>
+<div></div>
+
+  <div class="row">
+    <div class="col">
+      {{ product.description }}
+    </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-lg-5">
+      {{ 'collection-1' | placeholder_svg_tag: 'custom' }}
+    </div>
+    <div class="col col-12 col-lg-7">
+      Product Top
+      <button>Login or Create Account</button>
+      An acocunt is required to view pricing
+    </div>
+  </div>
+</div>

@@ -1,24 +1,51 @@
 <div class="container">
-  <div class="image-block text-center" style="padding-top: 5vw;">
-    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(1.5rem + .9vw); font-weight: 500;">{{ section.settings.title | escape }}</p>
-  </div>
-
-
-  {%- if section.blocks.size > 0 -%}
-    <div class="container mt-5">
-      {%- for block in section.blocks -%}
-        <div class="row">
-          <div class="col">
-            <div class="title">{{ block.settings.title | escape}}</div>
-            <div class="answer">{{ block.settings.content }}</div>
-          </div>
+  <ul class="nav" id="myTab" role="tablist">
+    {%- for block in section.blocks -%}
+      <li class="nav-item" role="presentation">
+        <a class="nav-link {% if forloop.first %}active{% endif %}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab{{ forloop.index }}" type="button" role="tab">{{ block.settings.title | escape }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    {%- for block in section.blocks -%}
+      <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="tab{{ forloop.index }}" role="tabpanel" aria-labelledby="home-tab">
+        <div>
+          <ul>
+            {% assign paragraphs = block.settings.content | strip_html | newline_to_br | strip_newlines | split: '<br />' %}
+            {% for paragraph in paragraphs %}<li>{{ paragraph }}</li>{% endfor %}
+          </ul>
         </div>
-
-        
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
 </div>
+
+
+{% javascript %}
+
+{% endjavascript %}
+
+{% style %}
+.product-details  .nav-link {
+    color: #65665d;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .product-details  .nav-link.active {
+    color: #0069a7;
+  }
+
+  .product-details .tab-content li {
+    list-style-image: url({{ 'arrow.svg' | asset_url }});
+    font-size: .9rem;
+    margin-bottom: .4rem;
+  }
+  
+  .product-details .tab-content ul li::marker {
+    font-size: 1.5e
+  
+  {% endstyle %}
+
 
 
 {% schema %}

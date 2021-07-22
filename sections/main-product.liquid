@@ -1,7 +1,42 @@
-<div>
-  <h1>{{ product.title }}</h1>
-  <div>{{ product.description }}</div>
+<div class="container" style="margin-top: 10rem;">
+  <div class="row">
+    <div class="col col-12 col-lg-5">
+      {{ 'collection-1' | placeholder_svg_tag: 'img-fluid' }}
+    </div>
+    <div class="col col-12 col-lg-7">
+      <div>{{ product.title }}</div>
+      <div>{{ product.description }}</div>
+      <button type="button" class="btn mt-5 mb-3">Login or Create Account</button>
+      <div>An account is required to view pricing</div>
+    </div>
+  </div>
 </div>
+
+{% stylesheet %}
+
+
+  .product-section {
+    font-size: .8rem;
+  }
+  .product-section .btn  {
+    min-width: 10rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #76bc21;
+    border-color: #76bc21;
+    color: white;
+  }
+  
+ 
+  .product-section .nav-link {
+    color: #65665d;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .product-section .nav-link.active {
+    color: #0069a7;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
