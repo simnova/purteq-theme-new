@@ -1,7 +1,13 @@
-<div class="container" style="margin-top: 10rem;">
+{% assign current_variant = product.selected_or_first_available_variant %}
+<div class="container" style="margin-top: 10rem;margin-bottom:5rem;">
   <div class="row">
     <div class="col col-12 col-lg-5">
-      {{ 'collection-1' | placeholder_svg_tag: 'img-fluid' }}
+      {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+      {%- if featured_image -%}
+        <img src="{{ featured_image | img_url: 'large' }}" alt="{{ featured_image.alt | escape }}" class="img-fluid" id="ProductPhotoImg" loading="lazy">
+      {%- else -%}
+        {{ 'collection-1' | placeholder_svg_tag: 'img-fluid' }}
+      {%- endif -%}
     </div>
     <div class="col col-12 col-lg-7">
       <div>{{ product.title }}</div>
