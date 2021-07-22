@@ -1,5 +1,5 @@
 <div class="container">
-  <ul class="nav" id="myTab" role="tablist">
+  <ul class="nav mb-3" id="myTab" role="tablist">
     {%- for block in section.blocks -%}
       <li class="nav-item" role="presentation">
         <a class="nav-link {% if forloop.first %}active{% endif %}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab{{ forloop.index }}" type="button" role="tab">{{ block.settings.title | escape }}</a>
@@ -30,6 +30,9 @@
     color: #65665d;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .product-details  .nav:first-child a {
+    padding-left:0;
   }
   .product-details  .nav-link.active {
     color: #0069a7;
