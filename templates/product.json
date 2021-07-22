@@ -28,21 +28,21 @@
           "type": "tab",
           "settings": {
             "title": "Product Info",
-            "content": ""
+            "content": "<p>{{ product.metafields.my_fields.product_information | metafield_tag }}<\/p>"
           }
         },
         "e5c8c896-2b24-44e5-b7f1-46366518f8e6": {
           "type": "tab",
           "settings": {
             "title": "Features and Benefits",
-            "content": ""
+            "content": "<p>{{ product.metafields.my_fields.features_and_benefits_tab | metafield_tag }}<\/p>"
           }
         },
         "83e9e139-b1c8-4f07-ba9f-92aacaf9a075": {
           "type": "tab",
           "settings": {
             "title": "Customer Info",
-            "content": ""
+            "content": "<p>{{ product.metafields.my_fields.customer_info_tab | metafield_tag }}<\/p>"
           }
         }
       },
