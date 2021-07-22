@@ -14,9 +14,16 @@
         "title",
         "description"
       ]
+    },
+    "details" : {
+      "type" : "product-details",
+      "settings": {
+        "title" : "Product Details"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "details"
   ]
 }

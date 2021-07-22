@@ -2,3 +2,31 @@
   <h1>{{ product.title }}</h1>
   <div>{{ product.description }}</div>
 </div>
+
+{% schema %}
+{
+  "name": "Product Details",
+  "tag": "section",
+  "class": "product-section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+    {
+      "type": "product-details",
+      "name": "Product Details",
+      "limit": 1
+    }
+  ]
+}
+{% endschema %}
