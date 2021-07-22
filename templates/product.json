@@ -4,21 +4,55 @@
       "type": "main-product",
       "blocks": {
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "title",
         "description"
-      ]
-    },
-    "details" : {
-      "type" : "product-details",
+      ],
       "settings": {
-        "title" : "Product Details"
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "0881394e-f281-41a6-bb33-5ea49d09ca23": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Info",
+            "content": ""
+          }
+        },
+        "e5c8c896-2b24-44e5-b7f1-46366518f8e6": {
+          "type": "tab",
+          "settings": {
+            "title": "Features and Benefits",
+            "content": ""
+          }
+        },
+        "83e9e139-b1c8-4f07-ba9f-92aacaf9a075": {
+          "type": "tab",
+          "settings": {
+            "title": "Customer Info",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "0881394e-f281-41a6-bb33-5ea49d09ca23",
+        "e5c8c896-2b24-44e5-b7f1-46366518f8e6",
+        "83e9e139-b1c8-4f07-ba9f-92aacaf9a075"
+      ],
+      "settings": {
+        "title": "Product Details"
       }
     }
   },
