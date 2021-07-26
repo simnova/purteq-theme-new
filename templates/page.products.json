@@ -58,10 +58,20 @@
       "settings": {
         "title": "Our Approach to Clean"
       }
+    },
+    "16273221395e0ba885": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "CTA Title",
+        "text": "",
+        "button-label": "Contact Us Now",
+        "link": "shopify:\/\/pages\/contact"
+      }
     }
   },
   "order": [
     "main",
-    "16273176916eace3ac"
+    "16273176916eace3ac",
+    "16273221395e0ba885"
   ]
 }
