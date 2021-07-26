@@ -68,6 +68,15 @@
         "details": "<h5>CITRAPUR<sup>TM<\/sup>\n<\/h5>\n<ul>\n<li>Easy-to-use, citrus-based disinfecting wipes for business or home<\/li>\n <li>Powerful against pathogens, yet a completely non-toxic alternative to name-brand wipes containing harmful chemicals – which were never meant for heavy use and can lead to toxic build-ups<\/li>\n<li>Simple one-step, no-rinse cleaning and disinfection. Use as directed.<\/li>\n<li>Approved on LIST N for use against SARS-CoV-2, the cause of COVID-19<\/li>\n<\/ul>"
       }
     },
+    "16273250824d170bad": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "CTA Title",
+        "text": "<p><span style=\"text-decoration:underline\">Contact us by email<\/span> or call us at 844-478-7837<\/p>",
+        "button-label": "Contact Us Now",
+        "link": ""
+      }
+    },
     "1626050025438538c1": {
       "type": "video-player",
       "settings": {
@@ -105,6 +114,7 @@
     "16260496490a85176f",
     "1626049739500c659f",
     "16260499878c20d24b",
+    "16273250824d170bad",
     "1626050025438538c1",
     "162605007907936423",
     "162732492238cce663",
