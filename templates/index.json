@@ -192,6 +192,14 @@
             "image": "shopify:\/\/shop_images\/purteq-client-brands-08-talladega-college_1d46b182-5ed9-4672-9ab7-380456cc6d20.png",
             "link": ""
           }
+        },
+        "9fcd42ce-c284-45c6-a71e-dad2354ed462": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "TJ Maxx",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-09-tj-maxx_65bf9140-aa76-4581-b37a-58d185c114f4.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -202,7 +210,8 @@
         "4057036a-06ab-4fe3-b66c-e67a715bd40f",
         "6275562c-b894-45d5-8978-278be0e490db",
         "6e629736-5141-49a0-93fe-8dbe5a185202",
-        "a23faa87-813b-46c8-9594-e28cafc8df3b"
+        "a23faa87-813b-46c8-9594-e28cafc8df3b",
+        "9fcd42ce-c284-45c6-a71e-dad2354ed462"
       ],
       "settings": {
         "title": ""
