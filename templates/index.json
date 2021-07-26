@@ -82,8 +82,9 @@
     "1627330379d018d9a9": {
       "type": "content-block",
       "settings": {
-        "title": "Title",
-        "text": "<p>Call to action text.<\/p>"
+        "title": "Our Promise is in Our Products",
+        "text": "<strong>Try PURTEQ &amp; experience the difference.<\/strong>\n<ul>\n<li>A safe solution for frequent cleaning and disinfecting<\/li>\n<li>Clear and detailed instruction on how to use all products<\/li>\n<li>A scientific testing methodology to prove the effectiveness<\/li>\n<\/ul>\nAs we all work together towards a cleaner, safer future, it pays to look into the promise of PURTEQ.",
+        "image": "shopify:\/\/shop_images\/three-products.png"
       }
     },
     "16273250824d170bad": {
