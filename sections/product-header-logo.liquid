@@ -1,0 +1,74 @@
+<div class="container">
+  {%- if section.settings.image != blank -%}
+    <img 
+      src="{{ section.settings.image | img_url: '1070x'}}"
+      alt="{{ section.settings.image.alt | escape }}"
+      class="img-fluid" style="min-width:100%;"
+    >
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+</div>
+
+
+<div class="container">
+  <div class="image-block text-center">
+    <p style="color: #ffffff; letter-spacing: 0.07rem;font-size: calc(1.5rem + .9vw); font-weight: 500;">{{ section.settings.title }}</p>
+  </div>
+</div>
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+{% style %}
+
+.header-image .image-block  {
+
+
+{%- if section.settings.image != blank -%}
+background-image: url({{section.settings.image | img_url: '2048x'}});
+{%- else -%}
+background-image: url({{'image' | img_url}});
+{%- endif -%}
+
+min-height: calc(0.8 * 47vw);
+padding-top: 5vw;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0 12px;
+}
+.header-image sup {
+font-size: calc(1vh * 2);
+font-weight: 500;
+top: calc( -1.1vh);
+margin-left: calc(-.4vh);
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+"name": "Image",
+"class":"header-image",
+"settings": [
+  {
+    "type": "html",
+    "id": "title",
+    "label": "Header Overlay"
+  },
+  { 
+    "type": "image_picker",
+    "id":"image",
+    "label": "Header Image"
+  }
+
+],
+"presets": [
+  {
+    "category": "Something",
+    "name":"Header Image"
+  }
+]
+}
+{% endschema %}

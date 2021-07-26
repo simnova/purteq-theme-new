@@ -1,5 +1,21 @@
 Setup:
 
+# metafield definitions
+
+/admin/metafields/product
+
+Customer Info Tab
+my_fields.customer_info_tab
+Multi-line text
+
+Features and Benefits Tab
+my_fields.features_and_benefits_tab
+Multi-line text
+
+Product Information Tab
+my_fields.product_information
+Multi-line text
+
 # Theme Settings:
 
 ##  Typography:
