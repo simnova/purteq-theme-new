@@ -160,13 +160,22 @@
             "image": "shopify:\/\/shop_images\/purteq-client-brands-04-best-buy_501c6f08-258e-4580-92ea-6f37e1b89567.png",
             "link": ""
           }
+        },
+        "4057036a-06ab-4fe3-b66c-e67a715bd40f": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "Planet Hollywood",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-05-planet-hollywood_216d8a31-da38-4cba-9a9c-341fbbad0ed0.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1627330388ee51cfe8-0",
         "1627330388ee51cfe8-1",
         "1627330388ee51cfe8-2",
-        "5d49f66f-575f-4a2f-bf98-7fe2ac935b3f"
+        "5d49f66f-575f-4a2f-bf98-7fe2ac935b3f",
+        "4057036a-06ab-4fe3-b66c-e67a715bd40f"
       ],
       "settings": {
         "title": ""
