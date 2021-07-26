@@ -1,6 +1,6 @@
 <div class="container mt-5" style="margin-bottom:10rem">
-    <div class="text-center">
-      <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
+    <div class="text-center header">
+      {{ section.settings.title | escape }}
     </div>
     
     {%- if section.blocks.size > 0 -%}
@@ -19,29 +19,45 @@
                   </div>
               {%- endfor -%}
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </ul>
     {%- endif -%}
 </div>
 
 <style>
+
   .featured-partners .swiper-button-prev {
     margin-left: -10px;
     background-image: url({{'arrow-left.svg' | asset_url}}) !important;
     background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -10px;
   }
 
   .featured-partners .swiper-button-next {
-    margin-right: -10px;
+    margin-left: 10px;
     background-image: url({{'arrow-right.svg' | asset_url}}) !important;
     background-repeat: no-repeat;
+    position: absolute;
+    bottom: 90px;
+    right: 0px;
   }
 </style>
 
 {% stylesheet %}
+.featured-partners .header {
+  color: #0c5fa1;
+  font-weight:500;
+  font-size: 1.9rem;
+  margin-bottom: 2.7rem;
+}
+.featured-partners .container {
+  position: relative;
+}
 
 .featured-partners .swiper-button-next:after {
   content:""  !important;
@@ -71,8 +87,8 @@
       spaceBetween: 100,
       slidesPerView: 4,
       navigation: {
-        nextEl: '.swiper-button-prev',
-        prevEl: '.swiper-button-next',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       }
     }
   );
