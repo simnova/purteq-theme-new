@@ -1,20 +1,67 @@
 {
   "sections": {
     "main": {
-      "type": "page",
-      "disabled": true,
+      "type": "page-noheading",
       "settings": {
       }
     },
-    "16263319041b7d6c5b": {
-      "type": "contact-form",
+    "16273176916eace3ac": {
+      "type": "product-callouts-small",
+      "blocks": {
+        "16273176916eace3ac-0": {
+          "type": "product_detail",
+          "settings": {
+            "title": "CITRAPUR",
+            "header": "Quick Clean",
+            "details": "<ul>\n\t<li>Easy-to-use cleaning and disinfecting wipes\n<\/li>\n\t<li>Kills 99.9% of germs, bacteria and viruses<\/li>\n\t<li>Effective non-toxic alternative that is safe for use in all facilities<\/li>\n<li>EPA-registered (34810-36-96548) List N disinfectant<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/store-product-citrapur.png",
+            "link": ""
+          }
+        },
+        "16273176916eace3ac-1": {
+          "type": "product_detail",
+          "settings": {
+            "title": "FRESCH",
+            "header": "Deep Clean",
+            "details": "<ul>\n\t<li>A non-toxic, botanical disinfectant that kills 99.9% of bacteria and viruses<\/li>\n\t<li>Cleans, disinfects and deodorizes<\/li>\n\t<li>EPA-registered (34810-25-96548) List N disinfectant<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/store-product-fresch.png",
+            "link": ""
+          }
+        },
+        "16273176916eace3ac-2": {
+          "type": "product_detail",
+          "settings": {
+            "title": "PREVNT",
+            "header": "Active Barrier",
+            "details": "<ul>\n\t<li>Long lasting clean, up to 90-days.<\/li>\n\t<li>Effective on a wide variety of everyday surfaces<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/store-product-prevnt.png",
+            "link": ""
+          }
+        },
+        "2a351339-0ec9-4afb-9762-90c284cf9371": {
+          "type": "product_detail",
+          "settings": {
+            "title": "NSPECT",
+            "header": "Verifiable Clean",
+            "details": "<ul>\n\t<li>Measure the before and after results of the clean<\/li>\n\t<li>Promote confidence in the cleaning &amp; disinfection<\/li>\n\t<li>Share the historical data with customers<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/store-product-nspect.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16273176916eace3ac-0",
+        "16273176916eace3ac-1",
+        "16273176916eace3ac-2",
+        "2a351339-0ec9-4afb-9762-90c284cf9371"
+      ],
       "settings": {
-        "heading": ""
+        "title": ""
       }
     }
   },
   "order": [
     "main",
-    "16263319041b7d6c5b"
+    "16273176916eace3ac"
   ]
 }

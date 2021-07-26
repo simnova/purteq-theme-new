@@ -1,0 +1,127 @@
+<div class="container mt-5">
+
+  <div class="text-center mb-4">
+    <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+      <div class="container">
+          <div class="row">
+          {%- for block in section.blocks -%}
+              <div class="col-xs-12 col-md-3 product-item">
+                <div class="card border-0">
+                  
+                  <div style="max-width: 200px;">
+                    <h5 class="header">{{ block.settings.header | escape}}</h5>
+                    {%- if block.settings.image != blank -%}
+                      {{ block.settings.image | img_url: '360x360', scale: 2 | img_tag: block.settings.image.alt, 'card-img-top h-100' }}
+                    {%- else -%}
+                      {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' | class: 'card-img-top' }}
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="card-body" >
+                  <h5 class="card-title">{{ block.settings.title | escape}}<sup>TM</sup></h5>
+                  <div class="card-text" style="color:#65665d;line-height:1.5rem;">
+                    {{ block.settings.details}}
+                  </div>
+                </div>
+                
+              </div>
+          {%- endfor -%}
+          </div>
+      </div>
+  </ul>
+  {%- endif -%}
+</div>
+{% stylesheet %}
+
+
+{% endstylesheet %}
+{% style %}
+.product-callouts .product-item:before {
+
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 50%;
+    width   : 1px;  /* or 100px */
+    border-left:1px solid magenta;
+  
+}
+.product-callouts .product-col {
+  border-left: solid 1px gray;
+}
+.product-callouts li {
+  list-style-image: url({{'arrow.svg'|asset_url}});
+  font-size: .9rem;
+  margin-bottom: .4rem;
+}
+
+.product-callouts ul li::marker {
+  font-size: 1.5em;
+}
+
+{% endstyle %}
+
+{%schema%}
+{
+  "name": "Product Callouts",
+  "max_blocks": 20,
+  "class":"product-callouts-small",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Product Detail",
+      "type": "product_detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "html",
+          "id": "details",
+          "label": "Details",
+          "default": "<ul>\n\t<li><strong>Feature 1</strong></li>\n\t<li>Feature 2</li>\n\t<li>Feature 3</li>\n</ul>"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Product Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Products Section",
+      "name":"Product Callout Small",
+      "blocks":[
+        {"type":"product_detail"},
+        {"type":"product_detail"},
+        {"type":"product_detail"}
+      ]
+    }
+  ]
+}
+{%endschema%}
