@@ -1,29 +1,45 @@
-<div class="container">
-  {%- if section.settings.image != blank -%}
-    <img 
-      src="{{ section.settings.image | img_url: '1070x'}}"
-      alt="{{ section.settings.image.alt | escape }}"
-      class="img-fluid" style="min-width:100%;"
-    >
-  {%- else -%}
-    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-  {%- endif -%}
+<div class="container mt-5">
+  <div class="text-center">
+      <div class="d-inline-block mt-5 mb-5" style="max-width:{{ section.settings.max-width }}px;">
+        {%- if section.settings.image != blank -%}
+          <img 
+            src="{{ section.settings.image | img_url: '1070x' }}"
+            alt="{{ section.settings.image.alt | escape }}"
+            class="img-fluid" style="min-width:100%;"
+          >
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+
+  </div>
+  
 </div>
 
 {% stylesheet %}
 
 {% endstylesheet %}
+{% style %}
+
+
+
+{% endstyle %}
 
 {% schema %}
 {
   "name": "Image",
-  "class":"cta-with-header",
+  "class":"image-section",
   "settings": [
 
     { 
       "type": "image_picker",
       "id":"image",
       "label": "Featured Image"
+    },
+    { 
+      "type": "number",
+      "id":"max-width",
+      "label": "Max Width(px)"
     }
   
   ],
