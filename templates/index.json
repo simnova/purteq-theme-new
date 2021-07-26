@@ -176,6 +176,14 @@
             "image": "shopify:\/\/shop_images\/purteq-client-brands-06-home-depot_ac938aa0-e9eb-41f4-a43a-d61704d33968.png",
             "link": ""
           }
+        },
+        "6e629736-5141-49a0-93fe-8dbe5a185202": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "Marriott",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-07-marriott_ac918200-3713-499b-b9fc-b1e48e33eebb.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -184,7 +192,8 @@
         "1627330388ee51cfe8-2",
         "5d49f66f-575f-4a2f-bf98-7fe2ac935b3f",
         "4057036a-06ab-4fe3-b66c-e67a715bd40f",
-        "6275562c-b894-45d5-8978-278be0e490db"
+        "6275562c-b894-45d5-8978-278be0e490db",
+        "6e629736-5141-49a0-93fe-8dbe5a185202"
       ],
       "settings": {
         "title": ""
