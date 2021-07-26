@@ -90,6 +90,13 @@
         "button-label": "Contact Us Now",
         "link": "shopify:\/\/pages\/contact"
       }
+    },
+    "1627325078c6d5230d": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/purteq-logo.png",
+        "max-width": 300
+      }
     }
   },
   "order": [
@@ -100,6 +107,7 @@
     "16260499878c20d24b",
     "1626050025438538c1",
     "162605007907936423",
-    "162732492238cce663"
+    "162732492238cce663",
+    "1627325078c6d5230d"
   ]
 }
