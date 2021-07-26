@@ -200,6 +200,14 @@
             "image": "shopify:\/\/shop_images\/purteq-client-brands-09-tj-maxx_65bf9140-aa76-4581-b37a-58d185c114f4.png",
             "link": ""
           }
+        },
+        "87710b60-364f-4de7-b92b-efc7eb05e318": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "The University of New Orleans",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-10-uno_a376f6e7-9dad-4717-b72e-f3cd1d1e9170.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -211,7 +219,8 @@
         "6275562c-b894-45d5-8978-278be0e490db",
         "6e629736-5141-49a0-93fe-8dbe5a185202",
         "a23faa87-813b-46c8-9594-e28cafc8df3b",
-        "9fcd42ce-c284-45c6-a71e-dad2354ed462"
+        "9fcd42ce-c284-45c6-a71e-dad2354ed462",
+        "87710b60-364f-4de7-b92b-efc7eb05e318"
       ],
       "settings": {
         "title": ""
