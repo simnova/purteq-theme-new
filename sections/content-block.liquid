@@ -5,27 +5,60 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 body">
+    <div class="col-12 body d-flex">
+      <div>
         {{ section.settings.text }}
+      </div>
+      {%- if section.settings.image != blank -%}
+        <div style="max-width:{{ section.settings.max-width }}px;">
+          <img 
+            src="{{ section.settings.image | img_url: '1070x' }}"
+            alt="{{ section.settings.image.alt | escape }}"
+            class="img-fluid" style="min-width:100%;"
+          >
+        </div>
+      {%- endif -%}
     </div>
   </div>
   
 </div>
 
-{% stylesheet %}
+{% style %}
   .content-block {
     letter-spacing: 0.02rem; 
-    font-size: 1.2rem;
-    line-height:2rem;
+
+    line-height:2.2rem;
   }
   .content-block .header {
    color: #0c5fa1;
    font-weight:500;
+   font-size: 1.9rem;
+   margin-bottom: .7rem;
   }
   .content-block .body {
     color: #65665d;
+    font-size: 1.6rem;
   }
-{% endstylesheet %}
+  .content-block .body strong {
+    font-weight:500;
+  }
+  .content-block .body li {
+    list-style-image: url({{'arrow.svg'|asset_url}});
+    margin-bottom: .9rem;
+  }
+  .content-block .body ul li {
+    margin-left:.5rem;
+    padding-left:.5rem;
+    font-size: 1.5rem;
+  }
+  .content-block .body ul {
+    margin-top:.9rem;
+  }
+  
+  .content-block .body ul li::marker {
+    font-size: 1.5em;
+  }
+{% endstyle %}
 
 {% schema %}
 {
@@ -43,6 +76,16 @@
       "id": "text",
       "label": "Body",
       "default": "<p>Call to action text.</p>"
+    },
+    { 
+      "type": "image_picker",
+      "id":"image",
+      "label": "Featured Image"
+    },
+    { 
+      "type": "number",
+      "id":"max-width",
+      "label": "Max Width(px)"
     }
   ],
   "presets": [
