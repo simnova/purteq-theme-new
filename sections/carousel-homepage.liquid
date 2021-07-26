@@ -1,7 +1,7 @@
 <div class="slideshow" id="slideshow-{{ section.id }}"></div>
 
   <!-- Swiper -->
-  <div class="hero-swiper-container">
+  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <video autoplay loop playsinline muted class="first d-none d-sm-block" preload="auto" >
@@ -72,7 +72,7 @@
 
   <!-- Initialize Swiper -->
 {% javascript %}
-    var homepageSwiper = new Swiper('.carousel-homepage .hero-swiper-container', {
+    var homepageSwiper = new Swiper('.carousel-homepage .swiper-container', {
       speed: 500,
       preloadImages:true,
       centeredSlides: true,
@@ -81,7 +81,6 @@
         delay: 8000,
         disableOnInteraction: true,
       },
-
       pagination: {
         el: '.carousel-homepage .swiper-pagination',
         clickable: true,
@@ -93,13 +92,11 @@
     });
 
     homepageSwiper.on('slideChange', function(){
-      var video = document.querySelectorAll('.hero-swiper-container .swiper-slide-active video')[0]
+      var video = document.querySelectorAll('.carousel-homepage .swiper-container .swiper-slide-active video')[0]
       //debugger;
-      
       video.pause();
       video.currentTime = 0;
       video.play();
-      
     });
 {% endjavascript %}
 
@@ -122,9 +119,6 @@
     top:45%;
   }
 
-  #shopify-section-{{ section.id }} {
-    height: 100%;
-  }
 </style>
 
 {% stylesheet %}
@@ -136,18 +130,18 @@
     content:""  !important;
   }
 
-  .carousel-homepage .hero-swiper-container {
+  .carousel-homepage .swiper-container {
     width: 100%;
     height: min(72vw,740px);
   }
   @media (max-width: 576px) { 
-    .carousel-homepage .hero-swiper-container {
+    .carousel-homepage .swiper-container {
       width: 100%;
       height: min(124vw,1024px);
     }
   }
 
-  .carousel-homepage .hero-swiper-container .swiper-pagination {
+  .carousel-homepage .swiper-container .swiper-pagination {
     margin-bottom: min(13vw,65px);
   }
 
@@ -297,7 +291,7 @@
     margin-bottom: 65px;
   }
   
-  .carousel-homepage  .hero-swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  .carousel-homepage  .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color:#76BC21;
   }
 {% endstylesheet %}
