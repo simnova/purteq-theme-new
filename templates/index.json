@@ -216,6 +216,14 @@
             "image": "shopify:\/\/shop_images\/purteq-client-brands-11-guarantee_88d624d3-9fb9-4fcb-b0aa-7d274ae70e92.png",
             "link": ""
           }
+        },
+        "fcafab96-6bcc-44ed-a86d-a35a3fb39219": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "Best Western",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-12-best-western_3a71e593-ef7d-4cee-a863-eaf8826338e5.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -229,7 +237,8 @@
         "a23faa87-813b-46c8-9594-e28cafc8df3b",
         "9fcd42ce-c284-45c6-a71e-dad2354ed462",
         "87710b60-364f-4de7-b92b-efc7eb05e318",
-        "a2e6e805-a21d-478b-9e2e-f4524b7ac8e2"
+        "a2e6e805-a21d-478b-9e2e-f4524b7ac8e2",
+        "fcafab96-6bcc-44ed-a86d-a35a3fb39219"
       ],
       "settings": {
         "title": ""
