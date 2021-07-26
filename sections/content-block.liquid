@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 header">
+      {{ section.settings.title }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 body">
+        {{ section.settings.text }}
+    </div>
+  </div>
+  
+</div>
+
+{% stylesheet %}
+  .content-block {
+    letter-spacing: 0.02rem; 
+    font-size: 1.2rem;
+    line-height:2rem;
+  }
+  .content-block .header {
+   color: #0c5fa1;
+   font-weight:500;
+  }
+  .content-block .body {
+    color: #65665d;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Content Block",
+  "class":"content-block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "html",
+      "id": "text",
+      "label": "Body",
+      "default": "<p>Call to action text.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Content Block"
+    }
+  ]
+}
+{% endschema %}

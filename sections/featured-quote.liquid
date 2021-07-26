@@ -2,16 +2,18 @@
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
-      <div class="text-center" style="margin: 100px 0px;">
-        <div class="d-inline" >
-          <img src="{{'quotes-open.png' | asset_url}}" style="max-height: min(10vw, 100px);margin-top:-80px" alt="begin quote">
+      <div class="d-flex" style="margin: 100px 0px;">
+        <div>
+          <img src="{{'quotes-open.png' | asset_url}}" style="max-height: min(10vw, 100px);margin-top:-80px; padding-right:20px;" alt="begin quote">
         </div>
-        <div class="d-inline" style="vertical-align: middle;font-size: calc(1.2rem + .9vw);color: #65665d;">
-          &nbsp;&nbsp;&nbsp;{{ section.settings.text | escape }}&nbsp;&nbsp;&nbsp;
+        <div>
+          <div class="d-inline" style="vertical-align: middle;font-size: calc(1.2rem + .9vw);color: #65665d;">{{ section.settings.text | escape }}&nbsp;&nbsp;&nbsp;
         </div>
         <div class="d-inline">
           <img src="{{'quotes-close.png' | asset_url}}" style="max-height: min(10vw, 100px);margin-bottom:-80px"  alt="end quote">
         </div>
+        </div>
+        
       </div>
     </div>
     <div class="col-1"></div>
