@@ -63,7 +63,7 @@
       "type": "call-to-action",
       "settings": {
         "title": "CTA Title",
-        "text": "",
+        "text": "<p><span style=\"text-decoration:underline\">Contact us<\/span> to learn how you can design a PURTEQ program to keep your environment safe.<\/p>",
         "button-label": "Contact Us Now",
         "link": "shopify:\/\/pages\/contact"
       }
@@ -71,7 +71,8 @@
     "16273228381608aaf6": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/purteq-logo.png"
+        "image": "shopify:\/\/shop_images\/purteq-logo.png",
+        "max-width": 300
       }
     }
   },
