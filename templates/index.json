@@ -79,41 +79,7 @@
       "type": "featured-quote",
       "settings": {
         "title": "Rob Kabel, CEO",
-        "text": "Our goal, quite simply, is to boost people’s sense of well-being. Our products earn customers’ trust by being provably better for their health and environment. Proving, not just promising, is at the heart of what we do."
-      }
-    },
-    "1626312566809fb37c": {
-      "type": "featured-partners",
-      "blocks": {
-        "1626312566809fb37c-0": {
-          "type": "partner_detail",
-          "settings": {
-            "title": "Partner2",
-            "link": ""
-          }
-        },
-        "1626312566809fb37c-1": {
-          "type": "partner_detail",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "1626312566809fb37c-2": {
-          "type": "partner_detail",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1626312566809fb37c-0",
-        "1626312566809fb37c-1",
-        "1626312566809fb37c-2"
-      ],
-      "settings": {
-        "title": ""
+        "text": "Clean is the new normal. Safe and non-toxic ways to achieve a higher level of clean are critical to the health of workers, guests, employees, students… everyone. Cleaning should never be harmful. This is why we do what we do."
       }
     }
   },
@@ -124,7 +90,6 @@
     "1626049739500c659f",
     "16260499878c20d24b",
     "1626050025438538c1",
-    "162605007907936423",
-    "1626312566809fb37c"
+    "162605007907936423"
   ]
 }
