@@ -125,6 +125,41 @@
         "image": "shopify:\/\/shop_images\/purteq-logo.png",
         "max-width": 300
       }
+    },
+    "1627330388ee51cfe8": {
+      "type": "featured-partners",
+      "blocks": {
+        "1627330388ee51cfe8-0": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "Walmart",
+            "image": "shopify:\/\/shop_images\/purteq-client-brands-01-walmart_25a01934-359f-45f8-bd7c-a8a63d7950a6.png",
+            "link": ""
+          }
+        },
+        "1627330388ee51cfe8-1": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "",
+            "link": ""
+          }
+        },
+        "1627330388ee51cfe8-2": {
+          "type": "partner_detail",
+          "settings": {
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1627330388ee51cfe8-0",
+        "1627330388ee51cfe8-1",
+        "1627330388ee51cfe8-2"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -139,6 +174,7 @@
     "1626050025438538c1",
     "162605007907936423",
     "162732492238cce663",
-    "1627325078c6d5230d"
+    "1627325078c6d5230d",
+    "1627330388ee51cfe8"
   ]
 }
