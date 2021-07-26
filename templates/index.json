@@ -81,6 +81,15 @@
         "title": "Rob Kabel, CEO",
         "text": "Clean is the new normal. Safe and non-toxic ways to achieve a higher level of clean are critical to the health of workers, guests, employees, students… everyone. Cleaning should never be harmful. This is why we do what we do."
       }
+    },
+    "162732492238cce663": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "CTA Title",
+        "text": "",
+        "button-label": "Contact Us Now",
+        "link": "shopify:\/\/pages\/contact"
+      }
     }
   },
   "order": [
@@ -90,6 +99,7 @@
     "1626049739500c659f",
     "16260499878c20d24b",
     "1626050025438538c1",
-    "162605007907936423"
+    "162605007907936423",
+    "162732492238cce663"
   ]
 }
