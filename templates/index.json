@@ -7,6 +7,7 @@
     },
     "16260496001b9d0254": {
       "type": "featured-text-image",
+      "disabled": true,
       "settings": {
         "title": "What is Clean?",
         "featured_image": "shopify:\/\/shop_images\/flower.png",
@@ -15,6 +16,7 @@
     },
     "16260496490a85176f": {
       "type": "product-callouts",
+      "disabled": true,
       "blocks": {
         "16260496490a85176f-0": {
           "type": "product_detail",
@@ -55,6 +57,7 @@
     },
     "1626049739500c659f": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "title": "A non-toxic cleaning system",
         "text": "<p><strong>A two-step application of first FRESCH, then PREVNT<\/strong>, can leave your environment clean and safe for enduring, provable periods of time – depending on levels of use – without subjecting people to unhealthy toxins and fumes. <em>Then, NSPECT offers tangible proof of that promise.<\/em><\/p>"
@@ -62,6 +65,7 @@
     },
     "16260499878c20d24b": {
       "type": "single-product-callout",
+      "disabled": true,
       "settings": {
         "title": "We just spread the promise<br> to a new realm of clean.",
         "featured_image": "shopify:\/\/shop_images\/home-product-citrapur-callout.png",
