@@ -39,7 +39,7 @@
 
 {% endstylesheet %}
 {% style %}
-.product-callouts .product-item:before {
+.product-callouts-small .product-item:before {
 
     content : "";
     position: absolute;
@@ -50,16 +50,16 @@
     border-left:1px solid magenta;
   
 }
-.product-callouts .product-col {
+.product-callouts-small .product-col {
   border-left: solid 1px gray;
 }
-.product-callouts li {
+.product-callouts-small li {
   list-style-image: url({{'arrow.svg'|asset_url}});
   font-size: .9rem;
   margin-bottom: .4rem;
 }
 
-.product-callouts ul li::marker {
+.product-callouts-small ul li::marker {
   font-size: 1.5em;
 }
 
