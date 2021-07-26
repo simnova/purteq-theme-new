@@ -1,51 +1,157 @@
 <div class="slideshow" id="slideshow-{{ section.id }}"></div>
 
-<style>
+  <!-- Swiper -->
+  <div class="hero-swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video autoplay loop playsinline muted class="first d-none d-sm-block" preload="auto" >
+          <source src="{{'1920x640-HOME_compressed.mp4' | asset_url}}" type="video/mp4"/>
+        </video>
+        <video autoplay loop playsinline muted class="first d-block d-sm-none" preload="auto">
+          <source src="{{'1000x860-HOME-Mobile-compressed.mp4' | asset_url}}" type="video/mp4"/>
+        </video>
+      </div>
 
-  .swiper-button-prev {
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="{{'home-product-fresch.png'|asset_url}}"  loading="lazy" class="product-image" />
+          <img src="{{'home-headline-fresch.svg'|asset_url}}"  loading="lazy" class="headline-image d-none d-sm-block" />
+          <img src="{{'mobile-headline-fresch.svg'|asset_url}}" loading="lazy"  class="headline-image mobile d-block d-sm-none" />
+        </div>
+        <video autoplay loop playsinline muted preload="auto">
+          <source src="{{'1920x640-FRESCH_compressed.mp4' | asset_url}}"  type="video/mp4"/>
+        </video>          
+      </div>
+
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="{{'home-product-prevnt.png'|asset_url}}"  loading="lazy" class="product-image" />
+          <img src="{{'home-headline-prevnt.svg'|asset_url}}"  loading="lazy" class="headline-image d-none d-sm-block" />
+          <img src="{{'mobile-headline-prevnt.svg'|asset_url}}" loading="lazy" class="headline-image mobile d-block d-sm-none" />
+        </div>
+        <video autoplay loop playsinline muted preload="auto">
+          <source src="{{'1920x640-PREVNT_compressed.mp4' | asset_url}}"   type="video/mp4"/>
+        </video> 
+      </div>
+
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="{{'home-product-nspect.png'|asset_url}}" loading="lazy" class="product-image" />
+          <img src="{{'home-headline-nspect.svg'|asset_url}}"  loading="lazy" class="headline-image d-none d-sm-block" />
+          <img src="{{'mobile-headline-nspect.svg'|asset_url}}"  loading="lazy" class="headline-image mobile d-block d-sm-none" />       
+        </div>
+        <video autoplay loop playsinline muted preload="auto">
+          <source src="{{'1920x640-NSPECT.mp4' | asset_url}}"  type="video/mp4"/>
+        </video>          
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="{{'home-product-citrapur.png'|asset_url}}"  loading="lazy" class="product-image from-right" />
+          <img src="{{'home-headline-citrapur.svg'|asset_url}}"  loading="lazy" class="headline-image d-none d-sm-block" />
+          <img src="{{'mobile-headline-citrapur.svg'|asset_url}}"  loading="lazy" class="headline-image mobile d-block d-sm-none" />
+        </div>
+        <video autoplay loop playsinline muted preload="auto">
+          <source src="{{'1920x640-CITRAPUR_compressed.mp4' | asset_url}}"  type="video/mp4"/>
+        </video> 
+      </div>
+
+      
+    </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+  <!-- Swiper JS -->
+ 
+
+  <!-- Initialize Swiper -->
+{% javascript %}
+    var homepageSwiper = new Swiper('.carousel-homepage .hero-swiper-container', {
+      speed: 500,
+      preloadImages:true,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 8000,
+        disableOnInteraction: true,
+      },
+
+      pagination: {
+        el: '.carousel-homepage .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.carousel-homepage .swiper-button-next',
+        prevEl: '.carousel-homepage .swiper-button-prev',
+      },
+    });
+
+    homepageSwiper.on('slideChange', function(){
+      var video = document.querySelectorAll('.hero-swiper-container .swiper-slide-active video')[0]
+      //debugger;
+      
+      video.pause();
+      video.currentTime = 0;
+      video.play();
+      
+    });
+{% endjavascript %}
+
+
+
+
+
+
+
+<style>
+  #shopify-section-{{ section.id }} .swiper-button-prev {
     background-image: url({{'arrow-left.svg' | asset_url}}) !important;
     background-repeat: no-repeat;
     top:45%;
   }
-  
-  .swiper-button-next {
+
+  #shopify-section-{{ section.id }} .swiper-button-next {
     background-image: url({{'arrow-right.svg' | asset_url}}) !important;
     background-repeat: no-repeat;
     top:45%;
-    
   }
 
-  .swiper-button-next:after {
-    content:""  !important;
-    
-  }
-  .swiper-button-prev:after {
-    content:""  !important;
-  }
-
-  #slideshow-{{ section.id }} {
-
+  #shopify-section-{{ section.id }} {
     height: 100%;
-   }
+  }
+</style>
 
+{% stylesheet %}
+  .carousel-homepage .swiper-button-next:after {
+    content:""  !important;
+  }
 
-  .swiper-container {
+  .carousel-homepage .swiper-button-prev:after {
+    content:""  !important;
+  }
+
+  .carousel-homepage .hero-swiper-container {
     width: 100%;
     height: min(72vw,740px);
   }
   @media (max-width: 576px) { 
-    .swiper-container {
+    .carousel-homepage .hero-swiper-container {
       width: 100%;
       height: min(124vw,1024px);
     }
   }
 
-  .swiper-container .swiper-pagination {
+  .carousel-homepage .hero-swiper-container .swiper-pagination {
     margin-bottom: min(13vw,65px);
   }
 
-
-  .swiper-slide {
+  .carousel-homepage .swiper-slide {
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -65,11 +171,10 @@
     -webkit-align-items: center;
     align-items: center;
     overflow: hidden;
-
     height: 755px;
   }
 
-  .swiper-slide video2 {
+  .carousel-homepage .swiper-slide video2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,52 +190,24 @@
     text-align: center;
   }
 
-  .swiper-slide video.first {
-    /*
-    display: block; 
-    position: absolute;
-    min-height: 100%;
-    margin-top: 50%;
-    height: auto;
-    */
+  .carousel-homepage .swiper-slide video.first {
     object-fit:cover;
-    
   }
 
-  .swiper-slide video {
-    /*
-    top:0;
-    height: min(50vw,640px);
-    min-width: 100%;
-    width: 100%;
-    object-position: bottom;
-    height: 300px;
-    display: block; 
-    position: absolute;
-    min-height: 100%;
-    margin-top: 50%;
-    height: auto;
-   
-    object-fit:cover;
+  .carousel-homepage .swiper-slide video {
+    align-self: start;
+    height: min(60vw,640px);
+    object-position: top;
     z-index: 0;
-    position: absolute;
-     */
-     align-self: start;
-     height: min(60vw,640px);
-     object-position: top;
-
-     z-index: 0;
   }
-
   @media (max-width: 576px) { 
-    .swiper-slide video {
+    .carousel-homepage .swiper-slide video {
       height: min(102vw,640px);
       width: auto;
     }
+  }
 
-   }
-
-  .image-container {
+  .carousel-homepage .image-container {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -141,13 +218,13 @@
   }
 
   @media (max-width: 576px) { 
-    .image-container {
+    .carousel-homepage .image-container {
       width: 100%;
       height: min(143vw,1024px);
     }
   }
 
-  .swiper-slide .product-image {
+  .carousel-homepage .swiper-slide .product-image {
     object-fit:fill;
     height: auto; /*min(70vw,755px);/**/
     width: min(80%,902px);/**/
@@ -160,25 +237,26 @@
   }
 
   @media (max-width: 576px) { 
-    .swiper-slide .product-image {
+    .carousel-homepage  .swiper-slide .product-image {
       width: min(145%,902px);/**/
       margin-top: 0;
     }
   }
 
-  .swiper-slide.swiper-slide-active .product-image {
+  .carousel-homepage .swiper-slide.swiper-slide-active .product-image {
     animation: slide .7s forwards;
     animation-delay: .25s;
     z-index: 1;
     left: -600px;
   }
 
-  .swiper-slide.swiper-slide-active .product-image.from-right {
+  .carousel-homepage .swiper-slide.swiper-slide-active .product-image.from-right {
     animation: slide-from-right .7s forwards;
     left: inherit;
     right: -600px;
   }
-  .swiper-slide .headline-image {
+
+  .carousel-homepage .swiper-slide .headline-image {
     object-fit:fill;
     height: auto; /*min(80vw,800px);*/
     width: min(100%,1096px);
@@ -190,13 +268,13 @@
     right:0;
   }
 
-  .swiper-slide.swiper-slide-active .headline-image {
+  .carousel-homepage .swiper-slide.swiper-slide-active .headline-image {
     animation: slide-from-right .7s forwards;
     animation-delay: .15s;
     right: -600px;
   }
 
-  .swiper-slide .headline-image.mobile {
+  .carousel-homepage .swiper-slide .headline-image.mobile {
     margin-top:0vw;
     padding:0;
   }
@@ -215,174 +293,12 @@
     }
   }
 
-  .swiper-pagination {
+  .carousel-homepage  .swiper-pagination {
     margin-bottom: 65px;
   }
-  .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color:#76BC21;
-  }
-
-</style>
-
-
-
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <video autoplay loop playsinline muted class="first d-none d-sm-block" preload="auto" >
-          <source src="{{'1920x640-HOME_compressed.mp4' | asset_url}}" type="video/mp4"/>
-        </video>
-        <video autoplay loop playsinline muted class="first d-block d-sm-none" preload="auto">
-          <source src="{{'1000x860-HOME-Mobile-compressed.mp4' | asset_url}}" type="video/mp4"/>
-        </video>
-
-        
-      </div>
-
-      <div class="swiper-slide">
-        <div class="image-container">
-          <img src="{{'home-product-fresch.png'|asset_url}}"  class="product-image" />
-          <img src="{{'home-headline-fresch.svg'|asset_url}}"  class="headline-image d-none d-sm-block" />
-          <img src="{{'mobile-headline-fresch.svg'|asset_url}}"  class="headline-image mobile d-block d-sm-none" />
-          
-        </div>
-        <video autoplay loop playsinline muted preload="auto">
-          <source src="{{'1920x640-FRESCH_compressed.mp4' | asset_url}}"  type="video/mp4"/>
-        </video>          
-      </div>
-
-      <div class="swiper-slide">
-        <div class="image-container">
-          <img src="{{'home-product-prevnt.png'|asset_url}}"  class="product-image" />
-          <img src="{{'home-headline-prevnt.svg'|asset_url}}"  class="headline-image d-none d-sm-block" />
-          <img src="{{'mobile-headline-prevnt.svg'|asset_url}}"  class="headline-image mobile d-block d-sm-none" />
-          
-        </div>
-        <video autoplay loop playsinline muted preload="auto">
-          <source src="{{'1920x640-PREVNT_compressed.mp4' | asset_url}}"   type="video/mp4"/>
-        </video> 
-      </div>
-
-      <div class="swiper-slide">
-        <div class="image-container">
-          <img src="{{'home-product-nspect.png'|asset_url}}"  class="product-image" />
-          <img src="{{'home-headline-nspect.svg'|asset_url}}"  class="headline-image d-none d-sm-block" />
-          <img src="{{'mobile-headline-nspect.svg'|asset_url}}"  class="headline-image mobile d-block d-sm-none" />
-          
-        </div>
-        <video autoplay loop playsinline muted preload="auto">
-          <source src="{{'1920x640-NSPECT.mp4' | asset_url}}"  type="video/mp4"/>
-        </video>          
-      </div>
-      <div class="swiper-slide">
-        <div class="image-container">
-          <img src="{{'home-product-citrapur.png'|asset_url}}"  class="product-image from-right" />
-          <img src="{{'home-headline-citrapur.svg'|asset_url}}"  class="headline-image d-none d-sm-block" />
-          <img src="{{'mobile-headline-citrapur.svg'|asset_url}}"  class="headline-image mobile d-block d-sm-none" />
-        </div>
-        <video autoplay loop playsinline muted preload="auto">
-          <source src="{{'1920x640-CITRAPUR_compressed.mp4' | asset_url}}"  type="video/mp4"/>
-        </video> 
-      </div>
-
-      
-    </div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-  </div>
-
-  <!--
-      <div class="swiper-slide" style="background-color: blue;">
-        <video autoplay loop playsinline muted>
-          <source src="{{'1920x640-FRESCH.mp4' | asset_url}}"  type="video/mp4"/>
-        </video>          
-      </div>
-      <div class="swiper-slide">
-        <video autoplay loop playsinline muted>
-          <source src="{{'1920x640-CITRAPUR.mp4' | asset_url}}"  type="video/mp4"/>
-        </video> 
-      </div>
-      <div class="swiper-slide" style="background-color: blue;">
-        <img src="{{placeholder_svg_tag | img_url: 'large'}}" />
-      </div>
-
-      <div class="swiper-slide">
-        
-        <video autoplay loop playsinline muted>
-          <source src="{{'1920x640-HOME.mp4' | asset_url}}"  type="video/mp4"/>
-        </video>
-        
   
-      </div>
-      -->
-
-
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      speed: 500,
-      preloadImages:true,
-      centeredSlides: true,
-      loop:true,
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: true,
-      },
-
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-    swiper.on('slideChange', function(){
-      var video = document.querySelectorAll('.swiper-container .swiper-slide-active video')[0]
-      //debugger;
-      
-      video.pause();
-      video.currentTime = 0;
-      video.play();
-      //video.load();
-      
-    })
-    
-    /*
-     spaceBetween: 30,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-
-    */
-  </script>
-
-
-
-
-
-{% javascript %}
-
-/*
-  $('.slideshow').slideshow();
-  */
-{% endjavascript %}
-
-{% stylesheet %}
-  .slideshow {
-    /* default styles */
-
+  .carousel-homepage  .hero-swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color:#76BC21;
   }
 {% endstylesheet %}
 
