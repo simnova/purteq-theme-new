@@ -10,7 +10,7 @@
       {%- endif -%}
     </div>
     <div class="col col-12 col-lg-7">
-      <div>{{ product.description }}</div>
+      <div class='product-description'>{{ product.description }}</div>
       <button type="button" class="btn mt-5 mb-3">Login or Create Account</button>
       <div>An account is required to view pricing</div>
     </div>
@@ -18,7 +18,9 @@
 </div>
 
 {% stylesheet %}
-
+  .product-section .product-description :is(h1, h2, h3, h4, h5, h6) {
+    color: #0069a7
+  }
 
   .product-section {
     font-size: .8rem;
