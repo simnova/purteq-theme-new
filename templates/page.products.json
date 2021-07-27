@@ -63,7 +63,7 @@
       "type": "call-to-action",
       "settings": {
         "title": "CTA Title",
-        "text": "<p><span style=\"text-decoration:underline\">Contact us<\/span> to learn how you can design a PURTEQ program to keep your environment safe.<\/p>",
+        "text": "<p>Contact us to learn how you can design a program to keep your environment safe.<\/p>",
         "button-label": "Contact Us Now",
         "link": "shopify:\/\/pages\/contact"
       }
