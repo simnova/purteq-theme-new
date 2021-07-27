@@ -91,7 +91,7 @@
       "type": "call-to-action",
       "settings": {
         "title": "CTA Title",
-        "text": "<p><span style=\"text-decoration:underline\">Contact us by email<\/span> or call us at 844-478-7837<\/p>",
+        "text": "<p><a href=\"mailto:sales@purteq.com\" title=\"mailto:sales@purteq.com\"><span style=\"text-decoration:underline\">Contact us by email<\/span><\/a> or call us at 844-478-7837<\/p>",
         "button-label": "Contact Us Now",
         "link": ""
       }
