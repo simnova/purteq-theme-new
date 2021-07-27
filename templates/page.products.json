@@ -33,7 +33,7 @@
           "settings": {
             "title": "PREVNT",
             "header": "Active Barrier",
-            "details": "<ul>\n\t<li>Long lasting clean, up to 90-days.<\/li>\n\t<li>Effective on a wide variety of everyday surfaces<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Continually cleans surfaces and the air for up to 90 days<\/li>\n\t<li>Effective on a wide variety of everyday surfaces<\/li>\n<li>\nApplies a barrier coating on surfaces to prevent the return of Volatile Organic Compounds\n<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/store-product-prevnt.png",
             "link": "shopify:\/\/products\/prevnt"
           }
@@ -43,7 +43,7 @@
           "settings": {
             "title": "NSPECT",
             "header": "Verifiable Clean",
-            "details": "<ul>\n\t<li>Measure the before and after results of the clean<\/li>\n\t<li>Promote confidence in the cleaning &amp; disinfection<\/li>\n\t<li>Share the historical data with customers<\/li>\n<\/ul>",
+            "details": "<ul>\n<li>\nMake the invisible, visible\n<\/li>\n\t<li>Measure the before and after results of the clean with a Luminometer<\/li>\n\t<li>Promote confidence in the cleaning &amp; disinfection<\/li>\n\t<li>Share the data to customize a cleaning program specific to customer objectives<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/store-product-nspect.png",
             "link": "shopify:\/\/products\/nspect"
           }
@@ -63,7 +63,7 @@
       "type": "call-to-action",
       "settings": {
         "title": "CTA Title",
-        "text": "<p><span style=\"text-decoration:underline\">Contact us<\/span> to learn how you can design a PURTEQ program to keep your environment safe.<\/p>",
+        "text": "<p>Contact us to learn how you can design a program to keep your environment safe.<\/p>",
         "button-label": "Contact Us Now",
         "link": "shopify:\/\/pages\/contact"
       }
