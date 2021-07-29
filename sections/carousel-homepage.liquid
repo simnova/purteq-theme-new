@@ -46,7 +46,7 @@
       </div>
       <div class="swiper-slide">
         <div class="image-container">
-          <img src="{{'home-product-citrapur.png'|asset_url}}"  class="product-image from-right" />
+          <img src="{{'home-product-citrapur.png'|asset_url}}"  class="product-image" />
           <img src="{{'home-headline-citrapur.svg'|asset_url}}"  class="headline-image d-none d-sm-block" />
           <img src="{{'mobile-headline-citrapur.svg'|asset_url}}"  class="headline-image mobile d-block d-sm-none" />
         </div>
@@ -142,7 +142,7 @@
   }
 
   .carousel-homepage .swiper-container .swiper-pagination {
-    margin-bottom: min(13vw,65px);
+    margin-bottom: 6%;
   }
 
   .carousel-homepage .swiper-slide {
@@ -199,6 +199,10 @@
       height: min(102vw,640px);
       width: auto;
     }
+    .carousel-homepage .swiper-container .swiper-pagination {
+      margin-bottom: 13%;
+    }
+
   }
 
   .carousel-homepage .image-container {
@@ -221,11 +225,11 @@
   .carousel-homepage .swiper-slide .product-image {
     object-fit:fill;
     height: auto; /*min(70vw,755px);/**/
-    width: min(80%,902px);/**/
+    width: max(100%,500px);/**/
     z-index: 1;
     position: absolute;
-    margin-top:25px;
-    top:0px;
+    margin-top:0px;
+    top:max(-20%,-85px);
     padding-left:20px;
     left:0;
   }
@@ -233,7 +237,7 @@
   @media (max-width: 576px) { 
     .carousel-homepage  .swiper-slide .product-image {
       width: min(145%,902px);/**/
-      margin-top: 0;
+      margin-top: max(10%,60px);
     }
   }
 
