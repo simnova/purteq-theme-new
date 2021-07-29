@@ -67,53 +67,56 @@
       
  
     <div class="mb-3">
+      <label class="form-label">{{ 'templates.contact.form.comment' | t }} *</label>
+      <div class="card">
+        <div class="card-body">
 
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="contactReason" id="reasonForMyBusiness" value="" required>
-        <label class="form-check-label" for="reasonForMyBusiness">
-          I'm interested in using PURTEQ non-toxic products to clean and disinfect my business/facility
-        </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactReason" id="reasonForMyBusiness" value="" required>
+            <label class="form-check-label" for="reasonForMyBusiness">
+              I'm interested in using PURTEQ non-toxic products to clean and disinfect my business/facility
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactReason" id="reasonCleaningProfessional" value="">
+            <label class="form-check-label" for="reasonCleaningProfessional">
+              I'm a cleaning professional and would like to use PURTEQ non-toxic products for my business
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactReason" id="reasonDistributor" value="">
+            <label class="form-check-label" for="reasonDistributor">
+              I'm a manufacturer/distributor and am interested in selling PURTEQ non-toxic products to my customers
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactReason" id="reasonSpeakToRep" value="">
+            <label class="form-check-label" for="reasonSpeakToRep">
+              I'd like to speak with a PURTEQ representative
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactReason" id="reasonOther" value="">
+            <label class="form-check-label" for="reasonOther">
+              Other
+            </label>
+          </div>
+          <div class="otherReasonDetails collapse ms-4 mt-2">      
+            
+            <textarea
+              rows="10"
+              
+              id="ContactForm-body"
+              class="form-control"
+              name="contact[body]"
+              placeholder="{{ 'templates.contact.form.comment' | t }}"
+            >
+              {{- form.body -}}
+            </textarea>
+          </div>
+        </div>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="contactReason" id="reasonCleaningProfessional" value="">
-        <label class="form-check-label" for="reasonCleaningProfessional">
-          I'm a cleaning professional and would like to use PURTEQ non-toxic products for my business
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="contactReason" id="reasonDistributor" value="">
-        <label class="form-check-label" for="reasonDistributor">
-          I'm a manufacturer/distributor and am interested in selling PURTEQ non-toxic products to my customers
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="contactReason" id="reasonSpeakToRep" value="">
-        <label class="form-check-label" for="reasonSpeakToRep">
-          I'd like to speak with a PURTEQ representative
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="contactReason" id="reasonOther" value="">
-        <label class="form-check-label" for="reasonOther">
-          Other
-        </label>
-      </div>
-
-
-      <div class="otherReasonDetails collapse">      
-        <label class="form-label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-      <textarea
-        rows="10"
-        
-        id="ContactForm-body"
-        class="form-control"
-        name="contact[body]"
-        placeholder="{{ 'templates.contact.form.comment' | t }}"
-      >
-        {{- form.body -}}
-      </textarea>
-
-      </div>
+      
 
 
     </div>

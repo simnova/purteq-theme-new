@@ -15,7 +15,7 @@
   
     <div data-address>
       <button
-        type="button"
+        
         aria-expanded="false"
         aria-controls="AddAddress"
       >
@@ -107,7 +107,7 @@
           {%- endif -%}
           {{ address | format_address }}
           <button
-            type="button"
+            
             id="EditFormButton_{{ address.id }}"
             aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
             aria-controls="EditAddress_{{ address.id }}"
@@ -117,7 +117,7 @@
             {{ 'customer.addresses.edit' | t }}
           </button>
           <button
-            type="button"
+            
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
             data-target="{{ address.url }}"
             data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"

@@ -1,23 +1,31 @@
 <div class="container">
-  <ul class="nav mb-3" id="myTab" role="tablist">
-    {%- for block in section.blocks -%}
-      <li class="nav-item" role="presentation">
-        <a class="nav-link {% if forloop.first %}active{% endif %}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab{{ forloop.index }}" type="button" role="tab">{{ block.settings.title | escape }}</a>
-      </li>
-    {%- endfor -%}
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    {%- for block in section.blocks -%}
-      <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="tab{{ forloop.index }}" role="tabpanel" aria-labelledby="home-tab">
-        <div>
-          <ul>
-            {% assign paragraphs = block.settings.content | strip_html | newline_to_br | strip_newlines | split: '<br />' %}
-            {% for paragraph in paragraphs %}<li>{{ paragraph }}</li>{% endfor %}
-          </ul>
-        </div>
+  <div class="row">
+    <div class="col-5 col-sm-6 col-md-12">
+      <ul class="nav mb-3" id="myTab" role="tablist">
+        {%- for block in section.blocks -%}
+          <li class="nav-item" role="presentation">
+            <a class="nav-link {% if forloop.first %}active{% endif %}" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab{{ forloop.index }}" role="tab">{{ block.settings.title | escape }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="col-7 col-sm-6 col-md-12">
+      <div class="tab-content" id="myTabContent">
+        {%- for block in section.blocks -%}
+          <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="tab{{ forloop.index }}" role="tabpanel" aria-labelledby="home-tab">
+            <div>
+              <ul>
+                {% assign paragraphs = block.settings.content | strip_html | newline_to_br | strip_newlines | split: '<br />' %}
+                {% for paragraph in paragraphs %}<li>{{ paragraph }}</li>{% endfor %}
+              </ul>
+            </div>
+          </div>
+        {%- endfor -%}
       </div>
-    {%- endfor -%}
+    </div>
   </div>
+
+  
 </div>
 
 

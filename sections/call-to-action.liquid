@@ -3,7 +3,7 @@
     <div class="col-12">
       <div id="cta-with-header" style="letter-spacing: 0.02rem; font-size: 1.2rem;line-height:2rem;color:#65665d;" class="text-center">
         {{ section.settings.text }}
-        <a href="{{section.settings.link.url}}" type="button" class="btn btn-success cta-button mt-3">{{ section.settings.button-label | escape }}</a>
+        <a href="{{section.settings.link.url}}" class="btn btn-success cta-button mt-3">{{ section.settings.button-label | escape }}</a>
       </div>
     </div>
   </div>
@@ -13,7 +13,8 @@
 {% stylesheet %}
   #cta-with-header .cta-button {
     text-transform:uppercase;
-    padding: .8rem 7rem;
+    padding: .8rem 0;
+    min-width: 400px;
     background-color: #76bc21;
     border-color:#76bc21;
     font-weight: 500;

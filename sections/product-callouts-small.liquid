@@ -7,23 +7,29 @@
       <div class="container">
           <div class="row">
           {%- for block in section.blocks -%}
-              <div class="col-xs-12 col-md-3 product-item">
-                <div class="card border-0">
-                  <div>
-                    <h5 class="header">{{ block.settings.header | escape}}</h5>
-                    {%- if block.settings.image != blank -%}
-                      <a href="{{block.settings.link.url}}">
-                        {{ block.settings.image | img_url: '400x400', scale: 2 | img_tag: block.settings.image.alt, 'card-img-top product-image img-fluid' }}
-                      </a>
-                    {%- else -%}
-                      {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' | class: 'card-img-top' }}
-                    {%- endif -%}
+              <div class="col-sm-6 col-lg-3 product-item">
+                <div class="row">
+                  <div class="col-4 col-sm-12">
+                    <div class="card border-0">
+                      <div>
+                        <h5 class="header">{{ block.settings.header | escape}}</h5>
+                        {%- if block.settings.image != blank -%}
+                          <a href="{{block.settings.link.url}}">
+                            {{ block.settings.image | img_url: '400x400', scale: 2 | img_tag: block.settings.image.alt, 'card-img-top product-image img-fluid' }}
+                          </a>
+                        {%- else -%}
+                          {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' | class: 'card-img-top' }}
+                        {%- endif -%}
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body" >
-                  <h5 class="card-title">{{ block.settings.title | escape}}<sup>TM</sup></h5>
-                  <div class="card-text" style="color:#65665d;line-height:1.5rem;">
-                    {{ block.settings.details}}
+                  <div class="col-8 col-sm-12">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ block.settings.title | escape}}<sup>TM</sup></h5>
+                      <div class="card-text" style="color:#65665d;line-height:1.5rem;">
+                        {{ block.settings.details}}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
