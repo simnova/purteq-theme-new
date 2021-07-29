@@ -1,13 +1,16 @@
 <div class="navbar navbar-expand-lg fixed-top continer top-nav">
     <div class="content-body-wrapper container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="{{'navigation-purteq-logo.svg'|asset_url}}" alt="" height="106" class="d-inline-block align-top logo">
+        <img src="{{'navigation-purteq-logo.svg'|asset_url}}" alt="" class="d-inline-block align-top logo">
       </a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        
+      </button>
+      <button class="btn float-end d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+          <i class="bi bi-list fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
       </button>
       
-
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -56,6 +59,51 @@
 
   </div>
 </div>
+<div class="offcanvas offcanvas-start w-50 side-nav" tabindex="-1" id="offcanvas">
+  <div class="offcanvas-header">
+   
+    <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">&nbsp;</h6>
+   
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body px-0">
+    <ul class="nav flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+      {% for link in linklists.main-menu.links %}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if linklists[child_list_handle].links != blank %}
+          <li class="navbar-item">
+            <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              [{% for childlink in linklists[child_list_handle].links %}
+              <li><a href="{{ childlink.url }}" class="dropdown-item">{{ childlink.title | escape }}</a></li>
+            {% endfor %}]
+            </ul>
+        </li>
+
+        {% else %}
+          <li class="navbar-item">
+            <a href="{{ link.url }}" class="nav-link  {% if link.active %}active{% endif %}">{{ link.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+        <li class="navbar-item">
+          <a href="/account" class="nav-link">account</a>
+        </li>
+        <li class="navbar-item"></li>
+          {{ 'log out'  | customer_logout_link }}
+        </li>
+        {% else %}
+        <li class="navbar-item">
+          <a href="{{ customer_login_link.url }}" class="nav-link {% if customer_login_link.active %}active{% endif %}">Log In</a>
+        </li>
+        {% endif %}
+      {% endif %}
+       
+    </ul>
+</div>
+</div>
 
 {% style %}
   @font-face {
@@ -73,8 +121,9 @@
   
   .navbar img.logo{
     margin: -1rem 0 -1.5rem 0;
+    height: 106px;
   }
-
+  
   .top-nav {
     min-height:107px;
     width:100%;
@@ -84,26 +133,42 @@
     font-weight: 500; 
     font-style: normal;
   }
-
-  .top-nav .nav-link {
+  @media (max-width: 992px) {
+    .top-nav {
+      min-height:inherit;
+      padding:0;
+    }
+    .navbar img.logo {
+      height: 80px;
+    }
+  }
+  .top-nav .nav-link, .side-nav .nav-link  {
     padding: 6px 12px;
     text-transform:uppercase;
     font-size: 1.1rem;
     margin: 0 0 0 16px;
   }
 
-  .top-nav .nav-link:link, .nav-link:visited, .nav-link:active {
+  .top-nav .nav-link:link,
+  .top-nav .nav-link:visited,
+  .top-nav .nav-link:active,
+  .side-nav .nav-link:link,
+  .side-nav .nav-link:visited,
+  .side-nav .nav-link:active,
+  {
     text-decoration: none;
     color:#65665d;
     
   }
 
-  .top-nav .nav-link:hover {
+  .top-nav .nav-link:hover,
+  .side-nav .nav-link:hover {
     color: white !important;
     background-color: #0069A7;
   }
 
-  .top-nav .nav-link.active {
+  .top-nav .nav-link.active,
+  .side-nav .nav-link.active  {
     text-decoration:underline;
     text-underline-offset: .1rem;
     text-decoration-thickness: .15rem;
