@@ -22,7 +22,7 @@
                 <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle {% if link.active %}active{% endif %}" id="navbarDropdown">{{ link.title }}</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   {% for childlink in link.links %}
-                  <li><a href="{{ childlink.url }}" class="dropdown-item">{{ childlink.title | escape }}</a></li>
+                  <li><a href="{{ childlink.url }}" class="nav-link">{{ childlink.title | escape }}</a></li>
                   {% endfor %}
                 </ul>
             </li>
@@ -43,7 +43,7 @@
             <li>
               <a href="/account" class="nav-link">account</a>
             </li>
-              {{ 'log out'  | customer_logout_link }}
+              {{ 'log out' | customer_logout_link }}
             {% else %}
             <li class="navbar-nav">
               <a href="{{ customer_login_link.url }}" class="nav-link {% if customer_login_link.active %}active{% endif %}">Log In</a>
@@ -133,7 +133,7 @@
     height: 106px;
   }
   
-  .top-nav {
+  .top-nav, .side-nav {
     min-height:107px;
     width:100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
@@ -158,6 +158,10 @@
     font-size: 1.1rem;
     
     color: var(--theme-color-body-text);
+  }
+
+  .top-nav .navbar-nav .dropdown-menu {
+    border-radius:0;
   }
 
   .top-nav .navbar-nav .nav-item:not(:last-child) {
