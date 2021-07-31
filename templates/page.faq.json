@@ -6,6 +6,12 @@
       "settings": {
       }
     },
+    "1627775130e0baa24c": {
+      "type": "page-header",
+      "settings": {
+        "title": "FREQUENTLY ASKED QUESTIONS"
+      }
+    },
     "1626333847f269a19a": {
       "type": "faq",
       "blocks": {
@@ -53,12 +59,13 @@
         "46e497de-cee9-4fc2-bd99-7595c64bc623"
       ],
       "settings": {
-        "title": "FREQUENTLY ASKED QUESTIONS"
+        "title": ""
       }
     }
   },
   "order": [
     "main",
+    "1627775130e0baa24c",
     "1626333847f269a19a"
   ]
 }
