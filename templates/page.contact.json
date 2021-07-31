@@ -11,10 +11,17 @@
       "settings": {
         "heading": "CONTACT US"
       }
+    },
+    "1627775178831159e2": {
+      "type": "page-header",
+      "settings": {
+        "title": "Contact Us"
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "1627775178831159e2"
   ]
 }
