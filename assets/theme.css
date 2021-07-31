@@ -1,18 +1,53 @@
+
+:root{
+  --theme-color-primary: rgb(0, 105, 167);
+  --theme-color-secondary: rgb(118, 188, 33);
+  --theme-color-body-heading: rgb(35,31,32);
+  --theme-color-body-text: rgb(101,102,92);
+
+  --theme-primary-heading-font-weight: 700;
+  --theme-secondary-heading-font-weight: 500;
+  --theme-body-font-weight: 400;
+}
+
 body {
   font-family: var(--font-stack-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-weight: var(--theme-body-font-weight);
+  color:var(--theme-color-body-text);
+  line-height:30px
 } 
 
+.page-heading {
+  letter-spacing: 0.07rem;
+  font-size: calc(1.5rem + .9vw); 
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  font-weight: var(--theme-primary-heading-font-weight);
+  text-transform: uppercase;
+  background-color: var(--theme-color-secondary);
+  border-color: var(--theme-color-secondary);
+}
+.btn-primary:hover {
+  font-weight: var(--theme-primary-heading-font-weight);
+  text-transform: uppercase;
+  background-color: var(--theme-color-primary);
+  border-color: var(--theme-color-primary);
+}
+
 .content-wrapper {
-  
   margin-left: auto;
   margin-right: auto;
-  
 }
 .content-section-wrapper {
   margin-top: 107px;
 }
+
 @media (max-width: 992px) {
   .content-section-wrapper {
     margin-top: 67px;
@@ -26,13 +61,11 @@ body {
 }
 
 .footer {
-  background-color:#65665d;
+  background-color:var(--theme-color-body-text);
   color: #ffffff;
   font-family: var(--font-stack-footer);
   font-size: .8rem;
 } 
-
-
 
 sup {
   top: -1em;

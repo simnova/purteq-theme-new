@@ -1,0 +1,26 @@
+<div class="container mb-5">
+  <div class="text-center" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">{{ section.settings.title }}</p>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Page Header",
+  "tag": "section",
+  "class": "page-header",
+  "settings": [{
+    "type": "text",
+    "id": "title",
+    "label": "Header"
+  }],
+  
+  "presets": [
+    {
+      "category": "Something",
+      "name":"Page Header"
+    }
+  ]
+}
+{% endschema %}

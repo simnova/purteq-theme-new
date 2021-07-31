@@ -1,9 +1,10 @@
 
 <div class="container">
-  <div class="image-block text-center mb-5" style="padding-top: 5vw;">
-    <p style="color: #0069a7; letter-spacing: 0.07rem;font-size: calc(1.5rem + .9vw); font-weight: 500;">{{ section.settings.heading | escape }}</p>
+  {%- if section.settings.title != blank -%}
+  <div class="text-center mb-4">
+    <p>{{ section.settings.title | escape }}</p>
   </div>
-
+  {%- endif -%}
   
   {%- form 'contact', id: 'ContactForm' -%}
     {%- if form.posted_successfully? -%}
@@ -126,6 +127,7 @@
       </button>
     </div>
   {%- endform -%}
+  * = Required Fields
 </div>
 
 <script>
@@ -152,10 +154,11 @@
 </script>
 
 {% style %}
+
 .contact-form label.form-label {
-  font-weight: 500;
-  color:#3c3c3c;
+  font-weight: var(--theme-primary-heading-font-weight);
 }
+
 .contact-form .form-control {
   background-color: #EEEEEE;
   border-radius: .35rem;
@@ -170,15 +173,13 @@
   text-transform:uppercase;
   font-weight:400;
 }
+
 .contact-form .submit-button {
   min-width: 10rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  background-color: #69b31d;
-  border-color: #69b31d;
 }
 
-    {% endstyle %}
+{% endstyle %}
+
 {% schema %}
 {
   "name": "Contact Form",
