@@ -35,25 +35,26 @@
 
 {% style %}
 .product-details  .nav-link {
-    color: #65665d;
-    font-weight: 700;
+    color: var(--theme-color-body-text);
+    font-weight: var(--theme-primary-heading-font-weight);
     text-transform: uppercase;
   }
   .product-details  .nav:first-child a {
     padding-left:0;
   }
   .product-details  .nav-link.active {
-    color: #0069a7;
+    color: var(--theme-color-primary);
   }
 
   .product-details .tab-content li {
     list-style-image: url({{ 'arrow.svg' | asset_url }});
-    font-size: .9rem;
+  /*  font-size: .9rem; */
     margin-bottom: .4rem;
   }
   
   .product-details .tab-content ul li::marker {
-    font-size: 1.5e
+    font-size: 1.5rem;
+  }
   
   {% endstyle %}
 
