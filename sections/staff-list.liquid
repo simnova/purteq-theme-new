@@ -13,10 +13,10 @@
         <div class="row">
           <div class="col">
             {%- if block.settings.title != blank -%}
-            <div class="title d-inline-block">{{ block.settings.title | escape}}</div>
+            <div class="title d-inline">{{ block.settings.title | escape}}</div>
             {%- endif -%}
             {%- if block.settings.role != blank -%}
-            <div class="role d-inline-block ms-3 ps-3">{{ block.settings.role | escape}}</div>
+            <div class="role d-inline ms-3 ps-3">{{ block.settings.role | escape}}</div>
             {%- endif -%}
           </div>
         </div>
