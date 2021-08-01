@@ -1,9 +1,9 @@
 {% assign videoId = section.settings.video_url | split: '?v=' %}
 
-<div class="container mb-5" style="margin-bottom:12rem">
+<div class="container mb-5">
 
-  <div class="text-center">
-    <p style="color: #0069a7; letter-spacing: 0.09rem;font-size: calc(2rem + .9vw); font-weight: 100;">{{ section.settings.title | escape }}</p>
+  <div class="text-center header">
+    {{ section.settings.title | escape }}
   </div>
 
  <div class="ratio ratio-16x9 video-player mt-4">
@@ -12,6 +12,13 @@
 
 </div>
 {% stylesheet %}
+  .video-player .header {
+      color: #0c5fa1;
+      font-weight:500;
+      font-size: min(calc(1.2rem + .9vw), 1.7rem);
+      margin-bottom: .7rem;
+     
+  }
   .video-player {
     box-shadow: 0 0 30px rgba(0,0,0, 40%);
   }
@@ -21,6 +28,7 @@
 {% schema %}
 {
   "name": "Video Player",
+  "class": "video-player",
   "settings": [
     {
       "type": "text",
