@@ -1,5 +1,5 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
-<div class="container" style="padding-top: 5vw;margin-bottom:5rem;">
+<div class="container mb-5" style="padding-top: 5vw;">
   <div class="row">
     <div class="col col-3 col-sm-4 col-lg-5">
       {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
@@ -29,11 +29,6 @@
     text-transform: uppercase;
   }
 
-  .product-section {
-    
-  }
-
- 
   .product-section .nav-link {
     color: var(--theme-color-primary);
     font-weight: var(--theme-primary-heading-font-weight);

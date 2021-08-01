@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mb-5">
   <div class="text-center mb-5">
     <p class="component-header">{{ section.settings.title | escape }}</p>
   </div>
@@ -46,6 +46,7 @@
 {% style %}
 
 .product-callouts-small .card-title {
+  font-weight: var(--theme-primary-heading-font-weight);
   text-align:center;
 }
 
@@ -61,7 +62,7 @@
   
 }
 .product-callouts-small .component-header {
-  font-weight: 700;
+  font-weight: var(--theme-primary-heading-font-weight);
   text-transform: uppercase;
 }
 .product-callouts-small .header {
