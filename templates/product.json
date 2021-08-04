@@ -27,7 +27,7 @@
         "e5c8c896-2b24-44e5-b7f1-46366518f8e6": {
           "type": "tab",
           "settings": {
-            "title": "Features and Benefits",
+            "title": "The Power of More Green, All Clean",
             "content": "<p>{{ product.metafields.my_fields.features_and_benefits_tab | metafield_tag }}<\/p>"
           }
         },
