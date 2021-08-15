@@ -79,7 +79,11 @@
             type="email"
             name="customer[email]"
             id="RegisterForm-email"
-            class="form-control {%- if form.errors contains 'email' -%} is-invalid{%- endif -%}"
+            {%- if form.errors contains 'email' -%} 
+            class="form-control is-invalid"
+            {%- else -%}
+            class="form-control"
+            {%- endif -%}
             {% if form.email %} value="{{ form.email }}"{% endif %}
             spellcheck="false"
             autocapitalize="off"
@@ -110,7 +114,11 @@
             name="customer[password]"
             id="RegisterForm-password"
             aria-required="true"
-            class="form-control {%- if form.errors contains 'password' -%} is-invalid{%- endif -%}"
+            {%- if form.errors contains 'password' -%} 
+            class="form-control is-invalid"
+            {%- else -%}
+            class="form-control"
+            {%- endif -%}
             {% if form.errors contains 'password' %}
               aria-invalid="true"
               aria-describedby="RegisterForm-password-error"
