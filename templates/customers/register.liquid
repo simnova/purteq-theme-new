@@ -26,9 +26,9 @@
             </svg>
             {{ 'templates.contact.form.error_heading' | t }}
           </h6>
-          <ul> 
+          <ul class="small"> 
             {%- for field in form.errors -%}
-              <li>
+              <li style="line-height: 20px;">
                 {%- if field == 'form' -%}
                   {{ form.errors.messages[field] }}
                 {%- else -%}
@@ -92,7 +92,7 @@
             placeholder="{{ 'customer.register.email' | t }}"
           >
           {%- if form.errors contains 'email' -%}
-            <span id="RegisterForm-email-error" class="form__message">
+            <span id="RegisterForm-email-error" class="invalid-feedback">
               <svg aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-error" />
               </svg>
@@ -118,7 +118,7 @@
             placeholder="{{ 'customer.register.password' | t }}"
           >
           {%- if form.errors contains 'password' -%}
-            <span id="RegisterForm-password-error" class="form__message">
+            <span id="RegisterForm-password-error" class="invalid-feedback">
               <svg aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-error" />
               </svg>
@@ -142,7 +142,8 @@
 
 .register-form svg {
   width: 1rem;
-  margin-right: 1rem;
+  margin-bottom: 3px;
+  margin-right: 3px;
   max-height:1rem;
 }
 
