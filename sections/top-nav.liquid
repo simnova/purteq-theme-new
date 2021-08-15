@@ -5,7 +5,7 @@
           <i class="bi bi-list fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
       </button>
       <a class="navbar-brand" href="/">
-        <img src="{{'navigation-purteq-logo.svg'|asset_url}}" alt="" class="d-inline-block align-top logo">
+        <img src="{{'navigation-purteq-logo.svg'|asset_url}}" alt="" class="d-inline-block align-top logo" loading="lazy">
       </a>
 
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,12 +42,12 @@
           {% if shop.customer_accounts_enabled %}
             {% if customer %}
             <li>
-              <a href="/account" class="nav-link">account</a>
+              <a href="{{ routes.account_url }}" class="nav-link">Account</a>
             </li>
               {{ 'log out' | customer_logout_link }}
             {% else %}
             <li class="navbar-nav">
-              <a href="{{ customer_login_link.url }}" class="nav-link {% if customer_login_link.active %}active{% endif %}">Log In</a>
+              <a href="{{ routes.account_login_url }}" class="nav-link">Log In</a>
             </li>
             {% endif %}
           {% endif %}
@@ -94,14 +94,14 @@
       {% if shop.customer_accounts_enabled %}
       {% if customer %}
         <li class="nav-item">
-          <a href="/account" class="nav-link">account</a>
+          <a href="{{ routes.account_url }}" class="nav-link">account</a>
         </li>
         <li class="nav-item"></li>
-          {{ 'log out'  | customer_logout_link }}
+          {{ 'log out' | customer_logout_link }}
         </li>
         {% else %}
         <li class="nav-item">
-          <a href="{{ customer_login_link.url }}" class="nav-link {% if customer_login_link.active %}active{% endif %}">Log In</a>
+          <a href="{{ routes.account_login_url}}" class="nav-link">Log In</a>
         </li>
         {% endif %}
       {% endif %}
