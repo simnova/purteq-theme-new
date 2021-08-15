@@ -1,4 +1,12 @@
 {
+  "general": {
+    "pagination": {
+      "label": "Pagination",
+      "page": "Page {{ number }}",
+      "next": "Next page",
+      "previous": "Previous page"
+    }
+  },
 	"accessibility": {
 		"skip_to_text": "Skip to content",
 		"skip_to_product_info": "Skip to product information",
