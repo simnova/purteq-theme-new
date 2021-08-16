@@ -215,7 +215,9 @@
                     </div>
                     <div>
                       <button class="btn btn-primary submit-button">{{ 'customer.addresses.update' | t }}</button>
-                      <button class="btn btn-light" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                      <button class="btn btn-light"
+                        data-bs-toggle="collapse" data-bs-target="#EditAddress_{{ address.id }}"
+                       type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                     </div>
                   {%- endform -%}
                 </div>
