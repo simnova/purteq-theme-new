@@ -123,9 +123,10 @@
                   </button>
                   <button
                     class="btn btn-warning submit-button"
+                    data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
                     aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                     data-target="{{ address.url }}"
-                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                    data-confirm-message=""
                     style="min-width:auto"
                   >
                     {{ 'customer.addresses.delete' | t }}
@@ -304,8 +305,45 @@
 {% endstyle %}
 
 
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"Delete Addresse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{ 'customer.addresses.delete_confirm' | t }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-warning">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   window.onload = () => {
+    
+    document.querySelectorAll('button[data-confirm-message]').forEach(button => {
+      element.addEventListener('click', _handleDeleteButtonClick);
+    })
+    const _handleDeleteButtonClick = ({ currentTarget }) => {
+      var myModal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'), {
+        keyboard: false
+      })
+      myModal.show()
+      myModal.getElementById('deleteButton').addEventListener('click', () => {
+        Shopify.postLink(currentTarget.dataset.target, {
+          parameters: { _method: 'delete' },
+        });
+      });
+
+ 
+    }
+
+
     if (Shopify && Shopify.CountryProvinceSelector) {
         // eslint-disable-next-line no-new
         new Shopify.CountryProvinceSelector('AddressCountryNew', 'AddressProvinceNew', {
