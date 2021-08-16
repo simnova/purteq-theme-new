@@ -13,17 +13,20 @@
           {{ 'customer.account.return' | t }}
         </a>
         <div>
-          <button
-            class="btn btn-primary"
-            aria-expanded="false"
-            aria-controls="AddAddress"
-            data-bs-toggle="collapse"
-            data-bs-target="#AddAddress"
-          >
-            {{ 'customer.addresses.add_new' | t }}
-          </button>
-          <div id="AddAddress"  class="collapse">
-            <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+          <div class="text-end mb-4">
+            <button
+              class="btn btn-primary"
+              aria-expanded="false"
+              aria-controls="AddAddress"
+              data-bs-toggle="collapse"
+              data-bs-target="#AddAddress"
+            >
+              {{ 'customer.addresses.add_new' | t }}
+            </button>
+          </div>
+          
+          <div id="AddAddress"  class="collapse mb-3">
+            <h3 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h3>
             {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
               <div class="mb-3">         
                 <label class="form-label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
@@ -90,7 +93,8 @@
               </div>
               <div class="text-end mt-3">
                 <button class="btn btn-primary submit-buttonm mr-3">{{ 'customer.addresses.add' | t }}</button>
-                <button class="btn btn-ligth" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                <button class="btn btn-ligth" data-bs-toggle="collapse"
+                data-bs-target="#AddAddress" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
               </div>
             {%- endform -%}
           </div>
