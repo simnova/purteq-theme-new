@@ -330,7 +330,7 @@
         keyboard: false
       })
       myModal.show()
-      myModal._element.getElementById('deleteButton').addEventListener('click', () => {
+      document.getElementById('deleteButton').addEventListener('click', () => {
         Shopify.postLink(currentTarget.dataset.target, {
           parameters: { _method: 'delete' },
         });
