@@ -123,7 +123,6 @@
                   </button>
                   <button
                     class="btn btn-warning submit-button"
-                    data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
                     aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                     data-target="{{ address.url }}"
                     data-confirm-message=""
@@ -327,7 +326,7 @@
   window.onload = () => {
     
     document.querySelectorAll('button[data-confirm-message]').forEach(button => {
-      element.addEventListener('click', _handleDeleteButtonClick);
+      button.addEventListener('click', _handleDeleteButtonClick);
     })
     const _handleDeleteButtonClick = ({ currentTarget }) => {
       var myModal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'), {
