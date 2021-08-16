@@ -8,16 +8,17 @@
 <div class="container customer-addresses">
   <div class="row">
     {%- paginate customer.addresses by 5 -%}
-      <div class="col col-md-4">
+      <div class="col col-md-6">
         <div class="card">
           <ul role="list-group list-group-flush">
             {%- for address in customer.addresses -%}
-              <li data-address>
+              <li class="list-group-item">
                 {%- if address == customer.default_address -%}
                   <h4>{{ 'customer.addresses.default' | t }}</h4>
                 {%- endif -%}
                 {{ address | format_address }}
                 <button
+                   data-bs-toggle="collapse" data-bs-target="#EditAddress_{{ address.id }}"
                   class="btn btn-primary submit-button"
                   id="EditFormButton_{{ address.id }}"
                   aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -35,7 +36,7 @@
                 >
                   {{ 'customer.addresses.delete' | t }}
                 </button>
-                <div id="EditAddress_{{ address.id }}">
+                <div id="EditAddress_{{ address.id }}" class="collapse">
                   <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
                   {%- form 'customer_address', address -%}
                     <div class="mb-3">               
@@ -167,7 +168,7 @@
           {%- endif -%}
         {%- endif -%}
       </div>
-      <div class="col col-md-8">
+      <div class="col col-md-6">
         <a href="{{ routes.account_url }}">
           {{ 'customer.account.return' | t }}
         </a>
