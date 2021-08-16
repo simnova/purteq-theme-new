@@ -59,7 +59,7 @@
                 name="address[country]"
                 data-default="{{ form.country }}"
                 autocomplete="country"
-                class="form-control"
+                class="form-select"
               >
                 {{ all_country_option_tags }}
               </select>
@@ -72,7 +72,7 @@
             <label class="form-label" for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
             <div class="select">
               <select
-                class="form-control"
+                class="form-select"
                 id="AddressProvinceNew"
                 name="address[province]"
                 data-default="{{ form.province }}"
@@ -97,8 +97,8 @@
             {{ form.set_as_default_checkbox }}
           </div>
           <div>
-            <button>{{ 'customer.addresses.add' | t }}</button>
-            <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+            <button class="btn btn-primary submit-button">{{ 'customer.addresses.add' | t }}</button>
+            <button class="btn btn-ligth" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
           </div>
         {%- endform -%}
       </div>
@@ -168,7 +168,7 @@
                     data-default="{{ form.country }}"
                     data-form-id="{{ form.id }}"
                     autocomplete="country"
-                    class="form-control"
+                    class="form-select"
                   >
                     {{ all_country_option_tags }}
                   </select>
@@ -187,7 +187,7 @@
                     name="address[province]"
                     data-default="{{ form.province }}"
                     autocomplete="address-level1"
-                    class="form-control"
+                    class="form-select"
                   >
                   </select>
                   <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
