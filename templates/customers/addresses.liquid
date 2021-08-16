@@ -66,9 +66,6 @@
               >
                 {{ all_country_option_tags }}
               </select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
             </div>
           </div>
           <div id="AddressProvinceContainerNew" style="display: none">
@@ -82,9 +79,6 @@
                 autocomplete="address-level1"
               >
               </select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
             </div>
           </div>
           <div class="mb-3">
@@ -207,10 +201,10 @@
                 <label class="form-label" for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
               </div>
               <div class="mb-3">
-                <label class="form-label" for="address_default_address_{{ form.id }}">
+                <label class="form-check-label" for="address_default_address_{{ form.id }}">
                   {{ 'customer.addresses.set_default' | t }}
                 </label>
-                {{ form.set_as_default_checkbox }}
+                {{ form.set_as_default_checkbox, class: "form-check-input" }}
               </div>
               <div>
                 <button class="btn btn-primary submit-button">{{ 'customer.addresses.update' | t }}</button>
@@ -281,11 +275,13 @@
   max-height:1rem;
 }
 
-.customer-addresses label.form-label {
+.customer-addresses label.form-label, .customer-addresses label.form-check-label  {
   font-weight: var(--theme-primary-heading-font-weight);
 }
 
-.customer-addresses .form-control {
+
+
+.customer-addresses .form-control, .customer-addresses .form-select {
   background-color: #EEEEEE;
   border-radius: .35rem;
   border: none;
