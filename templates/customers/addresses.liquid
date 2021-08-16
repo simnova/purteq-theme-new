@@ -316,7 +316,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-warning">Delete</button>
+        <button type="button" id="deleteButton" class="btn btn-warning">Delete</button>
       </div>
     </div>
   </div>
@@ -330,7 +330,7 @@
         keyboard: false
       })
       myModal.show()
-      myModal.getElementById('deleteButton').addEventListener('click', () => {
+      myModal._element.getElementById('deleteButton').addEventListener('click', () => {
         Shopify.postLink(currentTarget.dataset.target, {
           parameters: { _method: 'delete' },
         });
