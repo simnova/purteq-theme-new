@@ -8,34 +8,127 @@
 <div class="container customer-addresses">
   <div class="row">
     {%- paginate customer.addresses by 5 -%}
-      <div class="col col-md-6">
+      <div class="col col-12">
+        <a href="{{ routes.account_url }}">
+          {{ 'customer.account.return' | t }}
+        </a>
+        <div>
+          <button
+            class="btn btn-primary"
+            aria-expanded="false"
+            aria-controls="AddAddress"
+            data-bs-toggle="collapse"
+            data-bs-target="#AddAddress"
+          >
+            {{ 'customer.addresses.add_new' | t }}
+          </button>
+          <div id="AddAddress"  class="collapse">
+            <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+            {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
+              <div class="mb-3">         
+                <label class="form-label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+                <input class="form-control" type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+              </div>
+              <div class="mb-3">          
+                <label class="form-label" for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+                <input class="form-control" type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
+              </div>
+              <div class="mb-3">          
+                <label class="form-label" for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
+                <input class="form-control" type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
+              </div>
+              <div class="mb-3">          
+                <label class="form-label" for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+                <input class="form-control" type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
+              </div>
+              <div class="mb-3">          
+                <label class="form-label" for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+                <input class="form-control" type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
+              </div>
+              <div class="mb-3">          
+                <label class="form-label" for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+                <input class="form-control" type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+                <div class="select">
+                  <select
+                    id="AddressCountryNew"
+                    name="address[country]"
+                    data-default="{{ form.country }}"
+                    autocomplete="country"
+                    class="form-select"
+                  >
+                    {{ all_country_option_tags }}
+                  </select>
+                </div>
+              </div>
+              <div id="AddressProvinceContainerNew" style="display: none">
+                <label class="form-label" for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+                <div class="select">
+                  <select
+                    class="form-select"
+                    id="AddressProvinceNew"
+                    name="address[province]"
+                    data-default="{{ form.province }}"
+                    autocomplete="address-level1"
+                  >
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+                <input class="form-control" type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+                <input class="form-control" type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
+                {{ form.set_as_default_checkbox }}
+              </div>
+              <div class="text-end mt-3">
+                <button class="btn btn-primary submit-buttonm mr-3">{{ 'customer.addresses.add' | t }}</button>
+                <button class="btn btn-ligth" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+              </div>
+            {%- endform -%}
+          </div>
+        </div>
+      </div>
+      <div class="col col-12">
         <div class="card">
-          <ul role="list-group list-group-flush">
+          <ul role="list-group list-group-flush" style="padding-left: initial;margin-bottom: initia;">
             {%- for address in customer.addresses -%}
               <li class="list-group-item">
                 {%- if address == customer.default_address -%}
-                  <h4>{{ 'customer.addresses.default' | t }}</h4>
+                  <h6>{{ 'customer.addresses.default' | t }}</h6>
                 {%- endif -%}
                 {{ address | format_address }}
-                <button
-                   data-bs-toggle="collapse" data-bs-target="#EditAddress_{{ address.id }}"
-                  class="btn btn-primary submit-button"
-                  id="EditFormButton_{{ address.id }}"
-                  aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
-                  aria-controls="EditAddress_{{ address.id }}"
-                  aria-expanded="false"
-                  data-address-id="{{ address.id }}"
-                >
-                  {{ 'customer.addresses.edit' | t }}
-                </button>
-                <button
-                  class="btn btn-warning submit-button"
-                  aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
-                  data-target="{{ address.url }}"
-                  data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
-                >
-                  {{ 'customer.addresses.delete' | t }}
-                </button>
+                <div class="text-end">
+                  <button
+                    data-bs-toggle="collapse" data-bs-target="#EditAddress_{{ address.id }}"
+                    class="btn btn-primary submit-button"
+                    id="EditFormButton_{{ address.id }}"
+                    aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                    aria-controls="EditAddress_{{ address.id }}"
+                    aria-expanded="false"
+                    data-address-id="{{ address.id }}"
+                    style="min-width:auto"
+                  >
+                    {{ 'customer.addresses.edit' | t }}
+                  </button>
+                  <button
+                    class="btn btn-warning submit-button"
+                    aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                    data-target="{{ address.url }}"
+                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                    style="min-width:auto"
+                  >
+                    {{ 'customer.addresses.delete' | t }}
+                  </button>
+                </div>
+                
                 <div id="EditAddress_{{ address.id }}" class="collapse">
                   <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
                   {%- form 'customer_address', address -%}
@@ -168,94 +261,7 @@
           {%- endif -%}
         {%- endif -%}
       </div>
-      <div class="col col-md-6">
-        <a href="{{ routes.account_url }}">
-          {{ 'customer.account.return' | t }}
-        </a>
-        <div>
-          <button
-            class="btn btn-primary"
-            aria-expanded="false"
-            aria-controls="AddAddress"
-            data-bs-toggle="collapse"
-            data-bs-target="#AddAddress"
-          >
-            {{ 'customer.addresses.add_new' | t }}
-          </button>
-          <div id="AddAddress"  class="collapse">
-            <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
-            {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-              <div class="mb-3">         
-                <label class="form-label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
-                <input class="form-control" type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
-              </div>
-              <div class="mb-3">          
-                <label class="form-label" for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
-                <input class="form-control" type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
-              </div>
-              <div class="mb-3">          
-                <label class="form-label" for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
-                <input class="form-control" type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
-              </div>
-              <div class="mb-3">          
-                <label class="form-label" for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
-                <input class="form-control" type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
-              </div>
-              <div class="mb-3">          
-                <label class="form-label" for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
-                <input class="form-control" type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
-              </div>
-              <div class="mb-3">          
-                <label class="form-label" for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
-                <input class="form-control" type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
-                <div class="select">
-                  <select
-                    id="AddressCountryNew"
-                    name="address[country]"
-                    data-default="{{ form.country }}"
-                    autocomplete="country"
-                    class="form-select"
-                  >
-                    {{ all_country_option_tags }}
-                  </select>
-                </div>
-              </div>
-              <div id="AddressProvinceContainerNew" style="display: none">
-                <label class="form-label" for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
-                <div class="select">
-                  <select
-                    class="form-select"
-                    id="AddressProvinceNew"
-                    name="address[province]"
-                    data-default="{{ form.province }}"
-                    autocomplete="address-level1"
-                  >
-                  </select>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
-                <input class="form-control" type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
-                <input class="form-control" type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
-                {{ form.set_as_default_checkbox }}
-              </div>
-              <div class="text-end mt-3">
-                <button class="btn btn-primary submit-buttonm mr-3">{{ 'customer.addresses.add' | t }}</button>
-                <button class="btn btn-ligth" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
-              </div>
-            {%- endform -%}
-          </div>
-        </div>
-      </div>
+
     {%- endpaginate -%}
   </div>
 </div>
