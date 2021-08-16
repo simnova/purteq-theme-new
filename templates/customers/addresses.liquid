@@ -324,10 +324,7 @@
 
 <script>
   window.onload = () => {
-    
-    document.querySelectorAll('button[data-confirm-message]').forEach(button => {
-      button.addEventListener('click', _handleDeleteButtonClick);
-    })
+
     const _handleDeleteButtonClick = ({ currentTarget }) => {
       var myModal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'), {
         keyboard: false
@@ -338,9 +335,12 @@
           parameters: { _method: 'delete' },
         });
       });
-
- 
     }
+
+        
+    document.querySelectorAll('button[data-confirm-message]').forEach(button => {
+      button.addEventListener('click', _handleDeleteButtonClick);
+    })
 
 
     if (Shopify && Shopify.CountryProvinceSelector) {
