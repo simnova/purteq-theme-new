@@ -1,29 +1,41 @@
+<div class="container mb-5">
+  <div class="text-center" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">Cart</p>
+  </div>
+</div>
+
+<div class="container">
+
 {% if cart.item_count > 0 %}
-  <h1>cart</h1>
+<div class="row">
+  <div class="col col-md-8 offset-md-2 text-center">
+    <div class="text-start">
   <form action="/cart" method="post" novalidate>
-    <table>
+    <table class="table">
       <thead>
-        <th colspan="2">Prod</th>
+        <th colspan="2">Product</th>
         <th>Price</th>
-        <th>Qty</th>
-        <th>total</th>
+        <th>Quantity</th>
+        <th>Total</th>
       </thead>
       <tbody>
         {% for item in cart.items %}
           <tr>
             <td>
               <a href="{{ item.url | within: collections.all }}">
-                <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
+                <img src="{{ item | img_url: 'small' }}" alt="{{ item.title | escape }}">
               </a>
             </td>
             <td>
-              <a href="{{ item.url }}">{{ item.product.title }}</a>
-              {{ item.variant.title }}
-              <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">remove</a>
+              <a href="{{ item.url }}">{{ item.product.title }}</a><br/>
+              
+                {{ item.variant.title }}<br/>
+              
+              <a class="mt-1 btn btn-sm btn-outline-danger" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">remove</a>
             </td>
             <td>{{ item.price | money }}</td>
             <td>
-              <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+              <input class="form-control" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
             </td>
             <td>
               {% if item.original_line_price != item.line_price %}{{ item.original_line_price | money }}{% endif %}
@@ -34,13 +46,68 @@
         {% endfor %}
       </tbody>
     </table>
-    <div>
+    <div class="text-end mt-3">
       <p>sub total : {{ cart.total_price | money }}</p>
-      <button type="submit" name="update">Update</button>
-      <button type="submit" name="checkout">Checkout</button>
+      <button class="btn btn-primary submit-button me-3" type="submit" name="update">Update</button>
+      <button class="btn btn-light submit-button" type="submit" name="checkout">Checkout</button>
     </div>
   </form>
+</div>
+  </div>
+</div>
 {% else %}
-  <h2>cart</h2>
-  Cart is empty
+  <div class="row">
+    <div class="col text-center">
+      Cart is empty
+    </div>
+
+  </div>
 {% endif %}
+</div>
+
+
+{% style %}
+
+hr.thin {
+  border-top: 1px solid var(--theme-color-secondary)
+}
+hr.medium {
+  border-top: 2px solid var(--theme-color-secondary)
+}
+
+.cart-section thead th {
+  color:var(--theme-color-body-text);
+  border-bottom-color: var(--theme-color-secondary) !important;
+}
+.cart-section label.form-label, .customer-addresses label.form-check-label  {
+  font-weight: var(--theme-primary-heading-font-weight);
+}
+
+.cart-section .form-control, .customer-addresses .form-select {
+  background-color: #EEEEEE;
+  border-radius: .35rem;
+  border: none;
+  color:black;
+  font-size: .9rem;
+  padding: .475rem .75rem;
+  font-weight:500;
+}
+.cart-section .form-control::placeholder {
+  color:#777777;
+  text-transform:uppercase;
+  font-weight:400;
+}
+
+.cart-section .submit-button {
+  min-width: 10rem;
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Cart",
+  "tag": "section",
+  "class": "cart-section"
+}
+{% endschema %}

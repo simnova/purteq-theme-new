@@ -160,20 +160,22 @@
     </div>  
   </div>
 
-  
+  <div class="row">
   {%- if shop.checkout.guest_login -%}
-    <div>
+    <div class="col-md-6 offset-md-3">
       <hr>
-      <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+      <h3>{{ 'customer.login_page.guest_title' | t }}</h3>
 
       {%- form 'guest_login' -%}
-        <button>
+      <div class="text-end">
+        <button "btn btn-primary submit-button me-3">
           {{ 'customer.login_page.guest_continue' | t }}
         </button>
+      </div>
       {%- endform -%}
     </div>
   {%- endif -%}
-
+  </div>
 
 
 
