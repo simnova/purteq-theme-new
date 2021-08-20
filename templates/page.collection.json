@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "header": {
+      "type": "page-header",
+      "settings": {
+        "title": "Collection"
+      }
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main"
+  ]
+}
