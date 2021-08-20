@@ -9,7 +9,7 @@
     "main": {
       "type": "collection",
       "settings": {
-        "featured_collection": "frontpage"
+        "featured_collection": "featured-items"
       }
     }
   },
