@@ -41,7 +41,7 @@
         "0881394e-f281-41a6-bb33-5ea49d09ca23": {
           "type": "tab",
           "settings": {
-            "title": "Product Information",
+            "title": "Product Details",
             "content": "<p>{{ product.metafields.my_fields.product_information | metafield_tag }}<\/p>"
           }
         }
