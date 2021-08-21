@@ -2,6 +2,8 @@
   "current": {
     "type_heading_font": "avenir_next_n7",
     "type_subheading_font": "avenir_next_n5",
+    "checkout_logo_image": "shopify:\/\/shop_images\/purteq-logo.png",
+    "checkout_logo_size": "small",
     "sections": {
       "top-nav": {
         "type": "top-nav",
