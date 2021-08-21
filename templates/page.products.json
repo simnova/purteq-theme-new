@@ -80,6 +80,12 @@
         "image": "shopify:\/\/shop_images\/purteq-logo.png",
         "max-width": 300
       }
+    },
+    "1629556150ae9eece7": {
+      "type": "collection",
+      "settings": {
+        "featured_collection": "all-products"
+      }
     }
   },
   "order": [
@@ -87,6 +93,7 @@
     "main",
     "16273176916eace3ac",
     "16273221395e0ba885",
-    "16273228381608aaf6"
+    "16273228381608aaf6",
+    "1629556150ae9eece7"
   ]
 }
