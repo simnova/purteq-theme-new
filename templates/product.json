@@ -34,7 +34,7 @@
         "83e9e139-b1c8-4f07-ba9f-92aacaf9a075": {
           "type": "tab",
           "settings": {
-            "title": "Customer Information",
+            "title": "Features And Benefits",
             "content": "<p>{{ product.metafields.my_fields.customer_info_tab | metafield_tag }}<\/p>"
           }
         },
