@@ -22,12 +22,14 @@
           <a href="{{ product.url | within: collection }}">
           <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}" class="card-img-top">
           </a>
-          <div class="card-title">
-            <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-          </div>
-          <div class="card-text">
-            {{ product.price | money }}
-            {% unless product.available %} <strong>sold out</strong>{% endunless %}
+          <div class="card-body">
+            <div class="card-title">
+              <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+            </div>
+            <div class="card-text">
+              {{ product.price | money }}
+              {% unless product.available %} <strong>sold out</strong>{% endunless %}
+            </div>
           </div>
         </div>
       </div>
