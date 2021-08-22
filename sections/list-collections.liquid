@@ -1,18 +1,38 @@
-Collections
+<div class="container">
+  <div class="text-center mb-5" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">Collections</p>
+  </div>
+
+
+
 {% for collection in collections %}
   {% unless collection.handle == 'frontpage' %}
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
-    <a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a>
+    <div class="row">
+      <div class="col col-12">
+        <h4><a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a></h4>
+      </div>
+    </div>
+    <div class="row">
     {% for product in collection.products limit:5 %}
       {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
-      <div>
-        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-        {{ product.price | money }}
-        {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-        <a href="{{ product.url | within: collection }}">
-          <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-        </a>
+
+      <div class="col col-2 col-md-4">
+        <div class="card">
+          <a href="{{ product.url | within: collection }}">
+          <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}" class="card-img-top">
+          </a>
+          <div class="card-title">
+            <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+          </div>
+          <div class="card-text">
+            {{ product.price | money }}
+            {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+          </div>
+        </div>
       </div>
     {% endfor %}
+    </div>
   {% endunless %}
 {% endfor %}
+</div>
