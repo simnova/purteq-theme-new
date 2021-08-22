@@ -6,14 +6,14 @@
 
 
 {% for collection in collections %}
-  {% unless collection.handle == 'frontpage' %}
+  {% unless collection.handle == 'all-products' %}
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
     <div class="row">
       <div class="col col-12">
-        <h4><a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a></h4>
+        <h4><a href="{{ collection.url }}">{{ collection_title }} &rsaquo;</a></h4>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-3">
     {% for product in collection.products limit:5 %}
       {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
 
