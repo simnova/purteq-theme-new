@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container list-collections">
   <div class="text-center mb-5" style="padding-top: 5vw;">
     <p class="page-heading" style="color: #0069a7;">Collections</p>
   </div>
@@ -10,10 +10,10 @@
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
     <div class="row">
       <div class="col col-12">
-        <h4><a href="{{ collection.url }}">{{ collection_title }} &rsaquo;</a></h4>
+        <h4><a href="{{ collection.url }}">{{ collection_title }}</a></h4>
       </div>
     </div>
-    <div class="row mb-3">
+    <div class="row mb-5">
     {% for product in collection.products limit:5 %}
       {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
 
@@ -27,7 +27,7 @@
           </div>
           <div class="card-text">
             {{ product.price | money }}
-            {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+            {% unless product.available %} <strong>sold out</strong>{% endunless %}
           </div>
         </div>
       </div>
@@ -36,3 +36,11 @@
   {% endunless %}
 {% endfor %}
 </div>
+
+
+{% stylesheet %}
+  .list-collections h4 a {
+    text-decoration: none;
+  }
+
+{% endstylesheet %}
