@@ -8,6 +8,7 @@
     },
     "main": {
       "type": "page-noheading",
+      "disabled": true,
       "settings": {
       }
     },
