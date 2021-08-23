@@ -89,7 +89,8 @@
           "settings": {
             "title": "DLETE",
             "header": "Active Odor Eliminator",
-            "details": "<ul>\n\t<li>Scientifically formulated to eliminate odors, not just cover them up <\/li>\n\t<li>Utilizes a combination of odor counteractant technologies and probiotics <\/li>\n\t<li>Degrades organic matter quickly, preventing odors at the source<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Scientifically formulated to eliminate odors, not just cover them up <\/li>\n\t<li>Utilizes odor counteractant technologies and probiotics <\/li>\n\t<li>Degrades organic matter, prevents odors at the source<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-DLETE_large_bf49fea7-8232-4dce-8c97-4b9812db6ff0.png",
             "link": ""
           }
         }
