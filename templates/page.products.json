@@ -79,7 +79,17 @@
           "settings": {
             "title": "FABRIK",
             "header": "Specialty Cleaning",
-            "details": "<ul>\n\t<li>Effective carpet and fabric cleaning solution offers superior cleaning, fiber conditioning, and long-lasting odor control <\/li>\n\t<li>Probiotic blend penetrates carpet fibers to degrade soils that cause odors and continues to clean after application  <\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Carpet and fabric cleaner offers superior cleaning, fiber conditioning &amp; odor control <\/li>\n\t<li>Probiotic blend penetrates carpet fibers to degrade soils that cause odors and continues to clean after application  <\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-FABRIK_large_9fae955d-1b47-4938-8c3d-bcfc888532d2.png",
+            "link": ""
+          }
+        },
+        "903e9451-d415-4ebc-b473-49b7a91eed78": {
+          "type": "product_detail",
+          "settings": {
+            "title": "DLETE",
+            "header": "Active Odor Eliminator",
+            "details": "<ul>\n\t<li>Scientifically formulated to eliminate odors, not just cover them up <\/li>\n\t<li>Utilizes a combination of odor counteractant technologies and probiotics <\/li>\n\t<li>Degrades organic matter quickly, preventing odors at the source<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
             "link": ""
           }
         }
@@ -91,7 +101,8 @@
         "2a351339-0ec9-4afb-9762-90c284cf9371",
         "398f24ae-2cff-41a1-85f9-1a2ecfe82548",
         "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
-        "36243f97-50cd-4aa0-beff-638edfad274e"
+        "36243f97-50cd-4aa0-beff-638edfad274e",
+        "903e9451-d415-4ebc-b473-49b7a91eed78"
       ],
       "settings": {
         "title": "Our Approach to Clean"
