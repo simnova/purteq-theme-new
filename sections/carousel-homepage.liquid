@@ -154,9 +154,7 @@
     }
   }
 
-  .carousel-homepage .swiper-container .swiper-pagination {
-    margin-bottom: 6%;
-  }
+
 
   .carousel-homepage .swiper-slide {
     width: 100%;
@@ -207,13 +205,16 @@
     object-position: top;
     z-index: 0;
   }
+  .carousel-homepage .swiper-container .swiper-pagination {
+    top: min(60vw,640px);
+  }
   @media (max-width: 576px) { 
     .carousel-homepage .swiper-slide video {
       height: min(102vw,640px);
       width: auto;
     }
     .carousel-homepage .swiper-container .swiper-pagination {
-      margin-bottom: 13%;
+      height: min(102vw,640px);
     }
 
   }
