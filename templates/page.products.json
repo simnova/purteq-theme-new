@@ -63,6 +63,16 @@
             "image": "shopify:\/\/shop_images\/Product-Pages-KLARIFY_large_f776b604-9225-4c92-bf95-d337471569a6.png",
             "link": ""
           }
+        },
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c": {
+          "type": "product_detail",
+          "settings": {
+            "title": "FLOR",
+            "header": "Specialty Cleaning",
+            "details": "<ul>\n\t<li>Professional floor cleaner formulated to effectively clean a wide variety of industrial, institutional, and residential floor surfaces<\/li>\n\t<li>Immediate, results and ongoing biological cleaning action that continues working between applications<\/li>\n\t<li>Readily biodegradable components, safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-FLOR_large_81943235-fbb1-4f7d-933b-9af1c286502d.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -70,7 +80,8 @@
         "16273176916eace3ac-1",
         "16273176916eace3ac-2",
         "2a351339-0ec9-4afb-9762-90c284cf9371",
-        "398f24ae-2cff-41a1-85f9-1a2ecfe82548"
+        "398f24ae-2cff-41a1-85f9-1a2ecfe82548",
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c"
       ],
       "settings": {
         "title": "Our Approach to Clean"
