@@ -3,11 +3,12 @@
     "1627775234db1576db": {
       "type": "page-header",
       "settings": {
-        "title": "ALL Products"
+        "title": "OUR FAMILY OF Products"
       }
     },
     "main": {
       "type": "page-noheading",
+      "disabled": true,
       "settings": {
       }
     },
@@ -106,7 +107,7 @@
         "903e9451-d415-4ebc-b473-49b7a91eed78"
       ],
       "settings": {
-        "title": "Our Family of Products"
+        "title": ""
       }
     },
     "16273221395e0ba885": {
