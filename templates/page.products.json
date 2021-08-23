@@ -65,16 +65,6 @@
             "link": "shopify:\/\/products\/klarify"
           }
         },
-        "b92c9cb8-254c-4e94-ac63-9d195d682a5c": {
-          "type": "product_detail",
-          "settings": {
-            "title": "FLOR",
-            "header": "Active Floor Cleaner",
-            "details": "<ul>\n\t<li>Professional floor cleaner formulated to effectively clean a wide variety of floor surfaces<\/li>\n\t<li>Immediate, results and ongoing biological cleaning action that continues working between applications<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
-            "image": "shopify:\/\/shop_images\/Product-Pages-FLOR_large_81943235-fbb1-4f7d-933b-9af1c286502d.png",
-            "link": "shopify:\/\/products\/flor"
-          }
-        },
         "36243f97-50cd-4aa0-beff-638edfad274e": {
           "type": "product_detail",
           "settings": {
@@ -83,6 +73,16 @@
             "details": "<ul>\n\t<li>Carpet and fabric cleaner offers superior cleaning, fiber conditioning &amp; odor control <\/li>\n\t<li>Probiotic blend penetrates carpet fibers to degrade soils that cause odors and continues to clean after application  <\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-FABRIK_large_9fae955d-1b47-4938-8c3d-bcfc888532d2.png",
             "link": "shopify:\/\/products\/fabrik"
+          }
+        },
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c": {
+          "type": "product_detail",
+          "settings": {
+            "title": "FLOR",
+            "header": "Active Floor Cleaner",
+            "details": "<ul>\n\t<li>Professional floor cleaner formulated to effectively clean a wide variety of floor surfaces<\/li>\n\t<li>Immediate, results and ongoing biological cleaning action that continues working between applications<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-FLOR_large_81943235-fbb1-4f7d-933b-9af1c286502d.png",
+            "link": "shopify:\/\/products\/flor"
           }
         },
         "903e9451-d415-4ebc-b473-49b7a91eed78": {
@@ -102,8 +102,8 @@
         "16273176916eace3ac-2",
         "2a351339-0ec9-4afb-9762-90c284cf9371",
         "398f24ae-2cff-41a1-85f9-1a2ecfe82548",
-        "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
         "36243f97-50cd-4aa0-beff-638edfad274e",
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
         "903e9451-d415-4ebc-b473-49b7a91eed78"
       ],
       "settings": {
