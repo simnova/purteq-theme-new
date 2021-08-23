@@ -10,7 +10,7 @@
         {{ section.settings.text }}
       </div>
       {%- if section.settings.image != blank -%}
-        <div style="max-width:{{ section.settings.max-width }}px;">
+        <div class="image-block" style="max-width:{{ section.settings.max-width }}px;">
           <img 
             src="{{ section.settings.image | img_url: '1070x' }}"
             alt="{{ section.settings.image.alt | escape }}"
@@ -24,6 +24,15 @@
 </div>
 
 {% style %}
+  .content-block .image-block {
+    min-width:50%;
+  }
+  @media (min-width: 992px) {
+    .content-block .image-block {
+      min-width:30%;
+    }
+  }
+
   .content-block {
     letter-spacing: 0.02rem; 
 
@@ -35,6 +44,7 @@
    font-size: min(calc(1.2rem + .9vw), 1.7rem);
    margin-bottom: .7rem;
   }
+  
   .content-block .body {
     color: #65665d;
     font-size: min(calc(.8rem + .9vw), 1.5rem);
