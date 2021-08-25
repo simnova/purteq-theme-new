@@ -172,6 +172,7 @@
     },
     "16273228381608aaf6": {
       "type": "image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/purteq-logo.png",
         "max-width": 300
