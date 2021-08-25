@@ -34,9 +34,9 @@
         "1629856174077e1a96-2": {
           "type": "product_detail",
           "settings": {
-            "title": "",
+            "title": "Specialty Cleaning",
             "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
-            "link": ""
+            "link": "shopify:\/\/collections\/specialty-cleaning"
           }
         }
       },
