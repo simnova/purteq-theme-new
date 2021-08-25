@@ -29,6 +29,7 @@
           "settings": {
             "title": "Multi-Purpose Cleaning",
             "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-cluster.png",
             "link": "shopify:\/\/collections\/general-cleaning"
           }
         },
@@ -37,6 +38,7 @@
           "settings": {
             "title": "Specialty Cleaning",
             "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/home-product-cluster.png",
             "link": "shopify:\/\/collections\/specialty-cleaning"
           }
         }
