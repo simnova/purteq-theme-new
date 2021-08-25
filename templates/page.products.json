@@ -20,7 +20,7 @@
           "settings": {
             "title": "CITRAPUR",
             "header": "Disinfecting Wipes",
-            "details": "<ul>\n\t<li>Easy-to-use cleaning and disinfecting wipes\n<\/li>\n\t<li>Kills 99.9% of germs, bacteria and viruses<\/li>\n\t<li>Effective non-toxic alternative that is safe for use in all facilities<\/li>\n<li>EPA-registered (34810-36-96548) List N disinfectant<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Simple one-step, no-rinse cleaning, and disinfection\n<\/li>\n\t<li>Effective non-toxic alternative, safe for use in all facilities<\/li>\n\n<li>EPA-registered on List N <\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-CITRAPUR_76fb7e7f-207d-41a4-9de2-778519e72707.png",
             "link": "shopify:\/\/products\/citrapur"
           }
@@ -30,7 +30,7 @@
           "settings": {
             "title": "FRESCH",
             "header": "Botanical Disinfectant",
-            "details": "<ul>\n\t<li>A non-toxic, botanical disinfectant that kills 99.9% of bacteria and viruses<\/li>\n\t<li>Cleans, disinfects and deodorizes<\/li>\n\t<li>EPA-registered (34810-25-96548) List N disinfectant<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>One Step-Triple Action: cleans, disinfects, and deodorizess<\/li>\n\t<li>Powerful non-toxic cleaner and disinfectant\nwith broad efficacy<\/li>\n\t<li>EPA-registered on List N<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-FRESCH.png",
             "link": "shopify:\/\/products\/fresch"
           }
@@ -40,7 +40,7 @@
           "settings": {
             "title": "PREVNT",
             "header": "Active Barrier Cleaner",
-            "details": "<ul>\n\t<li>Continually cleans surfaces and the air for up to 90 days<\/li>\n\t<li>Effective on a wide variety of everyday surfaces<\/li>\n<li>\nApplies a barrier coating on surfaces to prevent the return of Volatile Organic Compounds\n<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Photocatalytic TiO2 offers a simple way to keep surfaces\nclean and purify the air<\/li>\n\t<li>Fights continuous contamination by continually cleaning for up to 90 days<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-PREVNT.png",
             "link": "shopify:\/\/products\/prevnt"
           }
@@ -50,7 +50,7 @@
           "settings": {
             "title": "KLENZ",
             "header": "Multi-Purpose Cleaner",
-            "details": "<ul>\n<li>\nProfessional, multi-purpose cleaner safely removes dirt without harsh chemicals\n<\/li>\n\t<li>KLENZ is not like typical solvents, and won't damage or react with the cleaning surface!<\/li>\n\t<li>Non-toxic, dye &amp; fragrance free<\/li>\n<\/ul>",
+            "details": "<ul>\n<li>\nProfessional, multi-purpose cleaner safely removes dirt without harsh chemicals\n<\/li>\n\t<li>Powerful micro-cleaning action, suitable for most surfaces<\/li>\n\t<li>Non-toxic, dye &amp; fragrance free<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-KLENZ_large_982c3db6-d622-48d8-b536-fc4d44e2931f.png",
             "link": "shopify:\/\/products\/klenz"
           }
@@ -60,19 +60,9 @@
           "settings": {
             "title": "KLARIFY",
             "header": "Professional Glass Cleaner",
-            "details": "<ul>\n\t<li>Graphene-enhanced, cuts through dirt, dust, grease and grime with no hazing<\/li>\n\n\t<li>A powerful streak-free cleaning formula without any harsh chemicals or abrasives<\/li>\n\t<li>Ideal for all modern surfaces, from touch screens to tinted windows (ammonia-free, will not damage window tint)<\/li>\n<\/ul>",
-            "image": "shopify:\/\/shop_images\/Product-Pages-KLARIFY_large_f776b604-9225-4c92-bf95-d337471569a6.png",
+            "details": "<ul>\n\t<li>Graphene-enhanced to cut thru dirt, dust, grease and grime. No streaking or hazing!<\/li>\n\t<li>Ideal for surfaces from touch screens to tinted windows <\/li>\n\t<li>Gives a crisp, clean appearance with optical-grade clarity <\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-KLARIFY-concentrate.png",
             "link": "shopify:\/\/products\/klarify"
-          }
-        },
-        "b92c9cb8-254c-4e94-ac63-9d195d682a5c": {
-          "type": "product_detail",
-          "settings": {
-            "title": "FLOR",
-            "header": "Active Floor Cleaner",
-            "details": "<ul>\n\t<li>Professional floor cleaner formulated to effectively clean a wide variety of floor surfaces<\/li>\n\t<li>Immediate, results and ongoing biological cleaning action that continues working between applications<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
-            "image": "shopify:\/\/shop_images\/Product-Pages-FLOR_large_81943235-fbb1-4f7d-933b-9af1c286502d.png",
-            "link": "shopify:\/\/products\/flor"
           }
         },
         "36243f97-50cd-4aa0-beff-638edfad274e": {
@@ -80,9 +70,19 @@
           "settings": {
             "title": "FABRIK",
             "header": "Active Carpet Cleaner",
-            "details": "<ul>\n\t<li>Carpet and fabric cleaner offers superior cleaning, fiber conditioning &amp; odor control <\/li>\n\t<li>Probiotic blend penetrates carpet fibers to degrade soils that cause odors and continues to clean after application  <\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Superior cleaning, fiber conditioning &amp; odor control <\/li>\n\t<li>Probiotic blend penetrates carpet fibers to degrade soils   <\/li>\n\t<li>Safe for users and the environment. Dye &amp; fragrance free<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-FABRIK_large_9fae955d-1b47-4938-8c3d-bcfc888532d2.png",
             "link": "shopify:\/\/products\/fabrik"
+          }
+        },
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c": {
+          "type": "product_detail",
+          "settings": {
+            "title": "FLOR",
+            "header": "Active Floor Cleaner",
+            "details": "<ul>\n\t<li>Professional cleaner effective on a wide variety of floors<\/li>\n\t<li>Immediate results and ongoing biological cleaning action <\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "image": "shopify:\/\/shop_images\/Product-Pages-FLOR_large_81943235-fbb1-4f7d-933b-9af1c286502d.png",
+            "link": "shopify:\/\/products\/flor"
           }
         },
         "903e9451-d415-4ebc-b473-49b7a91eed78": {
@@ -90,7 +90,7 @@
           "settings": {
             "title": "DLETE",
             "header": "Active Odor Eliminator",
-            "details": "<ul>\n\t<li>Scientifically formulated to eliminate odors, not just cover them up <\/li>\n\t<li>Utilizes odor counteractant technologies and probiotics <\/li>\n\t<li>Degrades organic matter, prevents odors at the source<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>Scientifically formulated to eliminate odors, not just cover them up <\/li>\n\t<li>Degrades organic matter preventing odors at the source<\/li>\n\t<li>Safe for users and the environment, dye and fragrance free<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Product-Pages-DLETE_large_bf49fea7-8232-4dce-8c97-4b9812db6ff0.png",
             "link": "shopify:\/\/products\/dlete"
           }
@@ -102,12 +102,12 @@
         "16273176916eace3ac-2",
         "2a351339-0ec9-4afb-9762-90c284cf9371",
         "398f24ae-2cff-41a1-85f9-1a2ecfe82548",
-        "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
         "36243f97-50cd-4aa0-beff-638edfad274e",
+        "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
         "903e9451-d415-4ebc-b473-49b7a91eed78"
       ],
       "settings": {
-        "title": "the power of more green, all clean"
+        "title": ""
       }
     },
     "16273221395e0ba885": {
