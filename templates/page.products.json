@@ -12,8 +12,46 @@
       "settings": {
       }
     },
+    "1629856174077e1a96": {
+      "type": "product-callouts",
+      "blocks": {
+        "1629856174077e1a96-0": {
+          "type": "product_detail",
+          "settings": {
+            "title": "Disinfecting",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": "shopify:\/\/collections\/disinfecting"
+          }
+        },
+        "1629856174077e1a96-1": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
+        },
+        "1629856174077e1a96-2": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1629856174077e1a96-0",
+        "1629856174077e1a96-1",
+        "1629856174077e1a96-2"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "16273176916eace3ac": {
       "type": "product-callouts-small",
+      "disabled": true,
       "blocks": {
         "16273176916eace3ac-0": {
           "type": "product_detail",
@@ -94,6 +132,15 @@
             "image": "shopify:\/\/shop_images\/Product-Pages-DLETE_large_bf49fea7-8232-4dce-8c97-4b9812db6ff0.png",
             "link": "shopify:\/\/products\/dlete"
           }
+        },
+        "3aeaec4b-7e1a-471d-a368-37704c58f4c5": {
+          "type": "product_detail",
+          "settings": {
+            "title": "",
+            "header": "",
+            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -104,7 +151,8 @@
         "398f24ae-2cff-41a1-85f9-1a2ecfe82548",
         "36243f97-50cd-4aa0-beff-638edfad274e",
         "b92c9cb8-254c-4e94-ac63-9d195d682a5c",
-        "903e9451-d415-4ebc-b473-49b7a91eed78"
+        "903e9451-d415-4ebc-b473-49b7a91eed78",
+        "3aeaec4b-7e1a-471d-a368-37704c58f4c5"
       ],
       "settings": {
         "title": ""
@@ -136,6 +184,7 @@
   "order": [
     "1627775234db1576db",
     "main",
+    "1629856174077e1a96",
     "16273176916eace3ac",
     "16273221395e0ba885",
     "16273228381608aaf6",
