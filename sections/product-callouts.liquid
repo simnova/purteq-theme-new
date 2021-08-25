@@ -9,7 +9,8 @@
           <div class="row">
           {%- for block in section.blocks -%}
             
-              <div class="col-xs-12 col-md-4 product-item">
+              <div class="col-xs-12 col-md-4 product-item text-center">
+                <div class="d-inline-block text-start">
                 <div class="card border-0">
                   <div style="max-width: 200px;">
                     <a href="{{block.settings.link.url}}">
@@ -28,6 +29,7 @@
                   </div>
                 </div>
                 
+              </div>
               </div>
             
           {%- endfor -%}
