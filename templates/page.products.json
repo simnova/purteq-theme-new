@@ -178,6 +178,7 @@
     },
     "1629556150ae9eece7": {
       "type": "collection",
+      "disabled": true,
       "settings": {
         "featured_collection": "all-products"
       }
