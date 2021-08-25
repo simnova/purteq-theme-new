@@ -27,7 +27,7 @@
           "type": "product_detail",
           "settings": {
             "title": "Multi-Purpose Cleaning",
-            "details": "<ul>\n\t<li><strong>Feature 1<\/strong><\/li>\n\t<li>Feature 2<\/li>\n\t<li>Feature 3<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li><strong>No harsh chemicals<\/strong><\/li>\n\t<li>No residue <\/li>\n\t<li>Clean less frequently<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/home-product-cluster.png",
             "link": "shopify:\/\/collections\/general-cleaning"
           }
