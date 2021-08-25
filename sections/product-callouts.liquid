@@ -8,6 +8,7 @@
       <div class="container">
           <div class="row">
           {%- for block in section.blocks -%}
+            <a href="{{block.settings.link.url}}">
               <div class="col-xs-12 col-md-4 product-item">
                 <div class="card border-0">
                   <div style="max-width: 200px;">
@@ -26,6 +27,7 @@
                 </div>
                 
               </div>
+            </a>
           {%- endfor -%}
           </div>
       </div>

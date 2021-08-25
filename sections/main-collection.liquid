@@ -13,16 +13,26 @@
   
     <div class="row justify-content-md-center">
       {% for product in collection.products %}
-        <div class="col col-6 col-md-2">
-          <div class="card">
+        <div class="col col-xs-12 col-md-3">
+          <div class="card border-0">
             <a href="{{ product.url | within: collection }}">
               <img src="{{ product.featured_image.src | img_url: 'medium' }}" class="card-img-top" alt="{{ product.featured_image.alt | escape }}">
             </a>
             <div class="card-body">
-              <h5><a href="{{ product.url | within: collection }}">{{ product.title }}</a></h5>
+              <h5>{{ product.title }}<sup>TM</sup></h5>
+              <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More &amp; Buy</a>
               <p class="card-text">
+                <div class="text-end">
                 Starting At {{ product.price | money }}
+                </div>
                 {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+                
+                <div class="p-2">
+                <small >
+                {{ product.metafields.my_fields.product_subtitle }}
+                </small>
+                </div>
+
               </p>
             </div>
           </div>
@@ -57,7 +67,7 @@
 </div>
 
 {% stylesheet %}
-.main-collection a {
+.main-collection a, .main-collection a.btn, .main-collection a.btn:hover {
   text-decoration: none;
 }
 .main-collection a:hover {
