@@ -14,7 +14,7 @@
                       <div>
                         <h5 class="header">{{ block.settings.header | escape}}</h5>
                         {%- if block.settings.image != blank -%}
-                          <a href="{{block.settings.link.url}}">
+                          <a href="{{block.settings.link.url}}" class="text-reset text-decoration-none">
                             {{ block.settings.image | img_url: '400x400', scale: 2 | img_tag: block.settings.image.alt, 'card-img-top product-image img-fluid' }}
                           </a>
                         {%- else -%}
