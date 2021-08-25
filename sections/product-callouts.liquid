@@ -8,26 +8,28 @@
       <div class="container">
           <div class="row">
           {%- for block in section.blocks -%}
-            <a href="{{block.settings.link.url}}">
+            
               <div class="col-xs-12 col-md-4 product-item">
                 <div class="card border-0">
                   <div style="max-width: 200px;">
+                    <a href="{{block.settings.link.url}}">
                     {%- if block.settings.image != blank -%}
                       {{ block.settings.image | img_url: '360x360', scale: 2 | img_tag: block.settings.image.alt, 'card-img-top h-100' }}
                     {%- else -%}
                       {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' | class: 'card-img-top' }}
                     {%- endif -%}
+                    </a>
                   </div>
                 </div>
                 <div class="card-body" >
-                  <h5 class="card-title">{{ block.settings.title | escape}}<sup>TM</sup></h5>
+                  <h5 class="card-title">{{ block.settings.title | escape}}</h5>
                   <div class="card-text" style="color:#65665d;line-height:1.5rem;">
                     {{ block.settings.details}}
                   </div>
                 </div>
                 
               </div>
-            </a>
+            
           {%- endfor -%}
           </div>
       </div>
