@@ -18,7 +18,7 @@
           "type": "product_detail",
           "settings": {
             "title": "Disinfecting",
-            "details": "<ul>\n\t<li>FRESCH Botanical Disinfectant<\/li>\n\t<li>CITRAPUR Disinfecting Wipes<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>\n<strong>FRESCH <\/strong>Botanical Disinfectant<\/li>\n\t<li>CITRAPUR Disinfecting Wipes<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Disinfecting_Bottles_300w.png",
             "link": "shopify:\/\/collections\/disinfecting"
           }
