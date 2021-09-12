@@ -22,11 +22,12 @@
               <h5>{{ product.title }}<sup>TM</sup></h5>
               <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More &amp; Buy</a>
               <p class="card-text">
+                <!-- 
                 <div class="text-end">
                 Starting At {{ product.price | money }}
                 </div>
                 {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-                
+                -->
                 <div class="p-2">
                 <small >
                 {{ product.metafields.my_fields.product_subtitle }}

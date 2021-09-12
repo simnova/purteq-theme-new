@@ -20,10 +20,12 @@
             </a>
             <div class="card-body">
               <h5><a href="{{ product.url | within: collection }}">{{ product.title }}</a></h5>
+              <!--
               <p class="card-text">
-                Starting At {{ product.price | money }}
+                Starting At {{ product.price | money }} 
                 {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
               </p>
+              -->
             </div>
           </div>
         </div>
