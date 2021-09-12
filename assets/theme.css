@@ -20,6 +20,18 @@ body {
   line-height:30px
 } 
 
+a {
+  color: var(--theme-color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0,126,200);
+}
+a:visited {
+  color: rgb(0,94,152);
+}
+
+
 .page-heading {
   letter-spacing: 0.07rem;
   font-size: calc(1.5rem + .9vw); 
@@ -33,12 +45,16 @@ body {
   background-color: var(--theme-color-secondary);
   border-color: var(--theme-color-secondary);
 }
+a.btn-primary {
+  color: white;
+}
 .btn-primary:hover {
   font-weight: var(--theme-primary-heading-font-weight);
   text-transform: uppercase;
   background-color: var(--theme-color-primary);
   border-color: var(--theme-color-primary);
 }
+
 
 .content-wrapper {
   margin-left: auto;
