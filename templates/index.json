@@ -244,6 +244,13 @@
         "image": "shopify:\/\/shop_images\/purteq-logo.png",
         "max-width": 300
       }
+    },
+    "1631490155b24b1a6a": {
+      "type": "featured-quote",
+      "settings": {
+        "title": "Who Said It",
+        "text": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.fdsfsda\n<br>\n\nfdasadsf\nfadsadsf"
+      }
     }
   },
   "order": [
@@ -259,6 +266,7 @@
     "162605007907936423",
     "1627330388ee51cfe8",
     "162732492238cce663",
-    "1627325078c6d5230d"
+    "1627325078c6d5230d",
+    "1631490155b24b1a6a"
   ]
 }
