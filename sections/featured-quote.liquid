@@ -7,7 +7,7 @@
           <img src="{{'quotes-open.png' | asset_url}}" loading="lazy" style="max-height: min(10vw, 100px);margin-top:-45px; padding-right:20px;" alt="begin quote">
         </div>
         <div>
-          <div class="d-inline quote">{{ section.settings.text }}&nbsp;&nbsp;&nbsp;
+          <div class="d-inline quote">{{ section.settings.text | escape }}&nbsp;&nbsp;&nbsp;
         </div>
         <div class="d-inline">
           <img src="{{'quotes-close.png' | asset_url}}" loading="lazy"  style="position:absolute;z-index:-1;  max-height: min(10vw, 100px);margin-top:-10px;margin-left:-10px;"  alt="end quote">
@@ -54,13 +54,13 @@
       "type": "text",
       "id": "title",
       "label": "Attribution",
-      "default": "Who Said It."
+      "default": "Who Said It"
     },
     {
       "type": "richtext",
       "id": "text",
       "label": "Quotation",
-      "default": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store."
+	  "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
     }
   ],
   "presets": [
