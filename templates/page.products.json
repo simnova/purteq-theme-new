@@ -27,7 +27,7 @@
           "type": "product_detail",
           "settings": {
             "title": "Multi-Purpose Cleaning",
-            "details": "<ul>\n\t<li>KLENZ Multi-Purpose Cleaner<\/li>\n\t<li>PREVNT Active-Barrier Cleaner<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li><a href=\"\/collections\/general-cleaning\/products\/klenz\">KLENZ Multi-Purpose Cleaner<\/a><\/li>\n\t<li><a href=\"\/collections\/general-cleaning\/products\/prevnt\">PREVNT Active-Barrier Cleaner<\/a><\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Multi-Purpose-300w-02.png",
             "link": "shopify:\/\/collections\/general-cleaning"
           }
