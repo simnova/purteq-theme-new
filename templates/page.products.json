@@ -36,7 +36,7 @@
           "type": "product_detail",
           "settings": {
             "title": "Specialty Cleaning",
-            "details": "<ul>\n\t<li>KLARIFY Graphene-Enhanced <br>Glass Cleaner<\/li>\n\t<li>FABRIK Active Carpet and <br>Fabric Cleaner<\/li>\n\t<li>FLOR Active Floor Cleaner<\/li>\n\t<li>DLETE Active Odor Eliminator<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li><a href=\"\/collections\/specialty-cleaning\/products\/klarify\">KLARIFY Graphene-Enhanced <br>Glass Cleaner<\/a><\/li>\n\t<li>FABRIK Active Carpet and <br>Fabric Cleaner<\/li>\n\t<li>FLOR Active Floor Cleaner<\/li>\n\t<li>DLETE Active Odor Eliminator<\/li>\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Specialty-Cleaners-300w-02.png",
             "link": "shopify:\/\/collections\/specialty-cleaning"
           }
