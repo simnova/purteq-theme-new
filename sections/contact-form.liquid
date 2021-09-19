@@ -134,10 +134,10 @@
   document.addEventListener("DOMContentLoaded", function(event) { 
     var otherReasonElement = document.getElementById('reasonOther')
 
-    document.querySelectorAll('input[type="radio"][name="contactReason[contactReason]"]').forEach(function(el) {
+    document.querySelectorAll('input[type="radio"][name="contact[contactReason]"]').forEach(function(el) {
       console.log(el.id);
       el.addEventListener('change',function(){
-        var selectedElement = document.querySelector('input[type="radio"][name="contactReason[contactReason]"]:checked');
+        var selectedElement = document.querySelector('input[type="radio"][name="contact[contactReason]"]:checked');
         console.log(otherReasonElement.checked);
         if(otherReasonElement.checked){
           (bootstrap.Collapse.getOrCreateInstance(document.querySelector('.otherReasonDetails'),{toggle:false})).show();
