@@ -140,11 +140,13 @@
         var selectedElement = document.querySelector('input[type="radio"][name="contact[contactReason]"]:checked');
         console.log(otherReasonElement.checked);
         if(otherReasonElement.checked){
+          document.getElementById('ContactForm-body').value = '';
           (bootstrap.Collapse.getOrCreateInstance(document.querySelector('.otherReasonDetails'),{toggle:false})).show();
           document.getElementById('ContactForm-body').required = true;
         }else{
           (bootstrap.Collapse.getOrCreateInstance(document.querySelector('.otherReasonDetails'),{toggle:false})).hide();
           document.getElementById('ContactForm-body').required = false;
+          document.getElementById('ContactForm-body').value = document.querySelector('input[type="radio"][name="contact[contactReason]"]:checked').value;
         }
       });
     });
