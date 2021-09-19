@@ -22,6 +22,9 @@
             </a>
             <div class="card-body">
               <h5>{{ product.title }}<sup>TM</sup></h5>
+              <div class="product-subheading">
+                {{ product.metafields.my_fields.product_subheading }}
+              </div>
               <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More &amp; Buy</a>
               <p class="card-text">
                 <!-- 
@@ -70,12 +73,20 @@
 </div>
 
 {% stylesheet %}
+
+.main-collection .product-subheading {
+  color: var(--theme-color-primary);
+  font-weight: var(--theme-primary-heading-font-weight);
+  text-transform: uppercase;
+}
 .main-collection a, .main-collection a.btn, .main-collection a.btn:hover {
   text-decoration: none;
 }
+
 .main-collection a:hover {
   text-decoration: underline;
 }
+
 {% endstylesheet %}
 
 {% schema %}
