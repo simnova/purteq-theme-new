@@ -51,7 +51,7 @@
   
   
     <div class="row">
-    {%- assign footer_linklist = block.settings.menu -%}
+    {%- assign footer_linklist = block.settings.footer -%}
     <ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
       {%- for link in linklists[footer_linklist].links -%}
         <li class="site-footer__linklist-item">
