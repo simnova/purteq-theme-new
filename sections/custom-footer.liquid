@@ -52,10 +52,10 @@
   
     <div class="row">
     {%- assign footer_linklist = section.settings.menu -%}
-    <ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
+    <ul class="list-inline">
       {%- for link in section.settings.menu.links -%}
-        <li class="site-footer__linklist-item">
-          <a href="{{ link.url }}"
+        <li class="list-inline-item">
+          <a href="{{ link.url }}" class="no-decoration nowrap"
             {% if link.current %} aria-current="page"{% endif %}
           >
             {{ link.title | escape }}
