@@ -1,6 +1,6 @@
 
 
-<div class="container text-center">
+<div class="container text-center custom-footer">
 
   <div class="row">
     <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
@@ -39,18 +39,7 @@
   </div>
 
 
-
-  
-  <div class="row">
-    <div class="col-12 text-center">
-      <div class="my-5">
-        <p style="letter-spacing: .012rem;">Copyright &copy; {{ 'now' | date: '%Y' }}, PURTEQ<sup style="top:-.2rem">&reg;</sup>, Inc. All Rights Reserved.</p>
-      </div>
-    </div>
-  </div>
-  
-  
-    <div class="row">
+  <div class="row mt-5">
     {%- assign footer_linklist = section.settings.menu -%}
     <ul class="list-inline">
       {%- for link in section.settings.menu.links -%}
@@ -64,10 +53,25 @@
       {%- endfor -%}
     </ul>
   </div>
+
+  
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="mb-5">
+        <p style="letter-spacing: .012rem;">Copyright &copy; {{ 'now' | date: '%Y' }}, PURTEQ<sup style="top:-.2rem">&reg;</sup>, Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  
+  
   
 </div>
 
 {% stylesheet %}
+
+.custom-footer .list-inline li:after{content:'|'; margin:0 10px;}
+.custom-footer .list-inline li:last-child:after {content: '';}
+
 a.no-decoration,
 a.no-decoration:hover,
 a.no-decoration:focus,
