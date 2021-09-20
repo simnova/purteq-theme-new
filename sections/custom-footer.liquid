@@ -48,8 +48,9 @@
       </div>
     </div>
   </div>
-
-  <div class="row">
+  
+  
+    <div class="row">
     {%- assign footer_linklist = block.settings.menu -%}
     <ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
       {%- for link in linklists[footer_linklist].links -%}
@@ -79,7 +80,6 @@ a.no-decoration:visited {
 {% endstylesheet %}
 
 
-
 {% schema %}
 {
   "name": "Footer",
@@ -88,7 +88,7 @@ a.no-decoration:visited {
     {
       "type": "link_list",
       "id": "menu",
-      "default": "footer-links",
+      "default": "footer",
       "label": "Footer Links"
     }
     
