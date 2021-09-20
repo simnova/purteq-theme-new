@@ -1,9 +1,10 @@
-<div class="container">
-  <div class="text-center mb-4">
-    <p>Search</p>
+<div class="container mb-5">
+  <div class="text-center" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">Search</p>
   </div>
+</div>
 
-  
+<div class="container">
 {% paginate search.results by 10 %}
   <form action="/search" method="get" role="search">
     <input type="search" name="q" value="{{ search.terms | escape }}">
@@ -12,13 +13,23 @@
 
   {% if search.performed %}
     {% for item in search.results %}
+  	<div class="card mb-3">
+      <div class="row g-0">
       {% if item.featured_image %}
+      	<div class="col-md-2">
         <a href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
           {{ item.featured_image.src | img_url: 'medium' | img_tag: item.featured_image.alt }}
         </a>
+        </div>
       {% endif %}
-      <h5>{{ item.title | link_to: item.url }}</h5>
-      <p>{{ item.content | strip_html | truncatewords: 50 }}</p>
+        <div class="col-md-10">
+          <div class="card-body">
+	        <h5 class="card-title">{{ item.title | link_to: item.url }}</h5>
+   	     	<p class="card-text">{{ item.content | strip_html | truncatewords: 50 }}</p>
+          </div>
+        </div>
+      </div>
+  	</div>
     {% else %}
       no results
     {% endfor %}
