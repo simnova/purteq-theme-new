@@ -13,8 +13,8 @@
     </div>
   </div>
 
-  <div class="container">
-    <div>
+  <div class="row">
+    <div class="col col-md-8">
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
       {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
@@ -258,7 +258,7 @@
         </tfoot>
       </table>
     </div>
-    <div>
+    <div class="col col-md-4">
       <div>
         <h2>{{ 'customer.order.billing_address' | t }}</h2>
         <p>
