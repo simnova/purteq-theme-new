@@ -48,6 +48,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    {%- assign footer_linklist = block.settings.menu -%}
+    <ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
+      {%- for link in linklists[footer_linklist].links -%}
+        <li class="site-footer__linklist-item">
+          <a href="{{ link.url }}"
+            {% if link.current %} aria-current="page"{% endif %}
+          >
+            {{ link.title | escape }}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
   
 </div>
 
@@ -62,3 +77,21 @@ a.no-decoration:visited {
 }
 
 {% endstylesheet %}
+
+
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "footer-links",
+      "label": "Footer Links"
+    }
+    
+  ]
+}
+{% endschema %}
