@@ -22,6 +22,7 @@
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
+          <div class="table-responsive">
           <table role="table" class="table">
             <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
             <thead role="rowgroup">
@@ -61,6 +62,7 @@
               {%- endfor -%}
             </tbody>
           </table>
+      	  </div>
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
         {%- endif -%}
