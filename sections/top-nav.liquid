@@ -36,7 +36,7 @@
           {% endfor %}
           
           <li  class="nav-item">
-            <a href="/cart" class="nav-link">Cart</a>
+            <a href="/cart" class="nav-link {% if template == "cart" %}active{% endif %}">Cart</a>
           </li>
         
           {% if shop.customer_accounts_enabled %}
