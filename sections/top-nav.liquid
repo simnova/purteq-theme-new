@@ -23,7 +23,7 @@
                 <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle {% if link.active %}active{% endif %}" id="navbarDropdown">{{ link.title }}</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   {% for childlink in link.links %}
-                  <li><a href="{{ childlink.url }}" class="nav-link">{{ childlink.title | escape }}</a></li>
+                  <li><a href="{{ childlink.url }}" class="nav-link  {% if childlink.active %}active{% endif %}">{{ childlink.title | escape }}</a></li>
                   {% endfor %}
                 </ul>
             </li>
