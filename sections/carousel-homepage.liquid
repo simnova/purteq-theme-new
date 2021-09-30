@@ -53,9 +53,11 @@
 
     </div>
       <!-- Add Arrows -->
-    <div class="image-container">
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    <div class="button-container-center">
+      <div class="button-container-max">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
@@ -120,6 +122,12 @@
 </style>
 
 {% stylesheet %}
+  .button-container-center {
+text-align:center;
+}
+.button-container-max {
+	max-width:1024px
+}
   .carousel-homepage {
     margin-bottom: 2%;
   }
@@ -135,6 +143,7 @@
   .carousel-homepage .swiper-container {
     width: 100%;
     height: min(72vw,740px);
+	
   }
   @media (max-width: 576px) { 
     .carousel-homepage .swiper-container {
