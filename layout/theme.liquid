@@ -72,6 +72,19 @@
     {{ subheading_font | font_face: font_display: 'swap' }}
     {{ body_font | font_face: font_display: 'swap' }}
     {{ footer_font | font_face: font_display: 'swap' }}
+
+    div.shopify-policy__body ul li{
+      list-style: none;
+    }
+    div.shopify-policy__body ul li:before{
+      content: ' ';
+      background-image: url({{'faq-question-image.png'|asset_url}});
+      background-repeat: no-repeat;
+      background-position: 1px 4px;
+      background-size: 12px;
+      padding-right: 24px;
+    }
+    
   {% endstyle %}
 </head>
 <body class="d-flex flex-column h-100">
