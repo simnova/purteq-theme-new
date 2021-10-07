@@ -8,7 +8,7 @@
 {% paginate search.results by 10 %}
   <div class="row my-3">
     <div class="col-md-6 offset-md-3">
-      <form action="/search" method="get" role="search">
+      <form action="/search" method="get" role="search" class="row">
         <div class="col-auto">
           <input class="form-control" type="search" name="q" value="{{ search.terms | escape }}">
         </div>
