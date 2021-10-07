@@ -7,11 +7,11 @@
 <div class="container">
 {% paginate search.results by 10 %}
   <div class="row my-3">
-    <div class="col text-center">
-  <form action="/search" method="get" role="search">
-    <input type="search" name="q" value="{{ search.terms | escape }}">
-    <button type="submit">search</button>
-  </form>
+    <div class="col-md-6 offset-md-3">
+      <form action="/search" method="get" role="search">
+        <input class="form-control" type="search" name="q" value="{{ search.terms | escape }}">
+        <button type="submit" class="btn btn-primary submit-button">search</button>
+      </form>
     </div>
   </div>
 
