@@ -8,6 +8,7 @@
 {% paginate search.results by 10 %}
   <div class="row mt-3 mb-5">
     <div class="col-md-6 offset-md-3">
+      Search the PURTEQ website
       <form action="/search" method="get" role="search" class="row">
         <div class="col">
           <input class="form-control" type="search" name="q" value="{{ search.terms | escape }}">
