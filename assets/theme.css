@@ -100,15 +100,16 @@ div.shopify-policy__container {
   width: 100%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
+ 
+}
+div.shopify-policy__title {
+  padding-top: 5vw;
+  margin-bottom: 3rem;
   letter-spacing: .07rem;
   font-size: calc(1.5rem + .9vw);
   font-weight: 500;
   text-transform: uppercase;
   color: #0069a7;
-}
-div.shopify-policy__title {
-  padding-top: 5vw;
-  margin-bottom: 3rem;
 }
 div.shopify-policy__body h1 {
   font-size: calc(1.3rem + .6vw);
