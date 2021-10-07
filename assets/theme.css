@@ -96,4 +96,49 @@ ul {
 
 /* SHOPIFY POLICY PAGES */
 
-shopify-policy__container
+div.shopify-policy__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  letter-spacing: .07rem;
+  font-size: calc(1.5rem + .9vw);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0069a7;
+}
+div.shopify-policy__title {
+  padding-top: 5vw;
+  margin-bottom: 3rem;
+}
+div.shopify-policy__body h1 {
+  font-size: calc(1.3rem + .6vw);
+}
+div.shopify-policy__body h2 {
+  font-size: calc(1.275rem + .3vw);
+}
+@media(min-width: 1200px) {
+  div.shopify-policy__container {
+    max-width: 1140px;
+  }
+  div.shopify-policy__body h1 {
+    font-size: 1.75rem;
+  }
+  div.shopify-policy__body h2 {
+    font-size: 1.5rem;
+  }
+}
+@media(max-width: 992px) {
+  div.shopify-policy__container {
+    max-width: 960px;
+  }
+}
+@media(max-width: 768px) {
+  div.shopify-policy__container {
+    max-width: 720px;
+  }
+}
+@media(max-width: 576px) {
+  div.shopify-policy__container {
+    max-width: 540px;
+  }
+}
