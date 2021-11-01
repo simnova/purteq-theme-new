@@ -93,7 +93,7 @@
       "settings": {
         "title": "CTA Title",
         "text": "<p><a href=\"mailto:sales@purteq.com\" title=\"mailto:sales@purteq.com\"><span style=\"text-decoration:underline\">Email<\/span><\/a> or call us at 844-478-7837<\/p>",
-        "button-label": "Contact Us Now",
+        "button-label": "REACH OUT TODAY",
         "link": "shopify:\/\/pages\/contact"
       }
     },
