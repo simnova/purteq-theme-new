@@ -51,6 +51,7 @@
         },
         "4aeb6ea2-c37f-420f-9974-009a81831ac3": {
           "type": "staff_detail",
+          "disabled": true,
           "settings": {
             "title": "Chris Grayson",
             "role": "Creative Director",
