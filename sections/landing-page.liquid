@@ -1,10 +1,10 @@
 {%- if page.title != blank -%}
-<div class="container">
-  <div class="text-center mb-4">
-    <p>{{ page.title | escape }}</p>
+<div class="container mb-5">
+  <div class="text-center" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">{{ page.title | escape }}</p>
   </div>
 </div>
 {%- endif -%}
-<div class="container mb-4">
+<div class="container mb-5">
   {{ page.content }}
 </div>
