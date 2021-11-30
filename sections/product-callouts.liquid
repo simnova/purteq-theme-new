@@ -23,9 +23,9 @@
                   </div>
                 </div>
                 <div class="card-body" >
-                  <h4 class="card-title mb-3">{{ block.settings.title | escape}}</h4>
+                  
                   <div class="card-text" style="color:#65665d;line-height:1.5rem;">
-                    <a href="{{block.settings.link.url}}" class="btn btn-primary w-100 mb-2">Learn More</a>
+                    <a href="{{block.settings.link.url}}" class="btn btn-primary w-100 mb-2">{{ block.settings.title | escape}}</a>
                     {{ block.settings.details}}
                   </div>
                 </div>
