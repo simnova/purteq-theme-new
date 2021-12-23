@@ -1,6 +1,57 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
 <div class="container mb-5" style="padding-top: 5vw;">
   <div class="row">
+    
+    
+    {% assign variant_images = product.images %}
+
+    
+    <div class="col col-3 col-sm-4 col-lg-5">
+
+      <div class="carousel" id="productDetailImage" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="row">
+          <div class="col">
+        
+            <div class="carousel-inner d-none d-sm-block" >
+            {% assign carousel_count = 0 %}
+            {% for image in variant_images %}
+                <div class="carousel-item {% if carousel_count == 0 %} active {% endif %}">
+                  <img src="{{ image | image_url: width:800 }}" alt="{{ image.alt | escape }}" class="img-fluid" loading="lazy" />
+                </div>
+                {% assign carousel_count = carousel_count | plus: 1 %}
+            {% endfor %}
+            </div>
+          </div>
+
+
+          {% if variant_images.size > 1 %}
+            <div class="col order-xxl-first col-xxl-auto col-12">
+              <div class="product-image-slider carousel-indicators d-flex flex-xxl-column flex-column flex-sm-row">
+              {% assign image_count = 0 %}
+              {% for image in variant_images %}
+                <div class="product-image-item {% if image_count == 0 %} active {% endif %} d-md-inline-block d-xxl-block flex-fill p-1" data-bs-slide-to="{{ image_count}}" data-bs-target="#productDetailImage">
+                  <img src="{{ image | image_url: width: 200, crop: 'center' }}" alt="{{ product.title }}" class="img-fluid" loading="lazy"/>
+                </div>
+                {% assign image_count = image_count | plus: 1 %}
+              {% endfor %}
+              </div>
+            </div>
+            {% endif %}
+
+
+
+
+          
+        </div>
+      </div>     
+    </div>
+
+
+    <div class="col col-9 col-sm-8 col-lg-7">
+      <div class='product-description'>{{ product.description }}</div>
+
+      <!--
+faslksfdjfkladsj
     <div class="col col-3 col-sm-4 col-lg-5">
       {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
       {%- if featured_image -%}
@@ -9,10 +60,6 @@
         {{ 'collection-1' | placeholder_svg_tag: 'img-fluid' }}
       {%- endif -%}
     </div>
-    <div class="col col-9 col-sm-8 col-lg-7">
-      <div class='product-description'>{{ product.description }}</div>
-
-      <!--
       <button class="btn mt-5 mb-3 btn-primary">Login or Create Account</button>
       <div>An account is required to view pricing</div>
       -->
@@ -50,6 +97,43 @@
 </div>
 
 {% stylesheet %}
+  .product-image-slider.carousel-indicators {
+    position: relative;
+    display: inherit;
+    margin:0;
+  }
+  .product-image-slider.carousel-indicators .product-image-item  {
+    position: relative;
+    text-indent: 0px;
+    flex: none;
+    height: inherit;
+    border:1px;
+    margin: 0 0 3px 0;
+    display:block;
+    width: auto;
+  }
+  @media (min-width: 1200px) {
+    .product-image-slider.carousel-indicators .product-image-item  {
+      width: 75px;
+    }
+  }
+  @media (max-width: 576px) {
+    .product-image-slider.carousel-indicators .product-image-item  {
+      opacity: 1;
+    }
+    .product-image-slider.carousel-indicators .active {
+      border: none;
+    }
+  }
+  @media (min-width: 576px) {
+    .product-image-slider.carousel-indicators .active {
+      border: .5px solid var(--theme-color-primary); 
+    }
+  }
+  
+  #productDetailImage .img-fluid {
+    min-width: 100%;
+  }
 
   .product-section .product-description a {
     text-decoration: none;
