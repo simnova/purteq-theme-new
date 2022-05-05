@@ -49,7 +49,7 @@
               {% for variant in product.variants %}
                 {% if variant.available %}
                   <option value="{{ variant.id }}">
-                    {{ variant.title }} - {{ variant.price | money | strip_html }}
+                    {{ variant.title }} 
                   </option>
                 {% else %}
                   <option disabled="disabled">
@@ -59,13 +59,7 @@
               {% endfor %}
             </select>
           </div>
-          <div class="mb-3">
-            <label class="form-label" for="Quantity">Quantity</label>
-            <input class="form-control" type="number" id="Quantity" name="quantity" value="1" min="1">
-          </div>
-          <div class="mb-3 text-end">
-            <button class="btn btn-primary submit-button" type="submit" name="add" id="AddToCart">Add to cart</button>
-          </div>
+
         </form>
     </div>
   </div>
