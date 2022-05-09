@@ -8,6 +8,23 @@
 <a href="/blogs/articles/tagged/press-release">Press Releases</a><br/>
 <a href="/blogs/articles/tagged/video">Videos</a><br/>
 
+Tags:
+{% for tag in collection.tags %}
+  {{ tag | link_to_tag: tag }}
+{% endfor %}
+
+
+
+Add Tag:
+{% for tag in collection.tags %}
+  {{ tag | link_to_add_tag: tag }}
+{% endfor %}
+
+
+Remove Tag:
+{% for tag in collection.tags %}
+  {{ tag | link_to_remove_tag: tag }}
+{% endfor %}
 
 {% for article in blog.articles %}
   <div>
