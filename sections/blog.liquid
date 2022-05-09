@@ -28,6 +28,7 @@
 {% for article in blog.articles %}
   <div>
     <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+    {{ article.image.src | image_url: width: 200 }}
     {{ article.author }} @ {{ article.created_at }}
     <div>
       {% if article.excerpt.size > 0 %}
