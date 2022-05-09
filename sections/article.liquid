@@ -3,10 +3,16 @@
   {% assign number_of_comments = article.comments_count %}
 {% endif %}
 
-<div class="container">
-  <div class="text-center mb-4">
-    <p>{{ article.title | escape }}</p>
+<section class="page-header">
+<div class="container mb-5">
+  <div class="text-center" style="padding-top: 5vw;">
+    <p class="page-heading" style="color: #0069a7;">{{ article.title | escape }}</p>
   </div>
+</div>
+<section>  
+
+<div class="container">
+
 
   {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
   {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
