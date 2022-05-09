@@ -1,8 +1,17 @@
 {% paginate blog.articles by 5 %}
 
+
+<section class="page-header">
+  <div class="container mb-5">
+    <div class="text-center" style="padding-top: 5vw;">
+      <p class="page-heading" style="color: #0069a7;">{{ blog.title | escape }}</p>
+    </div>
+  </div>
+<section>  
+
 <div class="container">
 
-<h1>{{ blog.title }}</h1>
+
 
 
 
