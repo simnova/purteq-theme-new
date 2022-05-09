@@ -8,7 +8,7 @@
 
 <a href="/blogs/articles/">View All</a><br/>
 <h3>Tags:</h3>
-{% for tag in blog.tags %}
+{% for tag in blog.all_tags %}
   {{ tag | link_to_tag: tag }} |
 {% endfor %}
 
