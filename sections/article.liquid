@@ -3,10 +3,18 @@
   {% assign number_of_comments = article.comments_count %}
 {% endif %}
 
-<h1>{{ article.title }}</h1>
+<h1>Title: {{ article.title }}</h1>
 {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
 {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
 {{ article.author }} @ {{ article.created_at }}
+
+<br/>
+Tags: 
+{% for tag in article.tags %}
+    {{ tag }}
+{% endfor %}
+<br/>
+
 
 <div>{{ article.content }}</div>
 {% if blog.comments_enabled? %}
