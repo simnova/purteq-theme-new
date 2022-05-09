@@ -8,22 +8,23 @@
 <a href="/blogs/articles/tagged/press-release">Press Releases</a><br/>
 <a href="/blogs/articles/tagged/video">Videos</a><br/>
 
-Tags:
+
+<h3>Tags:</h3>
 {% for tag in blog.tags %}
-  {{ tag | link_to_tag: tag }}
+  {{ tag | link_to_tag: tag }} |
 {% endfor %}
 
 
 
-Add Tag:
+<h3>Add Tag:</h3>
 {% for tag in blog.tags %}
-  {{ tag | link_to_add_tag: tag }}
+  {{ tag | link_to_add_tag: tag }} | 
 {% endfor %}
 
 
-Remove Tag:
+<h3>Remove Tag:</h3>
 {% for tag in blog.tags %}
-  {{ tag | link_to_remove_tag: tag }}
+  {{ tag | link_to_remove_tag: tag }} |
 {% endfor %}
 
 {% for article in blog.articles %}
