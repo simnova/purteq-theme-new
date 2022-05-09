@@ -1,6 +1,14 @@
 {% paginate blog.articles by 5 %}
 
 <h1>{{ blog.title }}</h1>
+
+
+<a href="./tagged/articles">Articles</a><br/>
+<a href="./tagged/white-paper">White Papers</a><br/>
+<a href="./tagged/press-releases">Press Releases</a><br/>
+<a href="./tagged/videos">Videos</a><br/>
+
+
 {% for article in blog.articles %}
   <div>
     <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
