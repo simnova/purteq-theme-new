@@ -20,7 +20,7 @@
 <a href="/blogs/articles/">View All</a> |
 
 {% for tag in blog.all_tags %}
-  {{ tag | link_to_tag: tag }} |
+  {{ tag | link_to_tag: tag }} ({{ tag.total_count }}) |
 {% endfor %}
 
 
