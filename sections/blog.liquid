@@ -17,14 +17,18 @@
 
 
 
-<a href="/blogs/articles/">View All</a> |
+<a href="/blogs/articles/ class="btn {%unless current_tags%} btn-primary {% endunless %}">View All</a>
 
 {% for tag in blog.all_tags %}
+  
+  
+  
   {% if current_tags contains tag %}
   <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn btn-primary">{{ tag }}</a>
    {% else %}
   <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn">{{ tag }}</a>
    {% endif %}
+  
 
 ({{ tag.total_count }})
 
