@@ -36,7 +36,7 @@
           <div class="d-inline-block mb-2">
             
           {% for tag in article.tags %}
-            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn btn-primary">{{ tag }}</a>
+            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn btn-sm btn-primary">{{ tag }}</a>
           
         {% endfor %}
 
