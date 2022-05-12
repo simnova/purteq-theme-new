@@ -17,16 +17,16 @@
 
 
 
-<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn filter {%unless current_tags%} btn-primary {% endunless %}">View All</a>
+<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn filter {%unless current_tags%} selected {% endunless %}">View All</a>
 
 {% for tag in blog.all_tags %}
   
   
   
   {% if current_tags contains tag %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter btn-primary">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter selected">{{ tag }}</a>
    {% else %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter ">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter">{{ tag }}</a>
    {% endif %}
   
 
@@ -86,7 +86,13 @@
 {% style %}
   .blog-main .btn {
     border-radius:0;
-    background-color:#ced2d3;
+    
+  }
+  .blog-main .btn.filter(not:selected) {
+ 	background-color:#ced2d3;
+  }
+  .blog-main .btn.filter.selected {
+	bagkground-color:#006cab;
   }
   
   
