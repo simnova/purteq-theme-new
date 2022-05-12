@@ -20,8 +20,9 @@
 <a href="/blogs/articles/">View All</a> |
 
 {% for tag in blog.all_tags %}
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
 
-  {{ tag | link_to_tag:tag, title: tag, class:'something'  }} ({{ tag.total_count }})
+({{ tag.total_count }})
 
 {% endfor %}
 
