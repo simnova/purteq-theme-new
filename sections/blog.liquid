@@ -21,7 +21,7 @@
 
 {% for tag in blog.all_tags %}
 
-  {{ tag | link_to_tag:tag  }} ({{ tag.total_count }})
+  {{ tag | link_to_tag:tag, title: tag, class:'something'  }} ({{ tag.total_count }})
 
 {% endfor %}
 
