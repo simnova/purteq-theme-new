@@ -37,7 +37,7 @@
             
           {% for tag in article.tags %}
             {{ tag }}
-            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn primary">{{ tag }}</a>
+            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn">{{ tag }}</a>
           
         {% endfor %}
 
