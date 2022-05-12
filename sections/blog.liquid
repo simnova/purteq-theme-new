@@ -43,17 +43,8 @@
           </div>
           <h3 class="mb-0"><a href="{{ article.url }}">{{ article.title }}</a></h3>
           <div class="mb-1 text-muted">{{ article.author }} @ {{ article.created_at }}</div>
-          <p class="mb-auto">
-            {% if article.excerpt.size > 0 %}
-              {{ article.excerpt }}
-            {% else %}
-              <p>{{ article.content | strip_html | truncatewords: 50 }}</p>
-            {% endif %}
-          
-          </p>
-          <a href="{{ article.url }}" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block" style="max-width:100px">
+          <div>
+                  <div class="col-auto d-none d-lg-block" style="max-width:100px">
            {%- if article.image != blank -%}
           <img 
             src="{{ article.image | img_url: '1070x' }}"
@@ -64,6 +55,18 @@
           no image
           {% endif %}
         </div>
+          <p class="mb-auto">
+            {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+            {% else %}
+              <p>{{ article.content | strip_html | truncatewords: 50 }}</p>
+            {% endif %}
+          
+          </p>
+        </div>
+          <a href="{{ article.url }}" class="stretched-link">Continue reading</a>
+        </div>
+
       </div>
     </div>
   </div>
