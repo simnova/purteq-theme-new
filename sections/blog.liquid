@@ -18,20 +18,12 @@
 
 
 <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn filter {%unless current_tags%} selected {% endunless %}">View All</a>
-
 {% for tag in blog.all_tags %}
-  
-  
-  
   {% if current_tags contains tag %}
   <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter selected">{{ tag }}</a>
    {% else %}
   <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter">{{ tag }}</a>
-   {% endif %}
-  
-
-({{ tag.total_count }})
-
+   {% endif %} 
 {% endfor %}
 
 
