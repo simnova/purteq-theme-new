@@ -17,16 +17,16 @@
 
 
 
-<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn {%unless current_tags%} btn-primary {% endunless %}">View All</a>
+<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn nav {%unless current_tags%} btn-primary {% endunless %}">View All</a>
 
 {% for tag in blog.all_tags %}
   
   
   
   {% if current_tags contains tag %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn btn-primary">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn nav btn-primary">{{ tag }}</a>
    {% else %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn nav ">{{ tag }}</a>
    {% endif %}
   
 
@@ -86,7 +86,9 @@
 {% stylesheet %}
   .blog-main.btn {
     border-radius:0;
+    background-color:#CFD2D3;
   }
+  
   
 {% endstylesheet %}
 {% schema %}
