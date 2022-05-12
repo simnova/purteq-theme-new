@@ -20,7 +20,9 @@
 <a href="/blogs/articles/">View All</a> |
 
 {% for tag in blog.all_tags %}
-  {{ tag | link_to_tag: tag }} ({{ tag.total_count }}) |
+  <button class="btn btn-primary">
+  {{ tag | link_to_tag: tag }} ({{ tag.total_count }})
+  </button>
 {% endfor %}
 
 
@@ -72,3 +74,16 @@
 {% endpaginate %}
 
 </div>
+{% stylesheet %}
+  .blog-main.btn {
+    border-radius:0;
+  }
+  
+{% endstylesheet %}
+{% schema %}
+{
+  "name": "Blog",
+  "tag": "section",
+  "class": "blog-main"
+}
+{% endschema %}
