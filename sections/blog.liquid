@@ -44,7 +44,7 @@
           <h3 class="mb-0"><a href="{{ article.url }}">{{ article.title }}</a></h3>
           <div class="mb-1 text-muted">{{ article.author }} |
             
-            {{ article.created_at | datetime: '%a, %b %d, %Y', time_tag:'%Y-%m-%d' }} |
+            {{ article.created_at | time_tag:'%Y-%m-%d', datetime: '%a, %b %d, %Y' }} |
             {{ article.created_at | time_tag:'%l:%M %p' }}
             
           </div>
