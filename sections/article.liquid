@@ -15,6 +15,11 @@
       <p class="page-subheading">
         {{ article.title | escape }}
       </p>
+      <div class="mb-1 text-muted">
+        {{ article.author }} &nbsp; | &nbsp;
+        {{ article.created_at | time_tag:'%Y-%m-%d', datetime: '%a, %b %d, %Y' }} &nbsp; | &nbsp;
+        {{ article.created_at | time_tag:'%l:%M %p' }}
+      </div>
     </div>
   </div>
 <section>  
