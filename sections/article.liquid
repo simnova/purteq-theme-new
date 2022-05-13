@@ -12,9 +12,9 @@
   {% endfor %}
         
         </p>
-      <p class="page-subheading">
+      <div class="page-subheading">
         {{ article.title | escape }}
-      </p>
+      </div>
       <div class="mb-1 text-muted">
         {{ article.author }} &nbsp; | &nbsp;
         {{ article.created_at | time_tag:'%Y-%m-%d', datetime: '%a, %b %d, %Y' }} &nbsp; | &nbsp;
