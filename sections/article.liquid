@@ -22,6 +22,17 @@
       </div>
       <div>
         <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">Back to {{ blog.handle }}</a>
+        
+        Share:
+        <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="share-facebook" title="{{ 'general.social.alt_text.share_on_facebook' | t }}">
+{% comment %}<span class="icon icon-facebook" aria-hidden="true"></span>{% endcomment %}
+<img src='{{ 'f-ogo_RGB_HEX-58_3.png' | file_img_url: '24x24' }}' alt='Facebook Logo' style="margin-right: 1px;">
+{% comment %}<span class="share-title" aria-hidden="true">{{ 'general.social.share_on_facebook' | t }}</span>{% endcomment %}
+{% comment %}<span class="visually-hidden">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>{% endcomment %}
+</a>
+        
+        
+        
       </div>
     </div>
   </div>
