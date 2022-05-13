@@ -16,13 +16,13 @@
 
 
 
-<div class="mb-5">
-<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn filter {%unless current_tags%} selected {% endunless %}">View All</a>
+<div class="mb-2">
+<a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn mb-3 filter {%unless current_tags%} selected {% endunless %}">View All</a>
 {% for tag in blog.all_tags %}
   {% if current_tags contains tag %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter selected">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn mb-3 filter selected">{{ tag }}</a>
    {% else %}
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn filter">{{ tag }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn mb-3 filter">{{ tag }}</a>
    {% endif %} 
 {% endfor %}
 </div>
@@ -33,10 +33,10 @@
   <div class="col-md-12">
       <div class="row g-0  overflow-hidden flex-md-row mb-5 h-md-250 position-relative">
         <div class="col d-flex flex-column position-static">
-          <div class="d-inline-block ">
+          <div class="d-inline-block mb-2">
             
           {% for tag in article.tags %}
-            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn mb-2 btn-sm btn-primary">{{ tag }}</a>
+            <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="btn btn-sm btn-primary">{{ tag }}</a>
           
         {% endfor %}
 
