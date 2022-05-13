@@ -39,7 +39,7 @@ a:visited {
   text-transform: uppercase;
 }
 .page-subheading {
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.04rem;
   font-size: calc(.6rem + .9vw); 
   font-weight: 800;
   color: black;
