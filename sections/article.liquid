@@ -32,7 +32,7 @@
   {{ article.author }} @ {{ article.created_at }}
 
   <br/>
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">BACK TO {{ blog.handle }}</a>
+  <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">Back to {{ blog.handle }}</a>
 
 
   <div>{{ article.content }}</div>
@@ -69,7 +69,19 @@
   </div>
 </div>
 
+{% style %}
+  .blog-article .btn {
+    font-family: 'Bank Gothic Pro Medium Cond';
+    border-radius:0;
+    color:white;
+    font-weight:500;
+    text-transform:uppercase;
+    margin-right:10px;
+  }
 
+  
+  
+{% endstyle %}
 
 {% schema %}
 {
