@@ -20,6 +20,9 @@
         {{ article.created_at | time_tag:'%Y-%m-%d', datetime: '%a, %b %d, %Y' }} &nbsp; | &nbsp;
         {{ article.created_at | time_tag:'%l:%M %p' }}
       </div>
+      <div>
+        <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">Back to {{ blog.handle }}</a>
+      </div>
     </div>
   </div>
 <section>  
@@ -32,7 +35,7 @@
   {{ article.author }} @ {{ article.created_at }}
 
   <br/>
-  <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">Back to {{ blog.handle }}</a>
+  
 
 
   <div>{{ article.content }}</div>
