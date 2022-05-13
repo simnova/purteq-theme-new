@@ -43,11 +43,6 @@
 <div class="container">
 
 
-  {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
-  {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
-  {{ article.author }} @ {{ article.created_at }}
-
-  <br/>
   
 
 
