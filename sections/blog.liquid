@@ -16,7 +16,7 @@
 
 
 
-<div class="mb-2">
+<div class="mb-5">
 <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn mb-3 filter {%unless current_tags%} selected {% endunless %}">View All</a>
 {% for tag in blog.all_tags %}
   {% if current_tags contains tag %}
