@@ -23,7 +23,7 @@
       <div>
         <a href="{{ shop.url}}/blogs/{{ blog.handle }}" class="btn btn-sm btn-primary">Back to {{ blog.handle }}</a>
         
-        Share:
+        Share: &nbsp; 
         <a target="_blank" href="//twitter.com/share?text={{ article.title | url_param_escape }}&amp;url={{ shop.url }}{{ article.url | append: share_permalink }}" class="share-twitter" title="Share on Twitter">
         	<img src="{{'social-twitter.png'|asset_url}}" alt="Twitter Logo" class="d-inline-block" loading="lazy" /> 
         </a> &nbsp;
