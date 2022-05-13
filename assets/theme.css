@@ -41,7 +41,7 @@ a:visited {
 .page-subheading {
   letter-spacing: 0.07rem;
   font-size: calc(.8rem + .9vw); 
-  font-weight: 500;
+  font-weight: 800;
   color: black;
 }
 
