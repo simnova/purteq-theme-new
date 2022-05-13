@@ -6,7 +6,15 @@
 <section class="page-header">
   <div class="container mb-5">
     <div class="text-center" style="padding-top: 5vw;">
-      <p class="page-heading" style="color: #0069a7;">{{ article.title | escape }}</p>
+      <p class="page-heading" style="color: #0069a7;">
+          {% for tag in article.tags %}
+      {{ tag }}
+  {% endfor %}
+        
+        </p>
+      <p class="page-subheading">
+        {{ article.title | escape }}
+      </p>
     </div>
   </div>
 <section>  
@@ -19,11 +27,7 @@
   {{ article.author }} @ {{ article.created_at }}
 
   <br/>
-  Tags: 
-  {% for tag in article.tags %}
-      {{ tag }}
-  {% endfor %}
-  <br/>
+
 
 
   <div>{{ article.content }}</div>
