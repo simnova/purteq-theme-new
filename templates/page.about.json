@@ -3,7 +3,7 @@
     "16268384495611bf12": {
       "type": "header-image",
       "settings": {
-        "title": "PURTEQ<sup>®<\/sup> LEADERSHIP TEAM",
+        "title": "<span style=\"text-transform:none\">\"We all deserve a clean, toxic-free future.\"<\/span><br>\n<div style=\"text-transform:none; text-align:right;margin-right:15%;color:white;font-size:1.5rem;font-weight:500\">Rob Kabel, CEO<\/div>",
         "image": "shopify:\/\/shop_images\/about-header_1fd51c92-79da-4254-b3c4-5908c027b6bd.png"
       }
     },
@@ -16,6 +16,7 @@
     },
     "162631558733ef00ff": {
       "type": "staff-list",
+      "disabled": true,
       "blocks": {
         "162631558733ef00ff-0": {
           "type": "staff_detail",
@@ -83,12 +84,20 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "7485d688-fe9d-4b69-8b89-1044b4476c9b": {
+      "type": "content-block",
+      "settings": {
+        "title": "",
+        "text": "<p>Imagine a world where cleaning products don’t harm the air, the ocean, or the earth. And they also don’t harm you when you breathe them, spray them, or touch them.<\/p>\n\n<p>At PURTEQ®, we offer a unique line of professional strength cleaning products, harnessing the advantages of nature’s technology. Our products are powerful enough to outclean the competition with an unmatched health and environmental safety profile.<\/p>\n\n<p>All of our products contain non-toxic, proprietary formulas developed to give you superior cleaning results without the use of any harsh or harmful chemicals. How do we do this? We use graphene in our glass cleaner, micelles in our multi-purpose concentrate, thymol in our disinfectant, citric acid in our wipes and probiotic formulas that keep on cleaning, even when you don’t.<\/p>\n\n<p>Why do we do this? You probably already know the answer. Our priorities are all about bringing you cleaning solutions that work harder and better, and are safe for all people, pets, and the planet. Whether you run a business or a household -- at PURTEQ, we provide the products to help you embrace a smarter, safer cleaning routine.<\/p>\n\n<p>We continue to expand our suite of non-toxic solutions for virtually any environment. Please explore our line of products and discover what cleaning solutions are right for you--because we all deserve a clean, toxic-free future.<\/p>\n<br><br>"
+      }
     }
   },
   "order": [
     "16268384495611bf12",
     "16263336964c1e8c63",
     "162631558733ef00ff",
-    "main"
+    "main",
+    "7485d688-fe9d-4b69-8b89-1044b4476c9b"
   ]
 }
