@@ -113,6 +113,7 @@
     },
     "1627330388ee51cfe8": {
       "type": "featured-partners",
+      "disabled": true,
       "blocks": {
         "1627330388ee51cfe8-0": {
           "type": "partner_detail",
