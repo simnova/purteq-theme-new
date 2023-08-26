@@ -18,7 +18,7 @@
           "type": "product_detail",
           "settings": {
             "title": "Disinfecting",
-            "details": "<ul>\n\t<li>\n<a href=\"\/collections\/disinfecting\/products\/fresch\">FRESCH Botanical Disinfectant<\/a>\n<\/li>\n\t<li>\n<a href=\"\/collections\/disinfecting\/products\/citrapur\">CITRAPUR Disinfecting Wipes<\/a>\n<\/li>\n<\/ul>",
+            "details": "<ul>\n\t<li>\n<a href=\"\/collections\/disinfecting\/products\/fresch\">FRESCH Botanical Disinfectant<\/a>\n<\/li>\n<!--\n\t<li>\n<a href=\"\/collections\/disinfecting\/products\/citrapur\">CITRAPUR Disinfecting Wipes<\/a>\n<\/li> -->\n<\/ul>",
             "image": "shopify:\/\/shop_images\/Disinfecting_Bottles_300w.png",
             "link": "shopify:\/\/collections\/disinfecting"
           }
@@ -53,7 +53,6 @@
     },
     "16273176916eace3ac": {
       "type": "product-callouts-small",
-      "disabled": true,
       "blocks": {
         "16273176916eace3ac-0": {
           "type": "product_detail",
@@ -156,6 +155,7 @@
         "903e9451-d415-4ebc-b473-49b7a91eed78",
         "3aeaec4b-7e1a-471d-a368-37704c58f4c5"
       ],
+      "disabled": true,
       "settings": {
         "title": ""
       }
