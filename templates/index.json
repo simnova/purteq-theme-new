@@ -16,7 +16,6 @@
     },
     "16260496490a85176f": {
       "type": "product-callouts",
-      "disabled": true,
       "blocks": {
         "16260496490a85176f-0": {
           "type": "product_detail",
@@ -51,6 +50,7 @@
         "16260496490a85176f-1",
         "16260496490a85176f-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Promise is in Our Products"
       }
@@ -85,7 +85,7 @@
       "settings": {
         "title": "Our Promise Is in Our Products",
         "text": "PURTEQ offers only non-toxic, sustainable, highly effective cleaning and disinfecting products that deliver an unparalleled and enduring clean. We harness nature’s technology by utilizing probiotic, colloidal, graphene, botanical, and mineral-based formulations that deliver superior results. <br> <br>\nAt PURTEQ, we take cleaning and disinfecting seriously — with an unwavering focus on solving all of your cleaning challenges.",
-        "image": "shopify:\/\/shop_images\/home-product-cluster.png"
+        "image": "shopify:\/\/shop_images\/Homepage-Bottle-Cluster_d3ebc898-5ef8-4da4-9f44-a90c90d1357f.png"
       }
     },
     "16273250824d170bad": {
@@ -113,7 +113,6 @@
     },
     "1627330388ee51cfe8": {
       "type": "featured-partners",
-      "disabled": true,
       "blocks": {
         "1627330388ee51cfe8-0": {
           "type": "partner_detail",
@@ -226,6 +225,7 @@
         "a2e6e805-a21d-478b-9e2e-f4524b7ac8e2",
         "fcafab96-6bcc-44ed-a86d-a35a3fb39219"
       ],
+      "disabled": true,
       "settings": {
         "title": "A Few of Our Clients"
       }
