@@ -29,13 +29,6 @@
             "answer": "<p>Yes, if the surface is visibly clear of dirt and debris, you only need one step to both clean and disinfect a surface using FRESCH BOTANICAL DISINFECTANT (when used according to disinfection instructions on the label).  If the surface is visibly soiled, we recommend cleaning first (you can use FRESCH to clean, too!).  Once the surface is visibly clear, we recommend spraying FRESCH until the surface is visibly wet and allowing it to dry naturally, no rinse required, even on food contact surfaces to ensure complete surface coverage.<\/p>"
           }
         },
-        "df92418b-8356-4503-93cc-f945d6501d22": {
-          "type": "question",
-          "settings": {
-            "title": "What is the correct way to disinfect?",
-            "answer": "<p>Because dirt and debris can serve as a physical barrier, it may lower the efficacy of a disinfectant.  For best results, “pre-clean” surfaces to remove any visible dirt or grime which may hinder the disinfectant from coming into contact with surface germs.<\/p>"
-          }
-        },
         "46e497de-cee9-4fc2-bd99-7595c64bc623": {
           "type": "question",
           "settings": {
@@ -49,14 +42,21 @@
             "title": "I recently tried your KLARIFY Glass Cleaner in our office building and the windows have never been so clear. What does \"Graphene-Enhanced\" mean and what other surfaces does it work on?",
             "answer": "<p>Imagine the thinnest, hardest, clearest substance in the world. It’s called Graphene. Now imagine you can use it, in a liquid spray, to clean, shine and protect every glass surface in sight. It has no dyes, no ammonia, or obnoxious chemicals--just the innovative stuff that professionals have proven will do the best job. Rain rolls off of it, oils won’t stick to it, UV rays can’t hurt it, and streaks are just not allowed. That’s KLARIFY. Spray KLARIFY on your windows, your car windshield (even the tinted windows), stainless steel, granite countertops, your computer screen, any touchscreen, flat screen TV, your eyeglasses, sunglasses and glass top everything. At work, use it to clean the whiteboard (and remove the permanent marker that “somehow” got on there). Now imagine you don’t have to clean all these things as often because KLARIFY builds invisible layers of protection with every use. That’s the reality. The more you use it, the less you need to! KLARIFY can fill your life with shinier objects...and who doesn't want that?  And it goes a long way -- one gallon of concentrate makes 40 32 oz. bottles of RTU!<\/p>"
           }
+        },
+        "df92418b-8356-4503-93cc-f945d6501d22": {
+          "type": "question",
+          "settings": {
+            "title": "What is the correct way to disinfect?",
+            "answer": "<p>Because dirt and debris can serve as a physical barrier, it may lower the efficacy of a disinfectant.  For best results, “pre-clean” surfaces to remove any visible dirt or grime which may hinder the disinfectant from coming into contact with surface germs.<\/p>"
+          }
         }
       },
       "block_order": [
         "1626333847f269a19a-0",
         "1626333847f269a19a-1",
-        "df92418b-8356-4503-93cc-f945d6501d22",
         "46e497de-cee9-4fc2-bd99-7595c64bc623",
-        "4ff3d04c-d429-41bf-ba24-16a371c4f8ef"
+        "4ff3d04c-d429-41bf-ba24-16a371c4f8ef",
+        "df92418b-8356-4503-93cc-f945d6501d22"
       ],
       "settings": {
         "title": ""
