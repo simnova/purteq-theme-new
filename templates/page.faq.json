@@ -49,6 +49,13 @@
             "title": "KLENZ is the best de-greaser I've ever used. What the heck are \"colloidal micelles\" and how do they make cleaning grease so easy?",
             "answer": "<p>We get questions like this a lot! KLENZ Multi-Purpose Cleaner makes difficult cleaning jobs a LOT easier, thanks to millions of micelles doing the work for you. Read about the science in our <a href=\"\/blogs\/resources\/the-colloidal-chemistry-of-micelles\" title=\"The Colloidal Cleaning Chemistry of Micelles\">blog post<\/a>, but to put it simply a micelle is a nanoparticle made of lipids, and each individual lipid has a head and a tail. The head is attracted to water and the tail repels water and loves oil. So the micelles in KLENZ all bounce around and the oleophilic tails capture the grease. You can also watch a <a href=\"\/blogs\/resources\/klenz-video\" title=\"KLENZ: Multi-Purpose Cleaner\">video here<\/a>, but the micelles basically hold the grease in suspension and you just have to rinse or wipe it away. The trick is to dilute KLENZ Concentrate to the right strength for the job and then spray it on and wait about 10 minutes -- let it do the work for you! After 10 minutes you can wipe or rinse the grease away. For really tough jobs like build up on a grill you may need to use a scrub brush or steel wool. And it's not just grease, that's how KLENZ works on all stains - it holds them in suspension and then you have to blot or rinse them away before the stain re-sets. It works on everything from your white tennis shoes to the grease hood in a commercial kitchen. Easy peasy. <br\/><br\/><\/p><p><\/p><p><\/p>"
           }
+        },
+        "0f1dd011-8a85-4d96-8607-9df663600a67": {
+          "type": "question",
+          "settings": {
+            "title": "How do I know what kind of stains I can try KLENZ Multi-Purpose Cleaner on? I'm confused about what it's intended for...",
+            "answer": "<p>Well, the short answer is you can try KLENZ on any surface compatible with water. We hear new uses from our customers all the time so there's really no limit to the things it will clean. KLENZ is biodegradable and sourced from plants. Its eco-friendly formula is non-toxic, non-flammable, non-caustic, dye- and fragrance-free; safe on<br\/>the skin; produces no harsh fumes and is water-based so try it on your toughest cleaning challenges and let us know how it works! It is suitable for most surfaces including countertops, walls, cabinets, doors, tables, chairs, appliances, porcelain, tile, outdoor equipment, fiberglass, and plastic furniture. Why just the other day we were at our warehouse and I sprayed some on a spot of oil that had leaked from the forklift and I went and grabbed a paper towel and came back and wiped it up and the spot I cleaned looked like a fresh water pool in the middle of the black sea! I'm going back to do the whole floor this weekend. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -56,7 +63,8 @@
         "1626333847f269a19a-1",
         "46e497de-cee9-4fc2-bd99-7595c64bc623",
         "4ff3d04c-d429-41bf-ba24-16a371c4f8ef",
-        "df92418b-8356-4503-93cc-f945d6501d22"
+        "df92418b-8356-4503-93cc-f945d6501d22",
+        "0f1dd011-8a85-4d96-8607-9df663600a67"
       ],
       "settings": {
         "title": ""
