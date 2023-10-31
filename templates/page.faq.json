@@ -63,6 +63,13 @@
             "title": "My company recently switched to PURTEQ products and installed a dosing station where we fill our mop buckets with FLOR Active Floor Cleaner (which works great!). The label says to dispose of the dirty mop water down any drain because it provides \"helpful biological drain maintenance\"--what does that mean?",
             "answer": "<p>FLOR is enriched with beneficial probiotics, naturally sourced from plants. Regularly cleaning with FLOR builds healthier and more protective ecological conditions. It works in a natural way and continues to work after application, so results are longer lasting. It cleans on a microscopic level, reaching the smallest spaces where organic matter can reside but is not visible to the naked eye. That's because the probiotics continue working as long as they can find a food source. The probiotics are what provide the biological drain maintenance. They create a healthier 'biome' in the drain, just like probiotic supplements create a healthier biome in our stomach. The probiotics degrade and eliminate the organic materials that can build up in a drain and cause blockages. <br\/><br\/>Conventional cleaners not only pollute our inside spaces with  aggressive chemicals but also act as antibiotics – they disrupt the balance of microflora by destroying not only the bad, but also the good bacteria. As a result, a bacterial imbalance occurs and bad bacteria predominate. Such an environment can be harmful to us. To clean without being exposed to aggressive chemicals, and to take care of your healthy indoor environment, it helps to choose eco-friendly and probiotic products. At PURTEQ, we harness nature's technology to deliver products that are powerful enough for professionals yet safe enough for your home. <\/p>"
           }
+        },
+        "3eff2fe5-d8d1-4116-b78c-daacef971f49": {
+          "type": "question",
+          "settings": {
+            "title": "Is it safe to use FLOR on hardwood floors?",
+            "answer": "<p>Most hardwood floors have been sealed so if you're already using a product that is water-based to clean your wood floors it's safe to use FLOR. Just dilute the product in your mop bucket and spin or wring out your mop so it's not very wet when you're mopping. Allow it to dry naturally. You will notice with repeated use that the mop water will be less dirty every week because the probiotics keep working and the floor stays cleaner longer. I use it on my wood floors at home and I love it. I used to mop with another product for wood floors and then I had to apply another product after to get rid of the water marks from the first one. No more! One and done. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -72,7 +79,8 @@
         "4ff3d04c-d429-41bf-ba24-16a371c4f8ef",
         "df92418b-8356-4503-93cc-f945d6501d22",
         "0f1dd011-8a85-4d96-8607-9df663600a67",
-        "7e2df813-463f-4ebe-93b2-83914cdaee24"
+        "7e2df813-463f-4ebe-93b2-83914cdaee24",
+        "3eff2fe5-d8d1-4116-b78c-daacef971f49"
       ],
       "settings": {
         "title": ""
