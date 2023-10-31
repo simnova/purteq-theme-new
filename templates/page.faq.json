@@ -70,6 +70,13 @@
             "title": "Is it safe to use FLOR on hardwood floors?",
             "answer": "<p>Most hardwood floors have been sealed so if you're already using a product that is water-based to clean your wood floors it's safe to use FLOR. Just dilute the product in your mop bucket and spin or wring out your mop so it's not very wet when you're mopping. Allow it to dry naturally. You will notice with repeated use that the mop water will be less dirty every week because the probiotics keep working and the floor stays cleaner longer. I use it on my wood floors at home and I love it. I used to mop with another product for wood floors and then I had to apply another product after to get rid of the water marks from the first one. No more! One and done. <\/p>"
           }
+        },
+        "632f9c53-59f9-45ed-a56b-9ba4031ce25f": {
+          "type": "question",
+          "settings": {
+            "title": "What is the difference between Probiotic and Enzymatic cleaners?",
+            "answer": "<p>Aha! We get this one so much that we wrote a whole white paper about it which you can <a href=\"\/blogs\/resources\/the-difference-between-probiotic-and-enzymatic-cleaning-solutions\" title=\"The Difference Between Probiotic and Enzymatic Cleaning Solutions\">read here<\/a>. Basically, enzymes speed up reactions and are specific to a single reaction, so it's ineffective if it is not the correct enzyme type for the cleaning required. Probiotics are living, helpful microorganisms (‘good’ bacteria). A single probiotic bacterium can produce many diverse enzymes that can clean dirt components such as oil, carbohydrates, and proteins all at once. So, whereas enzymes facilitate cleaning by preparing the ground, probiotics increase cleaning effectiveness and efficiency. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -80,7 +87,8 @@
         "df92418b-8356-4503-93cc-f945d6501d22",
         "0f1dd011-8a85-4d96-8607-9df663600a67",
         "7e2df813-463f-4ebe-93b2-83914cdaee24",
-        "3eff2fe5-d8d1-4116-b78c-daacef971f49"
+        "3eff2fe5-d8d1-4116-b78c-daacef971f49",
+        "632f9c53-59f9-45ed-a56b-9ba4031ce25f"
       ],
       "settings": {
         "title": ""
