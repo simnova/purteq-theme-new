@@ -56,6 +56,13 @@
             "title": "How do I know what kind of stains I can try KLENZ Multi-Purpose Cleaner on? I'm confused about what it's intended for...",
             "answer": "<p>Well, the short answer is you can try KLENZ on any surface compatible with water. We hear new uses from our customers all the time so there's no limit to the things it will clean. KLENZ is biodegradable and sourced from plants. Its eco-friendly formula is non-toxic, non-flammable, non-caustic, dye- and fragrance-free; safe on the skin; produces no harsh fumes and is water-based--so try it on your toughest cleaning challenges and let us know how it works! It's suitable for most surfaces including countertops, walls, cabinets, doors, tables, chairs, appliances, porcelain, tile, outdoor equipment, fiberglass, and plastic furniture. It's a great carpet spotter and an amazing grout cleaner. Soak your paint brushes in it and the paint will just rinse out (same for make up brushes!)  I use it for a lot of things I used to use bleach for. Why just the other day we were at our warehouse and I sprayed some on a spot of oil that had leaked from the forklift.  I grabbed a paper towel and returned and wiped it up and the spot I cleaned looked like a fresh water pool in the middle of the black sea! Now we have to clean the whole floor (it's painted concrete.) We'll just spray it with KLENZ using a pump sprayer, let it sit for 10 minutes, and wash it off with a pressure washer. <\/p>"
           }
+        },
+        "7e2df813-463f-4ebe-93b2-83914cdaee24": {
+          "type": "question",
+          "settings": {
+            "title": "My company recently switched to PURTEQ products and installed a dosing station where we fill our mop buckets with FLOR Active Floor Cleaner (which works great!). The label says to dispose of the dirty mop water down any drain because it provides \"helpful biological drain maintenance\"--what does that mean?",
+            "answer": "<p>FLOR is enriched with beneficial probiotics, naturally sourced from plants. Regularly cleaning with FLOR builds healthier and more protective ecological conditions. FLOR works in a natural way and continues to work after application, so results are longer lasting. It cleans on a microscopic level, reaching the smallest spaces where organic matter can reside but is not visible to the naked eye. That's because the probiotics continue working as long as they can find a food source. The probiotics are what provide the biological drain maintenance. They create a healthier 'biome' in the drain, just like probiotic supplements create a healthier biome in our stomach. The probiotics degrade and eliminate the organic materials that can build up in a drain and cause blockages. <br\/><br\/>Conventional cleaners not only pollute our inside spaces with  aggressive chemicals but also act as antibiotics – they disrupt the balance of microflora by destroying not only the bad, but also the good bacteria. As a result, a bacterial imbalance occurs and bad bacteria predominate. Such an environment can be harmful to us. To clean without being exposed to aggressive chemicals, and to take care of your healthy indoor environment, it helps to choose eco-friendly and probiotic products. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -64,7 +71,8 @@
         "46e497de-cee9-4fc2-bd99-7595c64bc623",
         "4ff3d04c-d429-41bf-ba24-16a371c4f8ef",
         "df92418b-8356-4503-93cc-f945d6501d22",
-        "0f1dd011-8a85-4d96-8607-9df663600a67"
+        "0f1dd011-8a85-4d96-8607-9df663600a67",
+        "7e2df813-463f-4ebe-93b2-83914cdaee24"
       ],
       "settings": {
         "title": ""
