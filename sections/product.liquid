@@ -9,23 +9,25 @@
 
 <h1>{{ product.title }}</h1>
 
-{% comment %} <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
-  <select name="id" id="productSelect">
-    {% for variant in product.variants %}
-      {% if variant.available %}
-        <option value="{{ variant.id }}">
-          {{ variant.title }} 
-        </option>
-      {% else %}
-        <option disabled="disabled">
-          {{ variant.title }} - sold out
-        </option>
-      {% endif %}
-    {% endfor %}
-  </select>
-  
-  <label for="Quantity">quantity</label>
-</form> {% endcomment %}
+{% if shop.customer_accounts_enabled and customer %} 
+  <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+    <select name="id" id="productSelect">
+      {% for variant in product.variants %}
+        {% if variant.available %}
+          <option value="{{ variant.id }}">
+            {{ variant.title }} 
+          </option>
+        {% else %}
+          <option disabled="disabled">
+            {{ variant.title }} - sold out
+          </option>
+        {% endif %}
+      {% endfor %}
+    </select>
+    
+    <label for="Quantity">quantity</label>
+  </form>
+{% endif %}
 <div></div>
 
   <div class="row">
