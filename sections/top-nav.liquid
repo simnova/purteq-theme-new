@@ -35,14 +35,17 @@
             {% endif %}
           {% endfor %}
           
-          <li  class="nav-item">
+          {% comment %} <li  class="nav-item">
             <a href="/cart" class="nav-link {% if template == "cart" %}active{% endif %}">Cart</a>
-          </li>
+          </li> {% endcomment %}
         
           {% if shop.customer_accounts_enabled %}
             {% if customer %}
             <li  class="nav-item">
               <a href="{{ routes.account_url }}" class="nav-link {% if template == "customers/account" %}active{% endif %}">Account</a>
+            </li>
+            <li  class="nav-item">
+              <a href="/cart" class="nav-link {% if template == "cart" %}active{% endif %}">Cart</a>
             </li>
             <li  class="nav-item">
               <a href="/account/logout" class="nav-link">Log Out</a>
