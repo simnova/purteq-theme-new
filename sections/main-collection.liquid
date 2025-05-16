@@ -25,7 +25,11 @@
               <div class="product-subheading">
                 {{ product.metafields.my_fields.product_subheading }}
               </div>
-              <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More</a>
+              {% if shop.customer_accounts_enabled and customer %}
+                <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More &amp; Buy</a>  
+              {% else %}
+                <a href="{{ product.url | within: collection }}" class="btn btn-primary w-100">Learn More</a>
+              {% endif %}
               <p class="card-text">
                 <!-- 
                 <div class="text-end">
